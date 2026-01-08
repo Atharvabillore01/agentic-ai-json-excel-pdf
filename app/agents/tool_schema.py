@@ -7,9 +7,10 @@ tools = [
             "parameters": {
                 "type": "object",
                 "properties": {
+                    "state": { "type": "string" },
                     "query": { "type": "string" }
                 },
-                "required": ["query"]
+                "required": ["state", "query"]
             }
         }
     },
@@ -17,16 +18,30 @@ tools = [
         "type": "function",
         "function": {
             "name": "get_parks",
-            "description": "Get all industrial parks in the state",
-            "parameters": { "type": "object", "properties": {} }
+            "description": "Get industrial parks in a state",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "state": { "type": "string" },
+                    "limit": { "type": "number" }
+                },
+                "required": ["state"]
+            }
         }
     },
     {
         "type": "function",
         "function": {
             "name": "get_plots",
-            "description": "Get all plots in the state",
-            "parameters": { "type": "object", "properties": {} }
+            "description": "Get industrial plots in a state",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "state": { "type": "string" },
+                    "limit": { "type": "number" }
+                },
+                "required": ["state"]
+            }
         }
     },
     {
@@ -37,12 +52,13 @@ tools = [
             "parameters": {
                 "type": "object",
                 "properties": {
+                    "state": { "type": "string" },
                     "lat": { "type": "number" },
                     "lng": { "type": "number" },
                     "radius_km": { "type": "number" },
                     "poi_type": { "type": "string" }
                 },
-                "required": ["lat", "lng"]
+                "required": ["state", "lat", "lng"]
             }
         }
     }

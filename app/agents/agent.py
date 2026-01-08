@@ -7,6 +7,8 @@ from app.agents.tools_runtime import (
     tool_get_plots,
     tool_find_nearby_pois
 )
+from app.agents.tool_compressor import compress_tool_result
+from app.utils.state import normalize_state
 
 TOOL_MAP = {
     "search_policy": tool_search_policy,
@@ -34,44 +36,44 @@ def run_agent(state: str, user_question: str):
     response = groq_chat(messages, tools=tools)
     msg = response.choices[0].message
 
-    # Tool call
     if msg.tool_calls:
         tool_messages = []
 
         for call in msg.tool_calls:
             name = call.function.name
             raw_args = call.function.arguments
-            tool_call_id = call.id  # 🔑 REQUIRED
+            tool_call_id = call.id
 
-            # Normalize arguments safely
+            # ---- Normalize args ONCE ----
             if raw_args is None:
                 args = {}
             elif isinstance(raw_args, str):
-                cleaned = raw_args.strip().lower()
-                if cleaned in ("", "null", "none"):
-                    args = {}
-                else:
-                    args = json.loads(raw_args)
+                cleaned = raw_args.strip()
+                args = json.loads(cleaned) if cleaned else {}
             elif isinstance(raw_args, dict):
                 args = raw_args
             else:
                 args = {}
 
+            # ---- GUARANTEE state exists ----
+            args.setdefault("state", state)
+            args["state"] = normalize_state(args["state"])
+
             print(f"[AGENT][TOOL_CALL] name={name} args={args}")
 
-            result = TOOL_MAP[name](state=state, **args)
+            # ---- Call tool EXACTLY as schema expects ----
+            result = TOOL_MAP[name](**args)
 
-            # Append ONE tool message per tool call (Groq requirement)
+            compressed = compress_tool_result(name, result)
+
             tool_messages.append({
                 "role": "tool",
                 "tool_call_id": tool_call_id,
-                "content": json.dumps(result, default=str)
+                "content": compressed
             })
 
-        # Add all tool responses
         messages.extend(tool_messages)
 
-        # 🔁 Final synthesis call (NO tools parameter here)
         final = groq_chat(messages)
 
         return {
@@ -79,5 +81,5 @@ def run_agent(state: str, user_question: str):
             "tools_used": [call.function.name for call in msg.tool_calls]
         }
 
+    return {"answer": msg.content}
 
-    return { "answer": msg.content }

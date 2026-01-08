@@ -270,7 +270,30 @@
         opacity: 0.5;
         cursor: not-allowed;
     }
+    .visualization-maximized {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  margin: 0 !important;
+  padding: 16px;
+  border-radius: 0 !important;
+  max-width: none !important;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.visualization-maximized #mynetwork {
+  height: calc(100vh - 160px);
+}
+
+.visualization-maximized .response-container {
+  max-height: calc(100vh - 160px);
+}
+
+body.maximized {
+  overflow: hidden;
+}
     @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
     }
@@ -309,7 +332,10 @@
   </div>
 
   <div class="card full">
-    <h3>📤 Data Visualization</h3>
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h3 style="margin:0;">📤 Data Visualization</h3>
+      <button class="sm-btn" id="btn-maximize" onclick="toggleMaximize()">⤢ Maximize</button>
+    </div>
     
     <div class="tabs">
       <button class="tab-btn active" onclick="switchTab('graph')">Graph Map</button>
@@ -725,6 +751,32 @@ function openAllClusters() {
       }
   }
   clusterIds.forEach(id => network.openCluster(id));
+}
+let isMaximized = false;
+
+function toggleMaximize() {
+  const card = document.querySelector('.card.full');
+  const btn = document.getElementById('btn-maximize');
+
+  isMaximized = !isMaximized;
+
+  if (isMaximized) {
+    card.classList.add('visualization-maximized');
+    document.body.classList.add('maximized');
+    btn.textContent = '⤡ Restore';
+  } else {
+    card.classList.remove('visualization-maximized');
+    document.body.classList.remove('maximized');
+    btn.textContent = '⤢ Maximize';
+  }
+
+  // Ensure Vis.js recalculates canvas size
+  setTimeout(() => {
+    if (network) {
+      network.redraw();
+      network.fit({ animation: true });
+    }
+  }, 200);
 }
 </script>
 
