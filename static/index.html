@@ -382,6 +382,8 @@ const BASE = "http://127.0.0.1:8000";
 let network = null;
 let nodesDataSet = null; 
 let edgesDataSet = null;
+let agentBusy = false;
+let agentAbortController = null;
 
 // --- Tab Switching Logic ---
 function switchTab(view) {
@@ -400,12 +402,19 @@ function switchTab(view) {
 // --- API Logic ---
 
 async function askAgent() {
+  if (agentBusy) return;
+
+  agentBusy = true;
+  const btn = document.querySelector("button[onclick='askAgent()']");
+  btn.disabled = true;
+  btn.textContent = "Thinking…";
+
   const state = document.getElementById("state").value;
   const question = document.getElementById("question").value;
   const output = document.getElementById("output");
-  
+
   output.textContent = "Processing request...";
-  switchTab('answer'); 
+  switchTab('answer');
 
   try {
     const res = await fetch(`/api/${state}/ask`, {
@@ -413,14 +422,26 @@ async function askAgent() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question })
     });
+
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
+    }
+
     const data = await res.json();
     output.textContent = JSON.stringify(data, null, 2);
     renderBotResponse(data);
     visualizeData(data);
+
   } catch (err) {
     output.textContent = err.toString();
+    renderChatStyleAnswer("⚠️ Something went wrong. Please try again.");
+  } finally {
+    agentBusy = false;
+    btn.disabled = false;
+    btn.textContent = "Ask Agent";
   }
 }
+
 
 async function callApi() {
   const endpoint = document.getElementById("endpoint").value;
@@ -452,11 +473,10 @@ function renderBotResponse(response) {
   let summaryText = "";
 
   // 1. Detect format
-  if (response.data && Array.isArray(response.data)) {
-    items = response.data;
-    const meta = response.meta || {};
-    summaryText = `Found <strong>${meta.total || items.length}</strong> items. Showing ${items.length}.`;
-  } else if (Array.isArray(response)) {
+  if (response.answer && typeof response.answer === "string") {
+  renderChatStyleAnswer(response.answer);
+  return;
+} else if (Array.isArray(response)) {
     items = response;
     summaryText = `Found <strong>${items.length}</strong> items.`;
   } else {
@@ -769,7 +789,6 @@ function toggleMaximize() {
     document.body.classList.remove('maximized');
     btn.textContent = '⤢ Maximize';
   }
-
   // Ensure Vis.js recalculates canvas size
   setTimeout(() => {
     if (network) {
@@ -777,6 +796,23 @@ function toggleMaximize() {
       network.fit({ animation: true });
     }
   }, 200);
+}
+function renderChatStyleAnswer(answerText) {
+  const container = document.getElementById("bot-response-container");
+
+  container.innerHTML = `
+    <div class="data-card" style="font-size:14px; line-height:1.7">
+      ${answerText
+        .split("\n")
+        .map(line => {
+          if (line.startsWith("- ")) return `<li>${line.slice(2)}</li>`;
+          if (line.match(/^#+\s/)) return `<h4>${line.replace(/^#+\s/, "")}</h4>`;
+          if (line.trim() === "") return "<br/>";
+          return `<p>${line}</p>`;
+        })
+        .join("")}
+    </div>
+  `;
 }
 </script>
 
