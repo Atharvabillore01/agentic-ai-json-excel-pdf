@@ -1,0 +1,34 @@
+# --- API / Backend ---
+fastapi
+uvicorn
+pydantic
+python-dotenv
+python-multipart
+orjson
+
+# --- Vector DB / Retrieval ---
+chromadb
+faiss-cpu
+sentence-transformers
+
+# --- ML / Embeddings ---
+torch
+transformers
+tokenizers
+numpy
+scikit-learn
+scipy
+
+# --- Document / PDF Processing ---
+pdfplumber
+pdfminer.six
+PyMuPDF
+pypdfium2
+pillow
+
+# --- Data / Utilities ---
+pandas
+requests
+tqdm
+regex
+rich

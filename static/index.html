@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP Industrial Agent – Test Console</title>
+  
+  <!-- Vis.js for Neo4j style graphs -->
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --primary: #1f4fd8;
+      --secondary: #eef2ff;
+      --border: #e2e6f0;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --success: #0f172a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding-bottom: 40px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f4fd8, #3b82f6);
+      color: #fff;
+      padding: 20px 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    header h1 { margin: 0; font-size: 22px; font-weight: 600; }
+    header p { margin: 6px 0 0; font-size: 13px; opacity: 0.9; }
+
+    .container {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+      height: 100%;
+    }
+
+    .card h3 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    select, input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      margin-bottom: 14px;
+      outline: none;
+    }
+
+    textarea { resize: vertical; }
+
+    select:focus, input:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--secondary);
+    }
+
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #1c45c2;
+      transform: translateY(-1px);
+    }
+
+    /* Output Section Styles */
+    .full { margin-top: 20px; grid-column: 1 / -1; }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid transparent;
+      padding: 6px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    .tab-btn.active {
+      background: var(--secondary);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .view-panel { display: none; }
+    .view-panel.active { display: block; }
+
+    /* New "Bot Response" Styles */
+    .response-container {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      max-height: 650px;
+      overflow-y: auto;
+    }
+
+    .bot-summary {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      color: #3730a3;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .data-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 13px;
+      transition: box-shadow 0.2s;
+    }
+    
+    .data-card:hover {
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-color: #cbd5e1;
+    }
+
+    .data-card-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--primary);
+      margin-bottom: 8px;
+      border-bottom: 1px solid #f1f5f9;
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .data-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    
+    .data-label { color: var(--muted); }
+    .data-val { font-weight: 500; text-align: right; max-width: 60%; }
+
+    /* Raw JSON fallback */
+    .json-raw {
+      background: #0b1020;
+      color: #d1d5db;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    /* Graph Container */
+    #mynetwork {
+      width: 100%;
+      height: 650px;
+      border: 1px solid var(--border);
+      border-top: none;
+      background: #0f172a; 
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    /* Graph Toolbar */
+    .graph-toolbar {
+      padding: 10px 15px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-bottom: 1px solid #edf2f7;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .sm-btn {
+      padding: 5px 12px;
+      font-size: 12px;
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    .sm-btn:hover {
+      background: var(--secondary);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .sm-btn.highlight {
+        background: var(--secondary);
+        color: var(--primary);
+        border-color: var(--primary);
+        font-weight: 600;
+    }
+    
+    .sm-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>MP Industrial Agent – Test Console</h1>
+  <p>Backend connected at <code>http://127.0.0.1:8000</code></p>
+</header>
+
+<div class="container">
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>🧠 Ask the Agent</h3>
+      <label>State</label>
+      <select id="state">
+        <option value="madhya_pradesh">Madhya Pradesh</option>
+      </select>
+      <label>Question</label>
+      <textarea id="question" rows="3">Medical Devices Policy</textarea>
+      <button onclick="askAgent()">Ask Agent</button>
+    </div>
+
+    <div class="card">
+      <h3>🔌 Raw API Tester</h3>
+      <label>Endpoint</label>
+      <input id="endpoint" value="/api/madhya_pradesh/plots?limit=50" />
+      <button onclick="callApi()">Call API & Visualize</button>
+    </div>
+
+  </div>
+
+  <div class="card full">
+    <h3>📤 Data Visualization</h3>
+    
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('graph')">Graph Map</button>
+      <button class="tab-btn" onclick="switchTab('answer')">Bot Answer</button>
+      <button class="tab-btn" onclick="switchTab('json')">Raw JSON</button>
+    </div>
+
+    <!-- Graph View -->
+    <div id="view-graph" class="view-panel active">
+      <div class="graph-toolbar">
+        <span style="font-size:12px; font-weight:600; color:var(--muted)">GROUP BY:</span>
+        <button class="sm-btn" onclick="clusterByHub('District')">District</button>
+        <button class="sm-btn" onclick="clusterByHub('Sector')">Sector</button>
+        <button class="sm-btn" onclick="clusterByHub('Owner')">Owner</button>
+        <button class="sm-btn" onclick="clusterByHub('Status')">Status</button>
+        <div style="width:1px; height:16px; background:#e2e6f0; margin:0 4px;"></div>
+        
+        <button id="btn-focus" class="sm-btn highlight" disabled onclick="focusOnSelection()">Focus</button>
+        <button class="sm-btn" onclick="resetView()">Reset</button>
+      </div>
+      <div id="mynetwork"></div>
+      <p style="font-size: 12px; color: var(--muted); margin-top: 5px;">
+        * Select a node to enable Focus Mode. Double click a cluster to expand it.
+      </p>
+    </div>
+
+    <!-- Bot Answer View -->
+    <div id="view-answer" class="view-panel">
+      <div id="bot-response-container" class="response-container">
+        <div style="text-align:center; padding: 40px; color:#aaa;">No data loaded yet.</div>
+      </div>
+    </div>
+
+    <!-- JSON View -->
+    <div id="view-json" class="view-panel">
+      <pre class="json-raw" id="output">Waiting for request…</pre>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const BASE = "http://127.0.0.1:8000";
+let network = null;
+let nodesDataSet = null; 
+let edgesDataSet = null;
+
+// --- Tab Switching Logic ---
+function switchTab(view) {
+  document.querySelectorAll('.view-panel').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  
+  document.getElementById(`view-${view}`).classList.add('active');
+  
+  // Update buttons state
+  const btns = document.querySelectorAll('.tab-btn');
+  if(view === 'graph') btns[0].classList.add('active');
+  else if(view === 'answer') btns[1].classList.add('active');
+  else btns[2].classList.add('active');
+}
+
+// --- API Logic ---
+
+async function askAgent() {
+  const state = document.getElementById("state").value;
+  const question = document.getElementById("question").value;
+  const output = document.getElementById("output");
+  
+  output.textContent = "Processing request...";
+  switchTab('answer'); 
+
+  try {
+    const res = await fetch(`/api/${state}/ask`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question })
+    });
+    const data = await res.json();
+    output.textContent = JSON.stringify(data, null, 2);
+    renderBotResponse(data);
+    visualizeData(data);
+  } catch (err) {
+    output.textContent = err.toString();
+  }
+}
+
+async function callApi() {
+  const endpoint = document.getElementById("endpoint").value;
+  const output = document.getElementById("output");
+  
+  output.textContent = "Fetching API response...";
+  switchTab('graph'); 
+
+  try {
+    const res = await fetch(BASE + endpoint);
+    const data = await res.json();
+    
+    output.textContent = JSON.stringify(data, null, 2);
+    renderBotResponse(data);
+    visualizeData(data);
+
+  } catch (err) {
+    output.textContent = err.toString();
+    console.error(err);
+  }
+}
+
+// --- Render Bot Response (Card View) ---
+function renderBotResponse(response) {
+  const container = document.getElementById('bot-response-container');
+  container.innerHTML = ''; // Clear
+
+  let items = [];
+  let summaryText = "";
+
+  // 1. Detect format
+  if (response.data && Array.isArray(response.data)) {
+    items = response.data;
+    const meta = response.meta || {};
+    summaryText = `Found <strong>${meta.total || items.length}</strong> items. Showing ${items.length}.`;
+  } else if (Array.isArray(response)) {
+    items = response;
+    summaryText = `Found <strong>${items.length}</strong> items.`;
+  } else {
+    // Single object or error
+    container.innerHTML = `<pre class="json-raw" style="background:transparent; color:#333">${JSON.stringify(response, null, 2)}</pre>`;
+    return;
+  }
+
+  // 2. Render Summary
+  const summaryDiv = document.createElement('div');
+  summaryDiv.className = 'bot-summary';
+  summaryDiv.innerHTML = `<span>${summaryText}</span>`;
+  container.appendChild(summaryDiv);
+
+  // 3. Render Grid of Cards
+  const grid = document.createElement('div');
+  grid.className = 'data-grid';
+
+  items.forEach(item => {
+    // Dynamic Title Selection
+    let title = item.park_name || item.plotno || item.name || "Unknown Item";
+    let sub = item.plotcat ? `Cat: ${item.plotcat}` : (item.sector || "");
+    
+    // Dynamic Field rendering (Exclude internal fields)
+    const ignore = ['_id', '__v', 'geom', 'createdAt', 'updatedAt', 'park_name', 'plotno', 'name', 'details', 'properties'];
+    let rowsHtml = '';
+    
+    // Specific important fields first if they exist
+    const priority = ['owner', 'status', 'dist_name', 'plotsize', 'plotrate', 'sector'];
+    
+    priority.forEach(key => {
+        if(item[key]) {
+            rowsHtml += `<div class="data-row"><span class="data-label">${key}:</span> <span class="data-val">${item[key]}</span></div>`;
+        }
+    });
+
+    // Add rest roughly
+    Object.keys(item).forEach(key => {
+        if (!ignore.includes(key) && !priority.includes(key) && item[key]) {
+            let val = String(item[key]);
+            if(val.length > 20) val = val.substring(0, 20) + '...';
+            rowsHtml += `<div class="data-row"><span class="data-label">${key}:</span> <span class="data-val">${val}</span></div>`;
+        }
+    });
+
+    const card = document.createElement('div');
+    card.className = 'data-card';
+    card.innerHTML = `
+      <div class="data-card-title">
+        <span>${title}</span>
+        <span style="font-weight:400; font-size:12px; color:#666">${sub}</span>
+      </div>
+      ${rowsHtml}
+    `;
+    grid.appendChild(card);
+  });
+
+  container.appendChild(grid);
+}
+
+
+// --- Visualization Logic ---
+
+function visualizeData(response) {
+  // 1. Extract Array Data
+  let rawArray = [];
+  if (Array.isArray(response)) {
+    rawArray = response;
+  } else if (response.data && Array.isArray(response.data)) {
+    rawArray = response.data;
+  } else {
+    return;
+  }
+
+  // 2. Normalize Data
+  const dataArray = rawArray.map(item => {
+    if (item.properties) {
+        let flat = { ...item.properties };
+        if (flat.details) { flat = { ...flat, ...flat.details }; }
+        if (!flat._id && item._id) flat._id = item._id;
+        return flat;
+    }
+    return item;
+  });
+
+  // 3. Prepare Nodes and Edges
+  const nodes = [];
+  const edges = [];
+  const existingNodes = new Set();
+
+  const addNode = (id, label, group, title = "") => {
+    if (!id || existingNodes.has(id)) return;
+    existingNodes.add(id);
+    nodes.push({ id: id, label: String(label), group: group, title: title });
+  };
+
+  const addEdge = (from, to, label = "") => {
+    if (!from || !to) return;
+    edges.push({ from, to, label, arrows: 'to' });
+  };
+
+  // 4. Config: Dynamic Mapping
+  const mapConfig = {
+    // Primary ID/Label for the main node
+    primaryKey: ['plotno', 'park_name', 'name', 'station_name', '_id'], 
+    
+    // Connectors: Create shared nodes for these attributes
+    connectors: [
+      { keys: ['owner'], label: 'Owner', color: '#ec4899' },
+      { keys: ['dist_name', 'District'], label: 'District', color: '#f59e0b' },
+      { keys: ['sector', 'commodities'], label: 'Sector', color: '#10b981' },
+      { keys: ['sub_sector'], label: 'Sub-Sector', color: '#059669' },
+      { keys: ['status'], label: 'Status', color: '#ef4444' },
+      { keys: ['plotcat'], label: 'Category', color: '#6366f1' }, // Added for plots
+      { keys: ['public_pri', 'poiType'], label: 'Type', color: '#8b5cf6' },
+      { keys: ['adm_name'], label: 'Admin', color: '#ec4899' }
+    ]
+  };
+
+  dataArray.forEach(item => {
+    // A. Main Node Identification
+    let mainLabel = "Unknown";
+    let mainId = null;
+
+    for (let key of mapConfig.primaryKey) {
+      if (item[key]) {
+        mainLabel = item[key];
+        mainId = item['_id'] || item[key];
+        break;
+      }
+    }
+
+    if (!mainId) return;
+
+    // Use a different color for 'Plot' items (identified by having 'plotno')
+    let group = item.plotno ? 'plot' : 'main';
+    addNode(mainId, mainLabel, group, JSON.stringify(item, null, 2));
+
+    // B. Connector Nodes
+    mapConfig.connectors.forEach(conn => {
+      let val = null;
+      for (const k of conn.keys) {
+         if (item[k]) {
+             val = item[k];
+             break;
+         }
+      }
+
+      if (Array.isArray(val)) {
+          val.forEach(v => {
+            const nodeId = `${conn.label}:${v}`;
+            addNode(nodeId, v, conn.label);
+            addEdge(mainId, nodeId);
+          });
+      } else if (val) {
+        const nodeId = `${conn.label}:${val}`;
+        const displayLabel = String(val).length > 20 ? String(val).substring(0, 18) + '...' : val;
+        addNode(nodeId, displayLabel, conn.label);
+        addEdge(mainId, nodeId);
+      }
+    });
+  });
+
+  // 5. Vis.js Setup
+  const container = document.getElementById("mynetwork");
+  nodesDataSet = new vis.DataSet(nodes);
+  edgesDataSet = new vis.DataSet(edges);
+  
+  const data = { nodes: nodesDataSet, edges: edgesDataSet };
+
+  const options = {
+    nodes: {
+      shape: "dot",
+      size: 16,
+      font: { size: 14, color: "#e2e8f0", face: 'Segoe UI' }, 
+      borderWidth: 1,
+      shadow: true,
+    },
+    edges: {
+      width: 1,
+      color: { color: "#94a3b8", opacity: 0.3 }, 
+      smooth: { type: "continuous" }
+    },
+    physics: {
+      stabilization: { enabled: true, iterations: 1000 },
+      solver: 'forceAtlas2Based', 
+      forceAtlas2Based: {
+        gravitationalConstant: -50,
+        springLength: 100,
+        springConstant: 0.08,
+        damping: 0.4
+      }
+    },
+    groups: {
+      main: { color: { background: "#3b82f6", border: "#60a5fa" }, size: 20 },
+      plot: { color: { background: "#14b8a6", border: "#2dd4bf" }, size: 15 }, // Teal for plots
+      District: { color: "#f59e0b", shape: "hexagon", size: 25 },
+      Sector: { color: "#10b981", shape: "square", size: 25 },
+      Owner: { color: "#ec4899", shape: "triangle", size: 20 },
+      Status: { color: "#ef4444", shape: "diamond", size: 25 },
+      Category: { color: "#6366f1", shape: "dot", size: 20 },
+      Type: { color: "#8b5cf6", size: 25 },
+      Admin: { color: "#ec4899", size: 25 }
+    },
+    interaction: {
+      hover: true,
+      tooltipDelay: 200,
+      zoomView: true,
+      selectConnectedEdges: false 
+    }
+  };
+
+  if (network) network.destroy();
+  network = new vis.Network(container, data, options);
+  
+  // Events
+  network.on("doubleClick", function(params) {
+      if (params.nodes.length === 1 && network.isCluster(params.nodes[0])) {
+          network.openCluster(params.nodes[0]);
+      }
+  });
+
+  network.on("select", function(params) {
+      const btn = document.getElementById('btn-focus');
+      if (params.nodes.length > 0) btn.disabled = false;
+      else btn.disabled = true;
+  });
+}
+
+// --- Interaction Logic ---
+
+function focusOnSelection() {
+    if (!network) return;
+    const selection = network.getSelection();
+    if (selection.nodes.length === 0) return;
+
+    const selectedNodeId = selection.nodes[0];
+    const connectedNodeIds = network.getConnectedNodes(selectedNodeId);
+    const nodesToKeep = new Set([selectedNodeId, ...connectedNodeIds]);
+
+    const allNodeIds = nodesDataSet.getIds();
+    const updateArray = allNodeIds.map(id => ({
+        id: id,
+        hidden: !nodesToKeep.has(id) 
+    }));
+
+    nodesDataSet.update(updateArray);
+    network.fit();
+}
+
+function resetView() {
+    if (!network) return;
+    openAllClusters(); 
+    const allNodeIds = nodesDataSet.getIds();
+    const updateArray = allNodeIds.map(id => ({ id: id, hidden: false }));
+    nodesDataSet.update(updateArray);
+    network.fit();
+}
+
+function clusterByHub(group) {
+  if(!network) return;
+  resetView(); 
+
+  const allNodes = nodesDataSet.get();
+  const hubNodes = allNodes.filter(n => n.group === group);
+
+  hubNodes.forEach(hub => {
+    const clusterOptions = {
+        joinCondition: function(childOptions) {
+            return ['main', 'plot'].includes(childOptions.group); 
+        },
+        clusterNodeProperties: {
+            id: 'cluster:' + hub.id,
+            borderWidth: 3,
+            shape: 'box',
+            color: hub.color, 
+            label: `${hub.label} (${network.getConnectedNodes(hub.id).length - 1})`, 
+            font: { size: 16, color: '#000', face: 'Segoe UI', strokeWidth: 0 },
+            allowSingleNodeCluster: true
+        }
+    };
+    network.clusterByConnection(hub.id, clusterOptions);
+  });
+}
+
+function openAllClusters() {
+  if(!network) return;
+  const clusterIds = [];
+  for (let nodeId of network.body.nodeIndices) {
+      if (network.isCluster(nodeId)) {
+          clusterIds.push(nodeId);
+      }
+  }
+  clusterIds.forEach(id => network.openCluster(id));
+}
+</script>
+
+</body>
+</html>

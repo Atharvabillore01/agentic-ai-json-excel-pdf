@@ -1,0 +1,1577 @@
+[
+  {
+    "_id": "6266519b1d7de951d5ee44df",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.4277957,
+        22.0379262
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44df",
+      "name": "Fulara",
+      "poiType": "toll_plaza",
+      "code": "Fulara",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4506",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.2904211,
+        24.6572426
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4506",
+      "name": "Khadda",
+      "poiType": "toll_plaza",
+      "code": "Khadda",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4516",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.0003875,
+        23.1087241
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4516",
+      "name": "Saliwada",
+      "poiType": "toll_plaza",
+      "code": "Saliwada",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4512",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.7364823,
+        25.1229205
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4512",
+      "name": "Ujara",
+      "poiType": "toll_plaza",
+      "code": "Ujara",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee451a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.8807247,
+        26.6446735
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee451a",
+      "name": "Phoop (Barahi) KM 105300",
+      "poiType": "toll_plaza",
+      "code": "Phoop (Barahi) KM 105300",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44c9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.9571339,
+        21.8637989
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44c9",
+      "name": "Milanpur Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Milanpur Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44e8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.9383865,
+        22.824644
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44e8",
+      "name": "IDTL Toll Plaza-A",
+      "poiType": "toll_plaza",
+      "code": "IDTL Toll Plaza-A",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4505",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.795401,
+        24.1160705
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4505",
+      "name": "Sonvarsha",
+      "poiType": "toll_plaza",
+      "code": "Sonvarsha",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4548",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.4568386,
+        22.1737063
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4548",
+      "name": "Khalghat Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Khalghat Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4574",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.9690244,
+        26.5179677
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4574",
+      "name": "Choundha",
+      "poiType": "toll_plaza",
+      "code": "Choundha",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4577",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.0782253,
+        24.2177407
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4577",
+      "name": "Ramnagar",
+      "poiType": "toll_plaza",
+      "code": "Ramnagar",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4576",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.7617893,
+        26.2743287
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4576",
+      "name": "Mehra",
+      "poiType": "toll_plaza",
+      "code": "Mehra",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.156337,
+        21.756304
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457a",
+      "name": "Jamli Toll Pllaza",
+      "poiType": "toll_plaza",
+      "code": "Jamli Toll Pllaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4509",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.6445785,
+        22.6249915
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4509",
+      "name": "Mungwari",
+      "poiType": "toll_plaza",
+      "code": "Mungwari",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4519",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.0823084,
+        26.59403
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4519",
+      "name": "Baretha KM 21120",
+      "poiType": "toll_plaza",
+      "code": "Baretha KM 21120",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4518",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.9878053,
+        23.2213157
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4518",
+      "name": "Madai Fee Plaza",
+      "poiType": "toll_plaza",
+      "code": "Madai Fee Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4522",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.4794198,
+        25.6162124
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4522",
+      "name": "Dagrai Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Dagrai Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4579",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.3001762,
+        24.6323648
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4579",
+      "name": "Guna",
+      "poiType": "toll_plaza",
+      "code": "Guna",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45b1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.4354042,
+        21.8238853
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45b1",
+      "name": "Chikhalikala",
+      "poiType": "toll_plaza",
+      "code": "Chikhalikala",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45ca",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.6037828,
+        25.1653588
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45ca",
+      "name": "Purankhedi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Purankhedi Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45c9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.7765058,
+        22.6120623
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45c9",
+      "name": "SONWAY Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "SONWAY Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4634",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.1860217,
+        24.5071909
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4634",
+      "name": "Pagara Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Pagara Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee461b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.1908,
+        23.2247
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee461b",
+      "name": "Fanda Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Fanda Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee461d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.7653924,
+        22.9513565
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee461d",
+      "name": "Bhourasa Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Bhourasa Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4644",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.3591907,
+        24.5463527
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4644",
+      "name": "Rathara",
+      "poiType": "toll_plaza",
+      "code": "Rathara",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4648",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.3350188,
+        23.7686837
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4648",
+      "name": "Katni Bypass Road Ltd - Exit",
+      "poiType": "toll_plaza",
+      "code": "Katni Bypass Road Ltd - Exit",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee461c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.8759,
+        23.1023
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee461c",
+      "name": "Amlaha Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Amlaha Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4640",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.0281004,
+        26.0982148
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4640",
+      "name": "Panihar",
+      "poiType": "toll_plaza",
+      "code": "Panihar",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4635",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.984672,
+        24.0876533
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4635",
+      "name": "Jogipur Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Jogipur Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4641",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.5544457,
+        22.9971702
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4641",
+      "name": "Mud Kheda",
+      "poiType": "toll_plaza",
+      "code": "Mud Kheda",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4647",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.3350188,
+        23.7686837
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4647",
+      "name": "Katni Bypass Road Ltd - Entry",
+      "poiType": "toll_plaza",
+      "code": "Katni Bypass Road Ltd - Entry",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4645",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.2326071,
+        24.5095781
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4645",
+      "name": "Choratha",
+      "poiType": "toll_plaza",
+      "code": "Choratha",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee469d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.9383865,
+        22.824644
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee469d",
+      "name": "IDTL Toll Plaza-B",
+      "poiType": "toll_plaza",
+      "code": "IDTL Toll Plaza-B",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46a5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.3900441,
+        21.6937131
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46a5",
+      "name": "Khambara Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Khambara Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46b8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.1870681,
+        23.3155322
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46b8",
+      "name": "Rojwas",
+      "poiType": "toll_plaza",
+      "code": "Rojwas",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46d8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.5451087,
+        22.2696857
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46d8",
+      "name": "Allonia",
+      "poiType": "toll_plaza",
+      "code": "Allonia",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46cd",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.050381,
+        23.2393589
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46cd",
+      "name": "Titarpani",
+      "poiType": "toll_plaza",
+      "code": "Titarpani",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46f7",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.6021614,
+        24.1301546
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46f7",
+      "name": "Kherwasani",
+      "poiType": "toll_plaza",
+      "code": "Kherwasani",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4704",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.412615,
+        23.2599333
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4704",
+      "name": "Shadol/Dhuwar",
+      "poiType": "toll_plaza",
+      "code": "Shadol/Dhuwar",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4707",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.8073259,
+        24.9136699
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4707",
+      "name": "Majhgawan",
+      "poiType": "toll_plaza",
+      "code": "Majhgawan",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4719",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.6321339,
+        23.26081
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4719",
+      "name": "Sehatganj",
+      "poiType": "toll_plaza",
+      "code": "Sehatganj",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee467b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.1280402,
+        21.8522135
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee467b",
+      "name": "Jungawani",
+      "poiType": "toll_plaza",
+      "code": "Jungawani",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee467c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.7294702,
+        23.4781631
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee467c",
+      "name": "Jaitpur",
+      "poiType": "toll_plaza",
+      "code": "Jaitpur",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46cc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.478036,
+        26.3215219
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46cc",
+      "name": "Chitora",
+      "poiType": "toll_plaza",
+      "code": "Chitora",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46ce",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.3853501,
+        22.7022527
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46ce",
+      "name": "Bakori",
+      "poiType": "toll_plaza",
+      "code": "Bakori",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46cb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.5279263,
+        24.3045713
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46cb",
+      "name": "Malthone",
+      "poiType": "toll_plaza",
+      "code": "Malthone",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46f5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.8653331,
+        22.7096833
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46f5",
+      "name": "Dattigaon",
+      "poiType": "toll_plaza",
+      "code": "Dattigaon",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4700",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.6037828,
+        25.1653588
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4700",
+      "name": "Pathoroundi",
+      "poiType": "toll_plaza",
+      "code": "Pathoroundi",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4722",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.0875087,
+        23.4336166
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4722",
+      "name": "Mohtara Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Mohtara Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee472e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.4526179,
+        24.5929342
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee472e",
+      "name": "Jognihai",
+      "poiType": "toll_plaza",
+      "code": "Jognihai",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee473a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.3349,
+        23.7687
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee473a",
+      "name": "Jhiriya Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Jhiriya Toll Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4796",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.291653,
+        24.0174627
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4796",
+      "name": "Bilantri",
+      "poiType": "toll_plaza",
+      "code": "Bilantri",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4797",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.9995589,
+        22.1240168
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4797",
+      "name": "Ghoradongri",
+      "poiType": "toll_plaza",
+      "code": "Ghoradongri",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47aa",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.0846828,
+        23.6092518
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47aa",
+      "name": "Tikitoria",
+      "poiType": "toll_plaza",
+      "code": "Tikitoria",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47ab",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.6530174,
+        23.2981229
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47ab",
+      "name": "Gadaghat",
+      "poiType": "toll_plaza",
+      "code": "Gadaghat",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee471c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.8156324,
+        22.364493
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee471c",
+      "name": "Pandutala",
+      "poiType": "toll_plaza",
+      "code": "Pandutala",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46f4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.5567821,
+        22.6553998
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46f4",
+      "name": "Methwada",
+      "poiType": "toll_plaza",
+      "code": "Methwada",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee46f6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.8743365,
+        24.7047577
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee46f6",
+      "name": "Odaki Pipkhar",
+      "poiType": "toll_plaza",
+      "code": "Odaki Pipkhar",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee472f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.9412061,
+        24.2881022
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee472f",
+      "name": "Masuriha",
+      "poiType": "toll_plaza",
+      "code": "Masuriha",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee475b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.9273153,
+        23.0455201
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee475b",
+      "name": "Bahoripar Fee Plaza",
+      "poiType": "toll_plaza",
+      "code": "Bahoripar Fee Plaza",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee473b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.3697672,
+        23.5629384
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee473b",
+      "name": "Heeran Khedi",
+      "poiType": "toll_plaza",
+      "code": "Heeran Khedi",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4799",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.598095,
+        24.128547
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4799",
+      "name": "Hatta",
+      "poiType": "toll_plaza",
+      "code": "Hatta",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee479f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.7595131,
+        24.5070006
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee479f",
+      "name": "Devkhedi",
+      "poiType": "toll_plaza",
+      "code": "Devkhedi",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47a0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.1865957,
+        22.8864761
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47a0",
+      "name": "Singhpur",
+      "poiType": "toll_plaza",
+      "code": "Singhpur",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47a3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.2433891,
+        23.8097147
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47a3",
+      "name": "Kherkheda",
+      "poiType": "toll_plaza",
+      "code": "Kherkheda",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47c7",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.3955603,
+        23.1531415
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47c7",
+      "name": "Eklehra",
+      "poiType": "toll_plaza",
+      "code": "Eklehra",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47ca",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.8682203,
+        24.6115284
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47ca",
+      "name": "Bela",
+      "poiType": "toll_plaza",
+      "code": "Bela",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47cf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.5518889,
+        23.8020991
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47cf",
+      "name": "Johariya Sheikh",
+      "poiType": "toll_plaza",
+      "code": "Johariya Sheikh",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47e1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.4422593,
+        21.7034654
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47e1",
+      "name": "Khawasa",
+      "poiType": "toll_plaza",
+      "code": "Khawasa",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47dd",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.02766,
+        23.3328412
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47dd",
+      "name": "Kachnaria",
+      "poiType": "toll_plaza",
+      "code": "Kachnaria",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47b3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.7603726,
+        23.7544659
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47b3",
+      "name": "Talchiri",
+      "poiType": "toll_plaza",
+      "code": "Talchiri",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47a4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.068199,
+        22.1764007
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47a4",
+      "name": "Sanawad",
+      "poiType": "toll_plaza",
+      "code": "Sanawad",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47b2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.4449358,
+        23.3042243
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47b2",
+      "name": "Silwani",
+      "poiType": "toll_plaza",
+      "code": "Silwani",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47cb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.7732335,
+        24.4722686
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47cb",
+      "name": "Mawai",
+      "poiType": "toll_plaza",
+      "code": "Mawai",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47dc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.3469014,
+        22.9729348
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47dc",
+      "name": "Sonkacch",
+      "poiType": "toll_plaza",
+      "code": "Sonkacch",
+      "details": {
+        "State": "Madhya Pradesh"
+      },
+      "commodities": []
+    }
+  }
+]

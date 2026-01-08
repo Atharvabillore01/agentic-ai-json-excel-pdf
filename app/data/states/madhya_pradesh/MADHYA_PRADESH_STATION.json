@@ -1,0 +1,8018 @@
+[
+  {
+    "_id": "626651961d7de951d5ee20ef",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.738537,
+        22.931678
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee20ef",
+      "name": "Ajnod",
+      "poiType": "station",
+      "code": "AJN",
+      "details": {
+        "Address": "Sawer Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee20c2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.286342,
+        21.894902
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee20c2",
+      "name": "Ajanti",
+      "poiType": "station",
+      "code": "ANI",
+      "details": {
+        "Address": "Ajanti, MD5015, Khandwa, Khandwa Tahsil, Khandwa, Madhya Pradesh, 450001, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee20f0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.599315,
+        23.37858
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee20f0",
+      "name": "Akodia",
+      "poiType": "station",
+      "code": "AKD",
+      "details": {
+        "Address": "Akodia, MD2405, Chhilocha, Shujalpur Tahsil, Shajapur, Madhya Pradesh, 465223, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Chhilocha"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee20cf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.205146,
+        21.999032
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee20cf",
+      "name": "Attar",
+      "poiType": "station",
+      "code": "ATR",
+      "details": {
+        "Address": "Khandwa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee20fb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.650578,
+        21.509995
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee20fb",
+      "name": "Amlakhurd",
+      "poiType": "station",
+      "code": "AMX",
+      "details": {
+        "Address": "Amalakhurd, MD5105, Nepanagar Tahsil, Burhanpur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Burhanpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee211f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.593104,
+        23.172858
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee211f",
+      "name": "Amlai",
+      "poiType": "station",
+      "code": "AAL",
+      "details": {
+        "Address": "Amlai, Amlai Burhar Road, Sohagpur Tahsil, Shahdol, Anuppur Tehsil, Anuppur, Madhya Pradesh, 484116, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee212a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.737511,
+        23.063319
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee212a",
+      "name": "Amargarh",
+      "poiType": "station",
+      "code": "AGR",
+      "details": {
+        "Address": "Amargarh, MD4412, Petlawad Tahsil, Jhabua, Madhya Pradesh, 457773, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2145",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.727724,
+        24.579712
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2145",
+      "name": "Ashoknagar",
+      "poiType": "station",
+      "code": "ASKN",
+      "details": {
+        "Address": "Ashok Nagar, SH9, Ashoknagar, Ashoknagar Tahsil, Ashok Nagar, Madhya Pradesh, 473331, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee215d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.97276,
+        23.227919
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee215d",
+      "name": "Adhartal",
+      "poiType": "station",
+      "code": "ADTL",
+      "details": {
+        "Address": "Adhartal, Jabalpur Bypass, Adhartal Tahsil, Jabalpur District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2153",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.125403,
+        21.920235
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2153",
+      "name": "Amla",
+      "poiType": "station",
+      "code": "AMLA",
+      "details": {
+        "Address": "Amla, Amli Tahsil, Betul, Madhya Pradesh, 460551, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2154",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.696126,
+        23.117598
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2154",
+      "name": "Anuppur",
+      "poiType": "station",
+      "code": "APR",
+      "details": {
+        "Address": "Anuppur Junction, Amarkantak Road, Anuppur, Anuppur Tehsil, Anuppur, Madhya Pradesh, 484224, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21ad",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.379546,
+        24.000431
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21ad",
+      "name": "Beohari",
+      "poiType": "station",
+      "code": "BEHR",
+      "details": {
+        "Address": "Beohari, SH57, Beohari Tahsil, Shahdol, Madhya Pradesh, 484774, India",
+        "State": "Madhya Pradesh",
+        "District": "",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21c1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.547495,
+        22.052531
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21c1",
+      "name": "Bir",
+      "poiType": "station",
+      "code": "BIR",
+      "details": {
+        "Address": "Bir, MD5006, Bir, Punasa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": "Bir"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21df",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.123626,
+        23.398083
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21df",
+      "name": "Bangrod",
+      "poiType": "station",
+      "code": "BOD",
+      "details": {
+        "Address": "Ratlam Tahsil, Ratlam, Madhya Pradesh, 457111, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21c5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.119186,
+        23.250553
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21c5",
+      "name": "Bijuri",
+      "poiType": "station",
+      "code": "BJRI",
+      "details": {
+        "Address": "Bijuri, MD1502, Bhawaniya Tola, Kotma Tehsil, Anuppur, Madhya Pradesh, 484440, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": "Bhawaniya Tola"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21d1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.486971,
+        23.361567
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21d1",
+      "name": "Bolai",
+      "poiType": "station",
+      "code": "BLX",
+      "details": {
+        "Address": "Bolai, MD2403, Gulana Tahsil, Shajapur, Madhya Pradesh, 465220, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21d2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.91024,
+        21.725118
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21d2",
+      "name": "Bhimalgondi",
+      "poiType": "station",
+      "code": "BMC",
+      "details": {
+        "Address": "Ghadela Halt, MD4227, Sausar Tahsil, Chhindwara, Madhya Pradesh, 480106, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21d4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.758775,
+        23.096056
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21d4",
+      "name": "Bamnia",
+      "poiType": "station",
+      "code": "BMI",
+      "details": {
+        "Address": "Thandla Tahsil, Jhabua, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21eb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.092559,
+        23.555284
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21eb",
+      "name": "Braylachaurasi",
+      "poiType": "station",
+      "code": "BRLA",
+      "details": {
+        "Address": "Barayla Chaurasi, Delhi - Vadodara Expressway, Padliya Hasan, Piploda Tahsil, Ratlam, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Padliya Hasan"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee221c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.777409,
+        26.591904
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee221c",
+      "name": "Bhind",
+      "poiType": "station",
+      "code": "BIX",
+      "details": {
+        "Address": "Bhind Tahsil, Bhind, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhind",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2253",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.756469,
+        22.875226
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2253",
+      "name": "Balaudatakun",
+      "poiType": "station",
+      "code": "BLDK",
+      "details": {
+        "Address": "Balauda Takun, Ajnod - Hatod Road, Hatod Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee226c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.462,
+        22.457598
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee226c",
+      "name": "Banapura",
+      "poiType": "station",
+      "code": "BPF",
+      "details": {
+        "Address": "MD3323, Seoni Malwa, Seoni-Malwa Tahsil, Hoshangabad, Madhya Pradesh, 461223, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2252",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.961787,
+        22.894125
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2252",
+      "name": "Barlai",
+      "poiType": "station",
+      "code": "BLAX",
+      "details": {
+        "Address": "Barlai, Sanwer - Kshipra Road, Shipra, Sawer Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": "Shipra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee225f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.596498,
+        23.091417
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee225f",
+      "name": "Bikrampur",
+      "poiType": "station",
+      "code": "BMR",
+      "details": {
+        "Address": "Gotegaon Tahsil, Narsimhapur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2266",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.575258,
+        23.848397
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2266",
+      "name": "Bandakpur",
+      "poiType": "station",
+      "code": "BNU",
+      "details": {
+        "Address": "Bandakpur, SH63, Damoh Tahsil, Damoh, Madhya Pradesh, 470771, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2278",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.043221,
+        23.367235
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2278",
+      "name": "Birsinghpur",
+      "poiType": "station",
+      "code": "BRS",
+      "details": {
+        "Address": "Pali, Pali Tahsil, Umaria, Madhya Pradesh, 484552, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2290",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.348434,
+        21.996257
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2290",
+      "name": "Bordhal",
+      "poiType": "station",
+      "code": "BXY",
+      "details": {
+        "Address": "Bordhai, MD3504, Amli Tahsil, Betul, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2296",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.090557,
+        23.97942
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2296",
+      "name": "Bijaysota",
+      "poiType": "station",
+      "code": "VST",
+      "details": {
+        "Address": "Vijay Sota, MD1301, Indawar, Manpur Tahsil, Umaria, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": "Indawar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee215f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.217236,
+        24.234149
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee215f",
+      "name": "Agasod",
+      "poiType": "station",
+      "code": "AGD",
+      "details": {
+        "Address": "Agasod, SH11, Kathai, Kirond, Bina Tahsil, Sagar, Madhya Pradesh, 470113, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Kirond"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2171",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.31933,
+        23.860398
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2171",
+      "name": "Aslana",
+      "poiType": "station",
+      "code": "ANA",
+      "details": {
+        "Address": "Patharia Tahsil, Damoh, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee217c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.607682,
+        23.23082
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee217c",
+      "name": "Aslaoda",
+      "poiType": "station",
+      "code": "ASL",
+      "details": {
+        "Address": "Aslaoda, Badnagar Tahsil, Ujjain, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2188",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.199839,
+        21.811604
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2188",
+      "name": "Balaghat Junction",
+      "poiType": "station",
+      "code": "BTC",
+      "details": {
+        "Address": "1, NH543, Prem Nagar, Balaghat, Balagat Tahsil, Balaghat District, Madhya Pradesh, 481001, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21af",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.999902,
+        23.915333
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21af",
+      "name": "Bareth",
+      "poiType": "station",
+      "code": "BET",
+      "details": {
+        "Address": "Bareth, MD2918, Vidisha, Basoda Tahsil, Vidisha, Madhya Pradesh, 464340, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21c2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.783301,
+        24.50028
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21c2",
+      "name": "Bisalwaskalan",
+      "poiType": "station",
+      "code": "BIWK",
+      "details": {
+        "Address": "Bisalwas Kalan, NH156, Nayagaon, Neemuch Tehsil, Neemuch, Madhya Pradesh, 458470, India",
+        "State": "Madhya Pradesh",
+        "District": "Neemuch",
+        "Village": "Nayagaon"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2191",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.906219,
+        21.897007
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2191",
+      "name": "Betul",
+      "poiType": "station",
+      "code": "BZU",
+      "details": {
+        "Address": "Betul, MD3504, Betul, Betul Tahsil, Betul, Madhya Pradesh, 460001, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2195",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.413378,
+        23.267182
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2195",
+      "name": "Bhopal",
+      "poiType": "station",
+      "code": "BPL",
+      "details": {
+        "Address": "Bhopal Junction, Bhopal Junction Parking platform 6, West Central Railway Colony, Ibrahimpura, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2197",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.183376,
+        24.171089
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2197",
+      "name": "Bina",
+      "poiType": "station",
+      "code": "BINA",
+      "details": {
+        "Address": "Bina Etawa, Bina Tahsil, Sagar, Madhya Pradesh, 470113, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21bf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.918151,
+        23.225089
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21bf",
+      "name": "Bildi",
+      "poiType": "station",
+      "code": "BILD",
+      "details": {
+        "Address": "Bildi, MD2520, Rawti Tahsil, Ratlam, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21e6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.408621,
+        22.05212
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21e6",
+      "name": "Barelipur",
+      "poiType": "station",
+      "code": "BQM",
+      "details": {
+        "Address": "Barelipar, SH41, Jamai Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2204",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.030953,
+        22.256273
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2204",
+      "name": "Barwaha",
+      "poiType": "station",
+      "code": "BWW",
+      "details": {
+        "Address": "Barwaha, SH36, Barwaha, Barwaha Tahsil, Khargone, Madhya Pradesh, 451115, India",
+        "State": "Madhya Pradesh",
+        "District": "Khargone",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21d9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.376832,
+        23.060772
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21d9",
+      "name": "Barnagar",
+      "poiType": "station",
+      "code": "BNG",
+      "details": {
+        "Address": "Barnagar, SH64;65, Barnagar, Badnagar Tahsil, Ujjain, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21da",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.681137,
+        22.786494
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21da",
+      "name": "Budni",
+      "poiType": "station",
+      "code": "BNI",
+      "details": {
+        "Address": "Budni, NH46, Budhni, Budni Tahsil, Sehore, Madhya Pradesh, 466441, India",
+        "State": "Madhya Pradesh",
+        "District": "Sehore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21ea",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.456446,
+        24.196977
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21ea",
+      "name": "Bargawan",
+      "poiType": "station",
+      "code": "BRGW",
+      "details": {
+        "Address": "Bargawan, NH39, Bargawan, Deosar Tahsil, Singrauli, Madhya Pradesh, 486896, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": "Bargawan"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee21ee",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.907503,
+        23.936418
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee21ee",
+      "name": "Biyavrarajgarh",
+      "poiType": "station",
+      "code": "BRRG",
+      "details": {
+        "Address": "Biaora, Biaora Tahsil, Rajgarh, Madhya Pradesh, 465674, India",
+        "State": "Madhya Pradesh",
+        "District": "Rajgarh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee220b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.39399,
+        25.142662
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee220b",
+      "name": "Basai",
+      "poiType": "station",
+      "code": "BZY",
+      "details": {
+        "Address": "Basai, MD0617, Jhansi, Datia, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Datia",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2233",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.286883,
+        23.294412
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2233",
+      "name": "Badhwabara",
+      "poiType": "station",
+      "code": "BDWA",
+      "details": {
+        "Address": "Badhwabara, NH43, Pali Tahsil, Umaria, Madhya Pradesh, 484551, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee222c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.334592,
+        23.283099
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee222c",
+      "name": "Berchha",
+      "poiType": "station",
+      "code": "BCH",
+      "details": {
+        "Address": "Bercha, SH17, Sankota, Mullakhedi, Shajapur Tahsil, Shajapur, Madhya Pradesh, 465110, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Mullakhedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651961d7de951d5ee2246",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.336687,
+        23.274288
+      ]
+    },
+    "properties": {
+      "_id": "626651961d7de951d5ee2246",
+      "name": "Bairagarh",
+      "poiType": "station",
+      "code": "BIH",
+      "details": {
+        "Address": "Sindhu Middle School, CTD road, Bairagarh, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2268",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.776872,
+        23.145391
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2268",
+      "name": "Bhairongarh",
+      "poiType": "station",
+      "code": "BOG",
+      "details": {
+        "Address": "Bhairongarh, SH26, Thandla Tahsil, Jhabua, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee22b9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.312099,
+        21.952437
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee22b9",
+      "name": "Barchi Road",
+      "poiType": "station",
+      "code": "BCRD",
+      "details": {
+        "Address": "Barchi Road, SH41, Amli Tahsil, Betul, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2321",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.902711,
+        22.72021
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2321",
+      "name": "Binaiki",
+      "poiType": "station",
+      "code": "VNK",
+      "details": {
+        "Address": "Binaiki, Ghansaur Tahsil, Seoni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": "Binaiki"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee22db",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.538491,
+        22.77537
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee22db",
+      "name": "Bankhedi",
+      "poiType": "station",
+      "code": "BKH",
+      "details": {
+        "Address": "Bankheri, Bankhedi Tahsil, Hoshangabad, Madhya Pradesh, 461990, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee230f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.5281,
+        23.212924
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee230f",
+      "name": "Burhar",
+      "poiType": "station",
+      "code": "BUH",
+      "details": {
+        "Address": "Sohagpur Tahsil, Shahdol, Madhya Pradesh, 484110, India",
+        "State": "Madhya Pradesh",
+        "District": "",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2312",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.535509,
+        23.374801
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2312",
+      "name": "Bhadbhadaghat",
+      "poiType": "station",
+      "code": "BVB",
+      "details": {
+        "Address": "Bhad Bhada Ghat, Bhopal Sanchi Road, Huzur Tahsil, Bhopal, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee233b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.098791,
+        26.355437
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee233b",
+      "name": "Banmor",
+      "poiType": "station",
+      "code": "BAO",
+      "details": {
+        "Address": "Banmor, NH44, Bamaur, Morena Tahsil, Morena, Madhya Pradesh, 476444, India",
+        "State": "Madhya Pradesh",
+        "District": "Morena",
+        "Village": "Bamaur"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2340",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.920403,
+        22.196731
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2340",
+      "name": "Barbatpur",
+      "poiType": "station",
+      "code": "BBTR",
+      "details": {
+        "Address": "Barbatpur, tertiary road, Shahpur, Shahpur Tahsil, Betul, Madhya Pradesh, 460440, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2336",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.198915,
+        21.334612
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2336",
+      "name": "Burhanpur",
+      "poiType": "station",
+      "code": "BAU",
+      "details": {
+        "Address": "Burhanpur, Burhanpur Tahsil, Burhanpur, Madhya Pradesh, 450331, India",
+        "State": "Madhya Pradesh",
+        "District": "Burhanpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2363",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.260705,
+        24.136102
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2363",
+      "name": "Baghora",
+      "poiType": "station",
+      "code": "BJQ",
+      "details": {
+        "Address": "Baghora, NH934, Ghatiyari, Koha, Khurai Tahsil, Sagar, Madhya Pradesh, 470113, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Koha"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2364",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.649843,
+        22.917542
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2364",
+      "name": "Barkhera",
+      "poiType": "station",
+      "code": "BKA",
+      "details": {
+        "Address": "Barkhera, NH46, Barkhera, Goharganj Tahsil, Raisen, Madhya Pradesh, 464990, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": "Barkhera"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2382",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.797896,
+        23.169976
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2382",
+      "name": "Bheraghat",
+      "poiType": "station",
+      "code": "BRGT",
+      "details": {
+        "Address": "Bheraghat, MD3714, Shahpura Tahsil, Jabalpur District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee235a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.689374,
+        22.171241
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee235a",
+      "name": "Bhoma",
+      "poiType": "station",
+      "code": "BHV",
+      "details": {
+        "Address": "Bhoma, SH42, Bhoma, Seoni Tahsil, Seoni, Madhya Pradesh, 480990, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": "Bhoma"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2353",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.994129,
+        22.631099
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2353",
+      "name": "Bagratawa",
+      "poiType": "station",
+      "code": "BGTA",
+      "details": {
+        "Address": "Bagra Tawa, Babai Tahsil, Hoshangabad, Madhya Pradesh, 461661, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": "Bagra Tawa"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2375",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.915672,
+        22.913271
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2375",
+      "name": "Bohani",
+      "poiType": "station",
+      "code": "BNE",
+      "details": {
+        "Address": "Bohani, MD3806, Gadarwara Tahsil, Narsimhapur, Madhya Pradesh, 487441, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2380",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.064212,
+        23.875488
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2380",
+      "name": "Bakhleta",
+      "poiType": "station",
+      "code": "BQQ",
+      "details": {
+        "Address": "Rithi Tahsil, Katni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2359",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.673862,
+        23.142656
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2359",
+      "name": "Bhitoni",
+      "poiType": "station",
+      "code": "BHTN",
+      "details": {
+        "Address": "Bhitoni, Shahpura Tahsil, Jabalpur District, Madhya Pradesh, 483119, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": "Bhitoni"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee23dd",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.015955,
+        24.177608
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee23dd",
+      "name": "Chachaurabngj",
+      "poiType": "station",
+      "code": "CBK",
+      "details": {
+        "Address": "Chachaura, Chachaura Tahsil, Guna, Madhya Pradesh, 473118, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee242d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.14028,
+        22.042186
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee242d",
+      "name": "Charegaon",
+      "poiType": "station",
+      "code": "CRN",
+      "details": {
+        "Address": "PHC Charegaon, NH543, Newargaon, Balagat Tahsil, Balaghat District, Madhya Pradesh, 481551, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Newargaon"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2414",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.314071,
+        22.406843
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2414",
+      "name": "Chhidgaon",
+      "poiType": "station",
+      "code": "CGO",
+      "details": {
+        "Address": "Chhidgaon, SH67, Seoni-Malwa Tahsil, Hoshangabad, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2430",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.838231,
+        24.870866
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2430",
+      "name": "Chitahra",
+      "poiType": "station",
+      "code": "CTHR",
+      "details": {
+        "Address": "Chitahra, NH135BG, Chaurehi, Majhgawan Tahsil, Satna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": "Chaurehi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2453",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.779764,
+        23.353099
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2453",
+      "name": "Chakrod",
+      "poiType": "station",
+      "code": "CKOD",
+      "details": {
+        "Address": "Chakrod, MD2406, Fatehpur Chakrod, Shujalpur Tahsil, Shajapur, Madhya Pradesh, 465331, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Fatehpur Chakrod"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2468",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.952801,
+        22.057955
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2468",
+      "name": "Chhindwara Junction",
+      "poiType": "station",
+      "code": "CWA",
+      "details": {
+        "Address": "Chhindwara, Chhindwara Tahsil, Chhindwara, Madhya Pradesh, 480001, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2393",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.874773,
+        22.995642
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2393",
+      "name": "Bargi",
+      "poiType": "station",
+      "code": "BUQ",
+      "details": {
+        "Address": "Bargi, Jabalpur Tahsil, Jabalpur District, Madhya Pradesh, 482056, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2398",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.411776,
+        24.786854
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2398",
+      "name": "Bhadaura",
+      "poiType": "station",
+      "code": "BWH",
+      "details": {
+        "Address": "Bhadora Jagir, NH46, Dunali, Bhadora, Guna Tahsil, Guna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Bhadora"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee23f9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.945286,
+        22.450062
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee23f9",
+      "name": "Choral",
+      "poiType": "station",
+      "code": "CRL",
+      "details": {
+        "Address": "Choral, NH347BG, Barwaha, Mhow Tahsil, Indore District, Madhya Pradesh, 451115, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2416",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.701532,
+        23.645517
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2416",
+      "name": "Chandia Road",
+      "poiType": "station",
+      "code": "CHD",
+      "details": {
+        "Address": "Chandia Road, Chandia Bypass, Chandia, Chandia Tahsil, Umaria, Madhya Pradesh, 484660, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee24e2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.87506,
+        22.281472
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee24e2",
+      "name": "Dhodramohar",
+      "poiType": "station",
+      "code": "DOH",
+      "details": {
+        "Address": "Shahpur Tahsil, Betul, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee250a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.303202,
+        25.11808
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee250a",
+      "name": "Dabhaura",
+      "poiType": "station",
+      "code": "DBR",
+      "details": {
+        "Address": "Dabhaura, Jawa Tahsil, Rewa, Madhya Pradesh, 486556, India",
+        "State": "Madhya Pradesh",
+        "District": "Rewa",
+        "Village": "Dabhaura"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee24e9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.845949,
+        23.129231
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee24e9",
+      "name": "Dhurwasin",
+      "poiType": "station",
+      "code": "DRSN",
+      "details": {
+        "Address": "Dhurwasin, SH35, Anuppur Tehsil, Anuppur, Madhya Pradesh, 484444, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee24f5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.051158,
+        22.977933
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee24f5",
+      "name": "Dewas",
+      "poiType": "station",
+      "code": "DWX",
+      "details": {
+        "Address": "Dewas Junction, Devas - Ujjain Highway, Dewas, Dewas Tahsil, Dewas, Madhya Pradesh, 455001, India",
+        "State": "Madhya Pradesh",
+        "District": "Dewas",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2508",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.331073,
+        25.881306
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2508",
+      "name": "Dabra",
+      "poiType": "station",
+      "code": "DBA",
+      "details": {
+        "Address": "Dabra, Pichhore Tahsil, Gwalior, Madhya Pradesh, 475110, India",
+        "State": "Madhya Pradesh",
+        "District": "Gwalior",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee251f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.105913,
+        23.949069
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee251f",
+      "name": "Dalauda",
+      "poiType": "station",
+      "code": "DLD",
+      "details": {
+        "Address": "Dalauda, MD2219, Daloda, Daloda Tahsil, Mandsaur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2528",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.10337,
+        23.770461
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2528",
+      "name": "Dhodhar",
+      "poiType": "station",
+      "code": "DOD",
+      "details": {
+        "Address": "Dhodhar, NH156, Parvaliya, Jaora Tahsil, Ratlam, Madhya Pradesh, 457339, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Parvaliya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2539",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.592706,
+        23.429406
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2539",
+      "name": "Dewanganj",
+      "poiType": "station",
+      "code": "DWG",
+      "details": {
+        "Address": "Dewanganj, Bhopal Sanchi Road, Diwanganj, Raisen Tahsil, Raisen, Madhya Pradesh, 464661, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": "Diwanganj"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2552",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.21628,
+        23.557403
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2552",
+      "name": "Dundi",
+      "poiType": "station",
+      "code": "DDCE",
+      "details": {
+        "Address": "Dundi, NH30, Majholi Tahsil, Jabalpur District, Madhya Pradesh, 483440, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2571",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.008951,
+        23.297216
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2571",
+      "name": "Deori",
+      "poiType": "station",
+      "code": "DOE",
+      "details": {
+        "Address": "Panagar, Panagar Tahsil, Jabalpur District, Madhya Pradesh, 483220, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25cc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.002231,
+        22.126633
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25cc",
+      "name": "Ghoradongri",
+      "poiType": "station",
+      "code": "GDYA",
+      "details": {
+        "Address": "Ghoradongri, MD3502, Ghodadongri, Ghodadongri Tahsil, Betul, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": "Ghodadongri"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25d8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.912297,
+        23.684317
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25d8",
+      "name": "Gulabhganj",
+      "poiType": "station",
+      "code": "GLG",
+      "details": {
+        "Address": "Gulabganj, Gulabganj Tahsil, Vidisha, Madhya Pradesh, 464220, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2631",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.181918,
+        26.216016
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2631",
+      "name": "Gwalior",
+      "poiType": "station",
+      "code": "GWL",
+      "details": {
+        "Address": "Platform 1, Padav Pul, Gwalior, Madhya Pradesh, 474002, India",
+        "State": "Madhya Pradesh",
+        "District": "Gwalior",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2619",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.528595,
+        23.026857
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2619",
+      "name": "Gautampura Road",
+      "poiType": "station",
+      "code": "GPX",
+      "details": {
+        "Address": "Gautampura Road, Indore - Depalpur - Ingoriya Road, Bahirampur, Runji Gautampura, Depalpur Tahsil, Indore District, Madhya Pradesh, 453220, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": "Runji Gautampura"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2540",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.43223,
+        23.836575
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2540",
+      "name": "Damoh",
+      "poiType": "station",
+      "code": "DMO",
+      "details": {
+        "Address": "Damoh, SH63, Damoh, Damoh Tahsil, Damoh, Madhya Pradesh, 470600, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2548",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.456185,
+        25.641115
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2548",
+      "name": "Datia",
+      "poiType": "station",
+      "code": "DAA",
+      "details": {
+        "Address": "Datia, Datia Tahsil, Datia, Madhya Pradesh, 475600, India",
+        "State": "Madhya Pradesh",
+        "District": "Datia",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee255a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.370064,
+        21.621422
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee255a",
+      "name": "Dongargaon",
+      "poiType": "station",
+      "code": "DGN",
+      "details": {
+        "Address": "Pandhana Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25de",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.848312,
+        22.095382
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25de",
+      "name": "Gangiwara",
+      "poiType": "station",
+      "code": "GNW",
+      "details": {
+        "Address": "Gangiwara, SH62, Chhindwara, Chhindwara Tahsil, Chhindwara, Madhya Pradesh, 480001, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25e6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.867004,
+        22.631886
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25e6",
+      "name": "Gurra",
+      "poiType": "station",
+      "code": "GRO",
+      "details": {
+        "Address": "Itarsi Tahsil, Hoshangabad, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25bb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.673171,
+        23.010947
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25bb",
+      "name": "Fatehabad Chowk",
+      "poiType": "station",
+      "code": "FTD",
+      "details": {
+        "Address": "Fatehabad Chandrawatiganj Junction, Sanwer - Chandrawatiganj - Gautampura Road, Hansa Khedi, Sawer Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25c3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.944752,
+        23.845302
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25c3",
+      "name": "Ganjbasoda",
+      "poiType": "station",
+      "code": "BAQ",
+      "details": {
+        "Address": "Ganj Basoda, MD2912, Mewli, Kakrawada, Basoda Tahsil, Vidisha, Madhya Pradesh, 464221, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": "Kakrawada"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25c5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.074213,
+        23.895736
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25c5",
+      "name": "Ganeshganj",
+      "poiType": "station",
+      "code": "GAJ",
+      "details": {
+        "Address": "Sagar Tahsil, Sagar, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25eb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.062956,
+        24.461926
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25eb",
+      "name": "Gunerubamori",
+      "poiType": "station",
+      "code": "GVB",
+      "details": {
+        "Address": "Guneru Bamori, SH11, Chhitari, Banskhedi, Mungaoli Tahsil, Ashok Nagar, Madhya Pradesh, 473443, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": "Banskhedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2602",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.186022,
+        23.343418
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2602",
+      "name": "Ghunghuti",
+      "poiType": "station",
+      "code": "GGT",
+      "details": {
+        "Address": "Ghunghuti, NH43, Pali Tahsil, Umaria, Madhya Pradesh, 484551, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2614",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.484836,
+        23.034559
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2614",
+      "name": "Gotegaon",
+      "poiType": "station",
+      "code": "GON",
+      "details": {
+        "Address": "Shridham, MD3804, Chhota Chhindwara, Gotegaon Tahsil, Narsimhapur, Madhya Pradesh, 487118, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee261b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.92798,
+        23.110385
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee261b",
+      "name": "Guwarighat",
+      "poiType": "station",
+      "code": "GRG",
+      "details": {
+        "Address": "Gwarighat, GorakhpurTahsil, Jabalpur District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25f6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.312303,
+        24.053988
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25f6",
+      "name": "Gajarabahara",
+      "poiType": "station",
+      "code": "GAJB",
+      "details": {
+        "Address": "MD1212, Singrauli Tahsil, Singrauli, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25f3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.314306,
+        24.64101
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25f3",
+      "name": "Guna",
+      "poiType": "station",
+      "code": "GUNA",
+      "details": {
+        "Address": "Guna Junction, SH10, Guna, Guna NagarTahsil, Guna, Madhya Pradesh, 473001, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee25f8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.792096,
+        22.900075
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee25f8",
+      "name": "Gadarwara",
+      "poiType": "station",
+      "code": "GAR",
+      "details": {
+        "Address": "Gadarwara, MD3816, Gadarwara, Gadarwara Tahsil, Narsimhapur, Madhya Pradesh, 487551, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2658",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.058995,
+        23.381488
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2658",
+      "name": "Gosalpur",
+      "poiType": "station",
+      "code": "GSPR",
+      "details": {
+        "Address": "Gosalpur, NH30, Gosalpur, Sihora Tahsil, Jabalpur District, Madhya Pradesh, 483222, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": "Gosalpur"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2684",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.964262,
+        22.38557
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2684",
+      "name": "Gangatolia",
+      "poiType": "station",
+      "code": "GNGT",
+      "details": {
+        "Address": "Bothia, Keolari Tahsil, Seoni, Madhya Pradesh, 480994, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": "Bothia"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2689",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.152291,
+        26.212813
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2689",
+      "name": "Ghosipura",
+      "poiType": "station",
+      "code": "GOPA",
+      "details": {
+        "Address": "Ghosipura, Maharani LaxhmiBai Marg, Gwalior, Gwalior Tahsil, Gwalior, Madhya Pradesh, 474001, India",
+        "State": "Madhya Pradesh",
+        "District": "Gwalior",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2698",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.581058,
+        21.630144
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2698",
+      "name": "Gurhi",
+      "poiType": "station",
+      "code": "GUX",
+      "details": {
+        "Address": "Gurhi, SH70, Khandwa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee269e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.439728,
+        23.222358
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee269e",
+      "name": "Habibganj",
+      "poiType": "station",
+      "code": "HBJ",
+      "details": {
+        "Address": "Rani Kamlapati, MD3119, Habibganj, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26a0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.10045,
+        22.338138
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26a0",
+      "name": "Harda",
+      "poiType": "station",
+      "code": "HD",
+      "details": {
+        "Address": "Harda, Harda Tahsil, Harda, Madhya Pradesh, 461331, India",
+        "State": "Madhya Pradesh",
+        "District": "Harda",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee264c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.952407,
+        22.65727
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee264c",
+      "name": "Ghonsor",
+      "poiType": "station",
+      "code": "GNS",
+      "details": {
+        "Address": "Ghansor, Ghansaur Tahsil, Seoni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2687",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.684165,
+        24.278602
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2687",
+      "name": "Garot",
+      "poiType": "station",
+      "code": "GOH",
+      "details": {
+        "Address": "Garot, MD2203, Kalakheda, Garoth Tahsil, Mandsaur, Madhya Pradesh, 458880, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": "Kalakheda"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26a3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.716135,
+        22.753269
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26a3",
+      "name": "Hoshangabad",
+      "poiType": "station",
+      "code": "HBD",
+      "details": {
+        "Address": "Sethani Ghat, Hoshangabad, Hoshangabad Tahsil, Hoshangabad, Madhya Pradesh, 461001, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26b4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.517118,
+        22.142524
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26b4",
+      "name": "Hirdagarh",
+      "poiType": "station",
+      "code": "HRG",
+      "details": {
+        "Address": "Hirdagarh, SH41, Jamai Tahsil, Chhindwara, Madhya Pradesh, 480551, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee271c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.708951,
+        22.207918
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee271c",
+      "name": "Iklehra",
+      "poiType": "station",
+      "code": "IKR",
+      "details": {
+        "Address": "Iklehra, SH45, Chandameta, Parasia, Parasia Tahsil, Chhindwara, Madhya Pradesh, 480441, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2733",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.767021,
+        22.608504
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2733",
+      "name": "Itarsi",
+      "poiType": "station",
+      "code": "ET",
+      "details": {
+        "Address": "Itarsi Junction, MD3318, Itarsi, Itarsi Tahsil, Hoshangabad, Madhya Pradesh, 461111, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26f4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.904006,
+        23.160869
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26f4",
+      "name": "Harrad",
+      "poiType": "station",
+      "code": "HRV",
+      "details": {
+        "Address": "Harrad, SH35, Jamuna & Kotma Colony, Anuppur Tehsil, Anuppur, Madhya Pradesh, 484444, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26a9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.283783,
+        23.915156
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26a9",
+      "name": "Hardua",
+      "poiType": "station",
+      "code": "HDU",
+      "details": {
+        "Address": "Hardua, SH63, Rithi, Murwara Tahsil, Katni, Madhya Pradesh, 483990, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": "Rithi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2673",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.673886,
+        23.829889
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2673",
+      "name": "Ghatera",
+      "poiType": "station",
+      "code": "GEA",
+      "details": {
+        "Address": "Ghatera, SH63, Damoh Tahsil, Damoh, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26ca",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.918879,
+        24.363224
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26ca",
+      "name": "Harkiakhal",
+      "poiType": "station",
+      "code": "HKL",
+      "details": {
+        "Address": "Harkia Khal, NH156, Bhakheda, Jiran Tehsil, Neemuch, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Neemuch",
+        "Village": "Bhakheda"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26b8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.207774,
+        21.706071
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26b8",
+      "name": "Hatra Road",
+      "poiType": "station",
+      "code": "HTT",
+      "details": {
+        "Address": "Kirnapur Tahsil, Balaghat District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26fc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.335815,
+        25.290486
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26fc",
+      "name": "Harpalpur",
+      "poiType": "station",
+      "code": "HPP",
+      "details": {
+        "Address": "Harpalpur, Nowgong Tahsil, Chhatarpur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhatarpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee26ff",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.931019,
+        23.155515
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee26ff",
+      "name": "Howbadh",
+      "poiType": "station",
+      "code": "HBG",
+      "details": {
+        "Address": "Sadar, Jabalpur, GorakhpurTahsil, Jabalpur District, Madhya Pradesh, 482001, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2721",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.868464,
+        22.719665
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2721",
+      "name": "Indore",
+      "poiType": "station",
+      "code": "INDB",
+      "details": {
+        "Address": "Sulabh Complex, Mahatma Gandhi Marg, Indore, Indore Tahsil, Indore District, Madhya Pradesh, 452001, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee272e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.868212,
+        22.717473
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee272e",
+      "name": "Indore Junction Mg",
+      "poiType": "station",
+      "code": "INDM",
+      "details": {
+        "Address": "Indore Junction, Maharani Road, Indore, Indore Tahsil, Indore District, Madhya Pradesh, 452001, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee273c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.950426,
+        23.164795
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee273c",
+      "name": "Jabalpur",
+      "poiType": "station",
+      "code": "JBP",
+      "details": {
+        "Address": "Jabalpur, NH45, Jabalpur, Ranjhi Tahsil, Jabalpur District, Madhya Pradesh, 482007, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2745",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.11541,
+        23.628031
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2745",
+      "name": "Jaora",
+      "poiType": "station",
+      "code": "JAO",
+      "details": {
+        "Address": "Jaora Tahsil, Ratlam, Madhya Pradesh, 457226, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2746",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.890455,
+        23.293791
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2746",
+      "name": "Jabri",
+      "poiType": "station",
+      "code": "JBX",
+      "details": {
+        "Address": "Jabri, MD2407, Kala Pipal, Kalapipal Tahsil, Shajapur, Madhya Pradesh, 465337, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2757",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.251751,
+        21.942797
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2757",
+      "name": "Jambara",
+      "poiType": "station",
+      "code": "JMV",
+      "details": {
+        "Address": "Jambara, Amli Tahsil, Betul, Madhya Pradesh, 460553, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2754",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.155589,
+        22.054082
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2754",
+      "name": "Jhilmili",
+      "poiType": "station",
+      "code": "JLY",
+      "details": {
+        "Address": "Chaurai Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2763",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.863525,
+        24.740176
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2763",
+      "name": "Jaitwar",
+      "poiType": "station",
+      "code": "JTW",
+      "details": {
+        "Address": "Jaitwara, Birsinghpur Tahsil, Satna, Madhya Pradesh, 485221, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": "Jaitwara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee278a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.478768,
+        23.973587
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee278a",
+      "name": "Jeruwakhera",
+      "poiType": "station",
+      "code": "JRK",
+      "details": {
+        "Address": "Mudra Jeruwakhera, Sagar Tahsil, Sagar, Madhya Pradesh, 470115, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Mudra Jeruwakhera"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee271f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.548672,
+        23.926984
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee271f",
+      "name": "Isarwara",
+      "poiType": "station",
+      "code": "ISH",
+      "details": {
+        "Address": "Isarwara, NH934, Sagar Tahsil, Sagar, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2755",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.892907,
+        24.406825
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2755",
+      "name": "Jamuniakalan",
+      "poiType": "station",
+      "code": "JMKL",
+      "details": {
+        "Address": "Jamuniya Kalan, MD2111, Hingoriya, Neemuch Nagar Tehsil, Neemuch, Madhya Pradesh, 458441, India",
+        "State": "Madhya Pradesh",
+        "District": "Neemuch",
+        "Village": "Hingoriya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2759",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.592263,
+        22.19121
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2759",
+      "name": "Junnordeo",
+      "poiType": "station",
+      "code": "JNO",
+      "details": {
+        "Address": "Junnordeo, SH41, Junnardeo, Jamai Tahsil, Chhindwara, Madhya Pradesh, 480551, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2766",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.764954,
+        24.557789
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2766",
+      "name": "Jawad Road",
+      "poiType": "station",
+      "code": "JWO",
+      "details": {
+        "Address": "Jawad Road, NH156, Nayagaon, Jawad Tehsil, Neemuch, Madhya Pradesh, 458470, India",
+        "State": "Madhya Pradesh",
+        "District": "Neemuch",
+        "Village": "Nayagaon"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2751",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.432258,
+        23.986782
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2751",
+      "name": "Jukehi",
+      "poiType": "station",
+      "code": "JKE",
+      "details": {
+        "Address": "Jukehi, MD3602, Kymore, Maihar Tahsil, Satna, Madhya Pradesh, 483880, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee27be",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.796884,
+        23.044772
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee27be",
+      "name": "Jaithari",
+      "poiType": "station",
+      "code": "JTI",
+      "details": {
+        "Address": "Jaithari, SH35, Jaithari, Jaithari Tehsil, Anuppur, Madhya Pradesh, 484330, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee27dc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.473839,
+        23.772699
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee27dc",
+      "name": "Jhalwara",
+      "poiType": "station",
+      "code": "JLW",
+      "details": {
+        "Address": "Jhalwara, MD3614, Katni, Murwara Tahsil, Katni, Madhya Pradesh, 483500, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee27e3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.642459,
+        24.040808
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee27e3",
+      "name": "Joba",
+      "poiType": "station",
+      "code": "JOBA",
+      "details": {
+        "Address": "Kanchanpur Road, Kusmi Tahsil, Sidhi, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Sidhi",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2805",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.057591,
+        23.97746
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2805",
+      "name": "Kalhar",
+      "poiType": "station",
+      "code": "KAH",
+      "details": {
+        "Address": "Kalhar, MD2907, Basoda Tahsil, Vidisha, Madhya Pradesh, 464215, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2835",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.909529,
+        22.375188
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2835",
+      "name": "Keolari",
+      "poiType": "station",
+      "code": "KLZ",
+      "details": {
+        "Address": "Keolari, Keolari Station Road, Keolari, Keolari Tahsil, Seoni, Madhya Pradesh, 480994, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee284c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.265761,
+        22.0526
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee284c",
+      "name": "Karaboh",
+      "poiType": "station",
+      "code": "KRBO",
+      "details": {
+        "Address": "Chaurai, Chaurai Tahsil, Chhindwara, Madhya Pradesh, 480115, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee284f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.724345,
+        24.269863
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee284f",
+      "name": "Karaila Road Junction",
+      "poiType": "station",
+      "code": "KRLR",
+      "details": {
+        "Address": "Karaila Road Junction, Chitrangi Tahsil, Singrauli, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2852",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.772642,
+        22.538245
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2852",
+      "name": "Kiratgarh",
+      "poiType": "station",
+      "code": "KRTH",
+      "details": {
+        "Address": "Kiratgarh, MD3320, Itarsi Tahsil, Hoshangabad, Madhya Pradesh, 461111, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2859",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.174509,
+        22.074565
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2859",
+      "name": "Kotlakheri",
+      "poiType": "station",
+      "code": "KTKH",
+      "details": {
+        "Address": "Kotlakheri, MD4903, Barwaha Tahsil, Khargone, Madhya Pradesh, 450551, India",
+        "State": "Madhya Pradesh",
+        "District": "Khargone",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee288c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.102278,
+        23.837858
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee288c",
+      "name": "Kachnara Road",
+      "poiType": "station",
+      "code": "KCNR",
+      "details": {
+        "Address": "Lasudia Ila, Daloda Tahsil, Mandsaur, Madhya Pradesh, 458669, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": "Lasudia Ila"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee288d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.910027,
+        23.104602
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee288d",
+      "name": "Karchha",
+      "poiType": "station",
+      "code": "KDHA",
+      "details": {
+        "Address": "Karachha, Dewas - Ujjain Highway, Ujjain, Ujjain Tahsil, Ujjain, Madhya Pradesh, 456001, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28bc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.265049,
+        24.330127
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28bc",
+      "name": "Karonda",
+      "poiType": "station",
+      "code": "KOA",
+      "details": {
+        "Address": "Karonda, MD1901, Umaria, Dhand, Bina Tahsil, Sagar, Madhya Pradesh, 470118, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Dhand"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee281c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.802648,
+        21.768198
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee281c",
+      "name": "Katangi",
+      "poiType": "station",
+      "code": "KGE",
+      "details": {
+        "Address": "Katangi, Katangi Tahsil, Balaghat District, Madhya Pradesh, 481445, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee27f9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.400994,
+        23.83405
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee27f9",
+      "name": "Katni",
+      "poiType": "station",
+      "code": "KTE",
+      "details": {
+        "Address": "Katni Junction, SH63, Katni, Murwara, Murwara Tahsil, Katni, Madhya Pradesh, 483500, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2824",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.079282,
+        24.362784
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2824",
+      "name": "Kumbhraj",
+      "poiType": "station",
+      "code": "KHRJ",
+      "details": {
+        "Address": "Kumbhraj, SH18, Kumbhraj, Kumbhraj Tahsil, Guna, Madhya Pradesh, 473222, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee282d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.859062,
+        22.165925
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee282d",
+      "name": "Khirkiya",
+      "poiType": "station",
+      "code": "KKN",
+      "details": {
+        "Address": "Khirkiya, MD3409, Khirkiya, Khirkiya Tahsil, Harda, Madhya Pradesh, 461441, India",
+        "State": "Madhya Pradesh",
+        "District": "Harda",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2854",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.430799,
+        23.344975
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2854",
+      "name": "Kalisindh",
+      "poiType": "station",
+      "code": "KSH",
+      "details": {
+        "Address": "Kali Sindh, MD2405, Deolabihar, Gulana Tahsil, Shajapur, Madhya Pradesh, 465220, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Deolabihar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2848",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.834338,
+        23.333075
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2848",
+      "name": "Kalapipal",
+      "poiType": "station",
+      "code": "KPP",
+      "details": {
+        "Address": "Kalapipal, MD2407, Kala Pipal, Kalapipal Tahsil, Shajapur, Madhya Pradesh, 465337, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28ea",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.065832,
+        22.932073
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28ea",
+      "name": "Kareli",
+      "poiType": "station",
+      "code": "KY",
+      "details": {
+        "Address": "Kareli, Kareli Tahsil, Narsimhapur, Madhya Pradesh, 487221, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2895",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.896466,
+        21.813696
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2895",
+      "name": "Kukrakhapa",
+      "poiType": "station",
+      "code": "KFP",
+      "details": {
+        "Address": "Bothiya, Mohkhed Tahsil, Chhindwara, Madhya Pradesh, 480107, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": "Bothiya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28a7",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.92147,
+        23.460806
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28a7",
+      "name": "Karkeli",
+      "poiType": "station",
+      "code": "KKI",
+      "details": {
+        "Address": "Karkeli, NH43, Karkeli Tahsil, Umaria, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28a6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.341005,
+        22.991839
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28a6",
+      "name": "Karakbel",
+      "poiType": "station",
+      "code": "KKB",
+      "details": {
+        "Address": "Karakbel, SH67, Gotegaon Tahsil, Narsimhapur, Madhya Pradesh, 487114, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28c1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.307295,
+        22.053783
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28c1",
+      "name": "Kapurdha Halt",
+      "poiType": "station",
+      "code": "KPDH",
+      "details": {
+        "Address": "NH347, Chaurai, Chaurai Tahsil, Chhindwara, Madhya Pradesh, 480115, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28df",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.28602,
+        23.442754
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28df",
+      "name": "Khachrod",
+      "poiType": "station",
+      "code": "KUH",
+      "details": {
+        "Address": "Khachrod, MD2615, Ghudawan, Khacharod Tahsil, Nagda, Madhya Pradesh, 456224, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Ghudawan"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee28da",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.97899,
+        23.203051
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee28da",
+      "name": "Kotma",
+      "poiType": "station",
+      "code": "KTMA",
+      "details": {
+        "Address": "Kotma, Kotma Tehsil, Anuppur, Madhya Pradesh, 484334, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee292b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.859651,
+        22.478285
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee292b",
+      "name": "Kalkund",
+      "poiType": "station",
+      "code": "KKD",
+      "details": {
+        "Address": "Mhow Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee297b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.353209,
+        21.82388
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee297b",
+      "name": "Khandwa",
+      "poiType": "station",
+      "code": "KNW",
+      "details": {
+        "Address": "Khandwa Junction, SH70, Ganesh Talai, Khandwa, Khandwa Tahsil, Khandwa, Madhya Pradesh, 450001, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee299a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.822285,
+        23.896756
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee299a",
+      "name": "Khannabanjari",
+      "poiType": "station",
+      "code": "KHBJ",
+      "details": {
+        "Address": "Khanna Banjari, SH6, Barhi, Barhi Tahsil, Katni, Madhya Pradesh, 483770, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29a1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.115365,
+        24.118127
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29a1",
+      "name": "Kurwaikethora",
+      "poiType": "station",
+      "code": "KIKA",
+      "details": {
+        "Address": "Kurwai Kethora, Kethora, Kurwai Tahsil, Vidisha, Madhya Pradesh, 464224, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": "Kethora"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29bf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.377224,
+        23.304303
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29bf",
+      "name": "Kisoni",
+      "poiType": "station",
+      "code": "KONY",
+      "details": {
+        "Address": "Kisoni, SH17, Kisori, Kamiliya Khedi, Shajapur Tahsil, Shajapur, Madhya Pradesh, 465110, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Kamiliya Khedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29e0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.889002,
+        24.79701
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29e0",
+      "name": "Khajuraho",
+      "poiType": "station",
+      "code": "KURJ",
+      "details": {
+        "Address": "Bamitha, Rajnagar Tahsil, Chhatarpur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhatarpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a07",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.751517,
+        23.58124
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a07",
+      "name": "Lorha",
+      "poiType": "station",
+      "code": "LOA",
+      "details": {
+        "Address": "Lorha, NH43, Chandia, Chandia Tahsil, Umaria, Madhya Pradesh, 484660, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a2f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.876235,
+        23.852087
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a2f",
+      "name": "Lidhora Khurd",
+      "poiType": "station",
+      "code": "LDA",
+      "details": {
+        "Address": "Lidhora Khurd, SH63, Sagar, Sagar Tahsil, Sagar, Madhya Pradesh, 470001, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a19",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.93685,
+        21.964062
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a19",
+      "name": "Linga",
+      "poiType": "station",
+      "code": "LIG",
+      "details": {
+        "Address": "Mohkhed Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a66",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.770891,
+        22.555704
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a66",
+      "name": "Mhow",
+      "poiType": "station",
+      "code": "MHOW",
+      "details": {
+        "Address": "Dr. Ambedkar Nagar, MD4527, Dr. Ambedkar Nagar, Mhow Tahsil, Indore District, Madhya Pradesh, 453441, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a7c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.076191,
+        24.075805
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a7c",
+      "name": "Mandasor",
+      "poiType": "station",
+      "code": "MDS",
+      "details": {
+        "Address": "Mandsor, SH58, Mandsaur, Mandsaur Nagar Tahsil, Mandsaur, Madhya Pradesh, 458001, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee294a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.818439,
+        22.395374
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee294a",
+      "name": "Kalaakhar",
+      "poiType": "station",
+      "code": "KQE",
+      "details": {
+        "Address": "Kala-Akhar, NH46, Itarsi Tahsil, Hoshangabad, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee296f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.331216,
+        24.052369
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee296f",
+      "name": "Khurai",
+      "poiType": "station",
+      "code": "KYE",
+      "details": {
+        "Address": "Khurai, SH62, Sadarpur, Karampur, Khurai Tahsil, Sagar, Madhya Pradesh, 470117, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Karampur"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29e1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.800755,
+        22.135284
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29e1",
+      "name": "Khirsadoh Junction",
+      "poiType": "station",
+      "code": "KUX",
+      "details": {
+        "Address": "Umreth, Umreth Tahsil, Chhindwara, Madhya Pradesh, 480442, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": "Umreth"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29ec",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.504746,
+        23.858534
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29ec",
+      "name": "Karhiyabhadeli",
+      "poiType": "station",
+      "code": "KYX",
+      "details": {
+        "Address": "Karhiya Bhadoli, SH63, Damoh, Damoh Tahsil, Damoh, Madhya Pradesh, 470600, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a0b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.124481,
+        22.136214
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a0b",
+      "name": "Lamta",
+      "poiType": "station",
+      "code": "LTA",
+      "details": {
+        "Address": "SubCentre, Lamta, NH543, Mau, Khairi, Balagat Tahsil, Balaghat District, Madhya Pradesh, 481551, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Khairi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee29e5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.732683,
+        22.217667
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee29e5",
+      "name": "Kaniwara",
+      "poiType": "station",
+      "code": "KWB",
+      "details": {
+        "Address": "Kaniwara, SH42, Kanhiwada, Seoni Tahsil, Seoni, Madhya Pradesh, 480990, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": "Kanhiwada"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a3d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.514475,
+        23.661256
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a3d",
+      "name": "Lunirichha",
+      "poiType": "station",
+      "code": "LNR",
+      "details": {
+        "Address": "Luni Richha, MD2506, Kamma Khedi, Tal Tahsil, Ratlam, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Kamma Khedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a4e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.854836,
+        21.580139
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a4e",
+      "name": "Lokdhikhera",
+      "poiType": "station",
+      "code": "LDE",
+      "details": {
+        "Address": "Railway Station, Main Road, Lodhikheda, Sausar Tahsil, Chhindwara, Madhya Pradesh, 480108, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a57",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.857916,
+        22.74151
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a57",
+      "name": "Lakshmibaingr",
+      "poiType": "station",
+      "code": "LMNR",
+      "details": {
+        "Address": "Indore, Indore Tahsil, Indore District, Madhya Pradesh, 452001, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2a83",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.918257,
+        22.815275
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2a83",
+      "name": "Mangliyagaon",
+      "poiType": "station",
+      "code": "MGG",
+      "details": {
+        "Address": "Sawer Tahsil, Indore District, Madhya Pradesh, 453771, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b14",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.977984,
+        23.2762
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b14",
+      "name": "Morwani",
+      "poiType": "station",
+      "code": "MRN",
+      "details": {
+        "Address": "Morwani, MD2520, Rajpura, Ratlam Nagar Tahsil, Ratlam, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Rajpura"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ac0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.473498,
+        24.857337
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ac0",
+      "name": "Metyalsohar",
+      "poiType": "station",
+      "code": "MYX",
+      "details": {
+        "Address": "Miyana, NH46, Minkhiya, Guna Tahsil, Guna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Minkhiya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2aaa",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.449651,
+        21.742714
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2aaa",
+      "name": "Mordar",
+      "poiType": "station",
+      "code": "MRDD",
+      "details": {
+        "Address": "Mordar, MD5020, Khandwa, Khandwa Tahsil, Khandwa, Madhya Pradesh, 450001, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2abf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.472827,
+        24.857021
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2abf",
+      "name": "Miyana",
+      "poiType": "station",
+      "code": "MYN",
+      "details": {
+        "Address": "Miyana, NH46, Minkhiya, Guna Tahsil, Guna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Minkhiya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ac1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.770101,
+        23.118752
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ac1",
+      "name": "Mauhari",
+      "poiType": "station",
+      "code": "MZH",
+      "details": {
+        "Address": "Mauhari, MD1505, Anuppur, Jaithari Tehsil, Anuppur, Madhya Pradesh, 484224, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b08",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.111845,
+        24.402487
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b08",
+      "name": "Mungaoli",
+      "poiType": "station",
+      "code": "MNV",
+      "details": {
+        "Address": "Mungaoli, SH11, Mungaoli, Mungaoli Tahsil, Ashok Nagar, Madhya Pradesh, 473443, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b18",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.458094,
+        23.169007
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b18",
+      "name": "Misrod",
+      "poiType": "station",
+      "code": "MSO",
+      "details": {
+        "Address": "Misrod, Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b49",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.107082,
+        23.727239
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b49",
+      "name": "Mundalaram",
+      "poiType": "station",
+      "code": "MDLM",
+      "details": {
+        "Address": "Richha Chanda, Jaora Tahsil, Ratlam, Madhya Pradesh, 457339, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Richha Chanda"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b4d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.500372,
+        23.567527
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b4d",
+      "name": "Mahidpur Road",
+      "poiType": "station",
+      "code": "MEP",
+      "details": {
+        "Address": "Mahidpur Road, SH16, Kharwa Kalan, Mahidpur Tahsil, Nagda, Madhya Pradesh, 457119, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Kharwa Kalan"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b1d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.262662,
+        21.783143
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b1d",
+      "name": "Multai",
+      "poiType": "station",
+      "code": "MTY",
+      "details": {
+        "Address": "Multai, SH41, Multai, Multai Tahsil, Betul, Madhya Pradesh, 460661, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b38",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.082328,
+        24.053506
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b38",
+      "name": "Mandibamora",
+      "poiType": "station",
+      "code": "MABA",
+      "details": {
+        "Address": "Mandi Bamora, MD1912, Rahatwas, Gohar, Bina Tahsil, Sagar, Madhya Pradesh, 464224, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Gohar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b50",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.919767,
+        23.951055
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b50",
+      "name": "Mahroi",
+      "poiType": "station",
+      "code": "MFQ",
+      "details": {
+        "Address": "Mahroi, SH63, Indawar, Manpur Tahsil, Umaria, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": "Indawar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b62",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.977985,
+        22.385367
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b62",
+      "name": "Mukhtiarbalwar",
+      "poiType": "station",
+      "code": "MKT",
+      "details": {
+        "Address": "Mukhtiara Balwada, NH347BG, Barwaha, Barwaha Tahsil, Khargone, Madhya Pradesh, 451115, India",
+        "State": "Madhya Pradesh",
+        "District": "Khargone",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b92",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.763625,
+        24.255737
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b92",
+      "name": "Maihar",
+      "poiType": "station",
+      "code": "MYR",
+      "details": {
+        "Address": "Maihar, Maihar Tahsil, Satna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b64",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.973583,
+        24.266381
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b64",
+      "name": "Malhargarh",
+      "poiType": "station",
+      "code": "MLG",
+      "details": {
+        "Address": "Malhargarh, MD2111, Malhargarh, Malhargarh Tahsil, Mandsaur, Madhya Pradesh, 458339, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": "Malhargarh"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bc3",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.502011,
+        22.111245
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bc3",
+      "name": "Morkadhana",
+      "poiType": "station",
+      "code": "MKDN",
+      "details": {
+        "Address": "Markadhana, SH41, Jamai Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bb7",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.356071,
+        22.586299
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bb7",
+      "name": "Mandlafort",
+      "poiType": "station",
+      "code": "MFR",
+      "details": {
+        "Address": "Maharajpur, Mandla, Mandla Tahsil, Mandla, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandla",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bc6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.810033,
+        23.866565
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bc6",
+      "name": "Makronia",
+      "poiType": "station",
+      "code": "MKRN",
+      "details": {
+        "Address": "Sagar, Sagar Tahsil, Sagar, Madhya Pradesh, 470001, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b12",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.003677,
+        26.500803
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b12",
+      "name": "Morena",
+      "poiType": "station",
+      "code": "MRA",
+      "details": {
+        "Address": "Morena, Morena Tahsil, Morena, Madhya Pradesh, 476001, India",
+        "State": "Madhya Pradesh",
+        "District": "Morena",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b1e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.242402,
+        24.628254
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b1e",
+      "name": "Mahugarha",
+      "poiType": "station",
+      "code": "MUGA",
+      "details": {
+        "Address": "Mahugarha, SH54, Nyagaon, Guna Tahsil, Guna, Madhya Pradesh, 473249, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Nyagaon"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b53",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.539833,
+        22.907282
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b53",
+      "name": "Meghnagar",
+      "poiType": "station",
+      "code": "MGN",
+      "details": {
+        "Address": "Meghnagar, MD4406, Meghnagar, Meghnagar Tahsil, Jhabua, Madhya Pradesh, 457779, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b97",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.159361,
+        23.252007
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b97",
+      "name": "Maksi",
+      "poiType": "station",
+      "code": "MKC",
+      "details": {
+        "Address": "Maksi Junction, NH52, Maksi, Shajapur Tahsil, Shajapur, Madhya Pradesh, 465106, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2b5d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.883099,
+        21.944414
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2b5d",
+      "name": "Maramjhiri",
+      "poiType": "station",
+      "code": "MJY",
+      "details": {
+        "Address": "Maramjhiri, Nagpur-Betul-Itarsi-Bhopal, Betul, Betul Tahsil, Betul, Madhya Pradesh, 460001, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bc1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.811739,
+        24.91367
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bc1",
+      "name": "Majhagawan",
+      "poiType": "station",
+      "code": "MJG",
+      "details": {
+        "Address": "Majhagawan, Majhagawan Bypass, Majhagawan, Majhgawan Tahsil, Satna, Madhya Pradesh, 485331, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bd0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.921025,
+        23.159969
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bd0",
+      "name": "Madanmahal",
+      "poiType": "station",
+      "code": "MML",
+      "details": {
+        "Address": "Jabalpur, Adhartal Tahsil, Jabalpur District, Madhya Pradesh, 482001, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ba2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.967529,
+        21.904844
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ba2",
+      "name": "Malkapur Road",
+      "poiType": "station",
+      "code": "MALK",
+      "details": {
+        "Address": "Hamlapur, Betul Tahsil, Betul, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Betul",
+        "Village": "Hamlapur"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bae",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.511313,
+        23.093845
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bae",
+      "name": "Mandidip",
+      "poiType": "station",
+      "code": "MDDP",
+      "details": {
+        "Address": "Mandideep, NH46, Mandideep, Goharganj Tahsil, Raisen, Madhya Pradesh, 462046, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c0c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.820278,
+        25.328259
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c0c",
+      "name": "Nivari",
+      "poiType": "station",
+      "code": "NEW",
+      "details": {
+        "Address": "Nivari, MD1703, Kuluwa Khas, Niwari Tahsil, Niwari, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Niwari",
+        "Village": "Kuluwa Khas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c15",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.867669,
+        22.988412
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c15",
+      "name": "Nigaura",
+      "poiType": "station",
+      "code": "NIQ",
+      "details": {
+        "Address": "Nigaura, MD1505, Jaithari Tehsil, Anuppur, Madhya Pradesh, 484113, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c18",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.067068,
+        23.455579
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c18",
+      "name": "Namli",
+      "poiType": "station",
+      "code": "NLI",
+      "details": {
+        "Address": "Namli, MD2524, Namli, Ratlam Tahsil, Ratlam, Madhya Pradesh, 457222, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Namli"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2bdc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.664738,
+        23.384122
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2bdc",
+      "name": "Mohammadkhera",
+      "poiType": "station",
+      "code": "MQE",
+      "details": {
+        "Address": "Mohammad Khera, SH25, Alisarkheda, Salsalai, Shujalpur Tahsil, Shajapur, Madhya Pradesh, 465223, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Salsalai"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c5f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.437315,
+        22.087907
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c5f",
+      "name": "Nawagaon",
+      "poiType": "station",
+      "code": "NVG",
+      "details": {
+        "Address": "Nawegaon, SH41, Jamai Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c61",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.123375,
+        22.211007
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c61",
+      "name": "Nagarwara",
+      "poiType": "station",
+      "code": "NWA",
+      "details": {
+        "Address": "Mau, Nagarwara, Balagat Tahsil, Balaghat District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Nagarwara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c04",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.849144,
+        24.463205
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c04",
+      "name": "Nimach",
+      "poiType": "station",
+      "code": "NMH",
+      "details": {
+        "Address": "Railway Platform A, Station Road, Neemuch, Neemuch Nagar Tehsil, Neemuch, Madhya Pradesh, 458411, India",
+        "State": "Madhya Pradesh",
+        "District": "Neemuch",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c1c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.305642,
+        26.426415
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c1c",
+      "name": "Nonera",
+      "poiType": "station",
+      "code": "NNE",
+      "details": {
+        "Address": "Nonera, NH719, Ekahara, Gohad Tahsil, Bhind, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhind",
+        "Village": "Ekahara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c21",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.397122,
+        21.463952
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c21",
+      "name": "Nepanagar",
+      "poiType": "station",
+      "code": "NPNR",
+      "details": {
+        "Address": "Nepanagar, MD5106, Nepanagar, Nepanagar Tahsil, Burhanpur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Burhanpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c66",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.412704,
+        23.456155
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c66",
+      "name": "Nagda",
+      "poiType": "station",
+      "code": "NAD",
+      "details": {
+        "Address": "Nagda Junction, SH26, Nagda, Nagda Tahsil, Nagda, Madhya Pradesh, 456300, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c4c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.682064,
+        23.200803
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c4c",
+      "name": "Naikheri",
+      "poiType": "station",
+      "code": "NKI",
+      "details": {
+        "Address": "Naikhedi, Ghatiya Tahsil, Ujjain, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": "Naikhedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c4d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.151172,
+        22.11085
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c4d",
+      "name": "Nimarkheri",
+      "poiType": "station",
+      "code": "NKR",
+      "details": {
+        "Address": "Nimar Kheri, MD4903, Punasa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c7d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.15747,
+        23.248291
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c7d",
+      "name": "Nauganwan",
+      "poiType": "station",
+      "code": "NGW",
+      "details": {
+        "Address": "Ratlam Tahsil, Ratlam, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ccf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.214204,
+        22.942905
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ccf",
+      "name": "Narsinghpur",
+      "poiType": "station",
+      "code": "NU",
+      "details": {
+        "Address": "Narsinghpur, MD3810, Narsinghpur, Narsimhapur Tahsil, Narsimhapur, Madhya Pradesh, 487001, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cdb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.644417,
+        25.401351
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cdb",
+      "name": "Orchha",
+      "poiType": "station",
+      "code": "ORC",
+      "details": {
+        "Address": "Orchha Tahsil, Niwari, Madhya Pradesh, 472246, India",
+        "State": "Madhya Pradesh",
+        "District": "Niwari",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cdf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.587441,
+        22.994862
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cdf",
+      "name": "Obaidullaganj",
+      "poiType": "station",
+      "code": "ODG",
+      "details": {
+        "Address": "Obaidullaganj, NH46, Obaidullaganj, Goharganj Tahsil, Raisen, Madhya Pradesh, 464993, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c67",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.10919,
+        22.425782
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c67",
+      "name": "Nainpur",
+      "poiType": "station",
+      "code": "NIR",
+      "details": {
+        "Address": "2/3, NH543, Irrigation Colony, Nainpur, Nainpur Tahsil, Mandla, Madhya Pradesh, 481776, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandla",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c9b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.013792,
+        24.054559
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c9b",
+      "name": "Niwas Road",
+      "poiType": "station",
+      "code": "NWB",
+      "details": {
+        "Address": "Bharsendi, MD1212, Niwas, Deosar Tahsil, Singrauli, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": "Niwas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c9c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.369673,
+        23.719533
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c9c",
+      "name": "Niwar",
+      "poiType": "station",
+      "code": "NWR",
+      "details": {
+        "Address": "Niwar, MD3614, Niwar, Murwara Tahsil, Katni, Madhya Pradesh, 483442, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": "Niwar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2c95",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.980503,
+        23.394511
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2c95",
+      "name": "Nowrozabad",
+      "poiType": "station",
+      "code": "NRZB",
+      "details": {
+        "Address": "NH43, Nowrozabad Tahsil, Umaria, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cc8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.008887,
+        23.04666
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cc8",
+      "name": "Naranjipur",
+      "poiType": "station",
+      "code": "NRGR",
+      "details": {
+        "Address": "Naranjipur, Dewas - Ujjain Highway, Dewas, Dewas Tahsil, Dewas, Madhya Pradesh, 455001, India",
+        "State": "Madhya Pradesh",
+        "District": "Dewas",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ce6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.046352,
+        22.214888
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ce6",
+      "name": "Omkareshwar Road",
+      "poiType": "station",
+      "code": "OM",
+      "details": {
+        "Address": "Omkareshwar Road, NH 347BG, Punasa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ce7",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.799728,
+        24.531425
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ce7",
+      "name": "Orr",
+      "poiType": "station",
+      "code": "ORR",
+      "details": {
+        "Address": "Hinotia Pipalkhera, MD0811, Barkheda Jagir, Bhadon, Ashoknagar Tahsil, Ashok Nagar, Madhya Pradesh, 473331, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": "Bhadon"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cc4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.60468,
+        23.896307
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cc4",
+      "name": "Nariaoli",
+      "poiType": "station",
+      "code": "NOI",
+      "details": {
+        "Address": "Sagar Tahsil, Sagar, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cdc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.611191,
+        23.030382
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cdc",
+      "name": "Osra",
+      "poiType": "station",
+      "code": "OSRA",
+      "details": {
+        "Address": "Osra, MD4501, Kulala, Jalodia Gyan, Depalpur Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": "Jalodia Gyan"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d00",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.046676,
+        22.51222
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d00",
+      "name": "Pindrai",
+      "poiType": "station",
+      "code": "PDE",
+      "details": {
+        "Address": "Pindrai, MD4017, Pindrai, Nainpur Tahsil, Mandla, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandla",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d0b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.964744,
+        24.503971
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d0b",
+      "name": "Pipraigaon",
+      "poiType": "station",
+      "code": "PIA",
+      "details": {
+        "Address": "Piprai Gaon, MD0816, Chirwas, Mungaoli Tahsil, Ashok Nagar, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": "Chirwas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d3a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.354399,
+        22.754298
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d3a",
+      "name": "Piparia",
+      "poiType": "station",
+      "code": "PPI",
+      "details": {
+        "Address": "Piparia, Pipariya Tahsil, Hoshangabad, Madhya Pradesh, 461775, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d42",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.525163,
+        21.589746
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d42",
+      "name": "Pandhurna",
+      "poiType": "station",
+      "code": "PAR",
+      "details": {
+        "Address": "Pandhurna, Pandhurna Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d59",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.471951,
+        23.042536
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d59",
+      "name": "Pirjhalar",
+      "poiType": "station",
+      "code": "PJH",
+      "details": {
+        "Address": "MD2602, Hatyakhedi, Palduna, Badnagar Tahsil, Ujjain, Madhya Pradesh, 456222, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": "Palduna"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d61",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.860485,
+        23.211157
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d61",
+      "name": "Pingleshwar",
+      "poiType": "station",
+      "code": "PLW",
+      "details": {
+        "Address": "Pingleswar, Ujjain - Makshi Highway, Ujjain, Ujjain Tahsil, Ujjain, Madhya Pradesh, 456001, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d75",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.217313,
+        23.194985
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d75",
+      "name": "Pritamnagar",
+      "poiType": "station",
+      "code": "PRNG",
+      "details": {
+        "Address": "Bhil Khedi, Ratlam Tahsil, Ratlam, Madhya Pradesh, 457441, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": "Bhil Khedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d78",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.5313,
+        23.26028
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d78",
+      "name": "Palsoramakrawa",
+      "poiType": "station",
+      "code": "PSO",
+      "details": {
+        "Address": "Palsora Makrawan, SH38;65, Bhainsla Khurd, Ingoniya, Badnagar Tahsil, Ujjain, Madhya Pradesh, 456337, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": "Ingoniya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d81",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.764073,
+        22.193348
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d81",
+      "name": "Parasia",
+      "poiType": "station",
+      "code": "PUX",
+      "details": {
+        "Address": "Parasia, SH62, Parasia, Parasia Tahsil, Chhindwara, Madhya Pradesh, 480441, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d9c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.741494,
+        23.728693
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d9c",
+      "name": "Pachor Road",
+      "poiType": "station",
+      "code": "PFR",
+      "details": {
+        "Address": "Pachor Road, NH52, Badalkhedi, Rajgarh Tahsil, Rajgarh, Madhya Pradesh, 465683, India",
+        "State": "Madhya Pradesh",
+        "District": "Rajgarh",
+        "Village": "Badalkhedi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2de9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.192516,
+        23.905706
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2de9",
+      "name": "Patharia",
+      "poiType": "station",
+      "code": "PHA",
+      "details": {
+        "Address": "Patharia, SH22, Patharia, Patharia Tahsil, Damoh, Madhya Pradesh, 470666, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e00",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.4288,
+        23.361579
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e00",
+      "name": "Piplodabagla",
+      "poiType": "station",
+      "code": "PPG",
+      "details": {
+        "Address": "Piploda Sagotimata, Nagda Tahsil, Nagda, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Piploda Sagotimata"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e51",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.250534,
+        24.553369
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e51",
+      "name": "Rewa",
+      "poiType": "station",
+      "code": "REWA",
+      "details": {
+        "Address": "Rewa, Huzur Tahsil, Rewa, Madhya Pradesh, 486001, India",
+        "State": "Madhya Pradesh",
+        "District": "Rewa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e78",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.176061,
+        24.532408
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e78",
+      "name": "Ruthiyai",
+      "poiType": "station",
+      "code": "RTA",
+      "details": {
+        "Address": "Ruthiyai, Raghogarh Tahsil, Guna, Madhya Pradesh, 473110, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Ruthiyai"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e94",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.250534,
+        24.553369
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e94",
+      "name": "Rewa",
+      "poiType": "station",
+      "code": "REWA",
+      "details": {
+        "Address": "Rewa, Huzur Tahsil, Rewa, Madhya Pradesh, 486001, India",
+        "State": "Madhya Pradesh",
+        "District": "Rewa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ea9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.573194,
+        23.731271
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ea9",
+      "name": "Rupaund",
+      "poiType": "station",
+      "code": "RPD",
+      "details": {
+        "Address": "MD3614, Badwara Tahsil, Katni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2eec",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.82873,
+        24.569099
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2eec",
+      "name": "Satna",
+      "poiType": "station",
+      "code": "STA",
+      "details": {
+        "Address": "Satna Junction, NH135BG, Satna, Raghurajnagar Tahsil, Satna, Madhya Pradesh, 485001, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2cf5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.931914,
+        23.767868
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2cf5",
+      "name": "Pabai",
+      "poiType": "station",
+      "code": "PAI",
+      "details": {
+        "Address": "Pabai, MD2918, Madhiya Semara, Basoda Tahsil, Vidisha, Madhya Pradesh, 464220, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": "Madhiya Semara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d30",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.816033,
+        22.301703
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d30",
+      "name": "Palari",
+      "poiType": "station",
+      "code": "PUE",
+      "details": {
+        "Address": "Palari, MD4105, Keolari Tahsil, Seoni, Madhya Pradesh, 480991, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d31",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.230181,
+        23.256133
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d31",
+      "name": "Pirumrod",
+      "poiType": "station",
+      "code": "PUO",
+      "details": {
+        "Address": "Pir Umrod, Peerumrod, Shajapur Tahsil, Shajapur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Peerumrod"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d19",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.11376,
+        22.31691
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d19",
+      "name": "Padriganj",
+      "poiType": "station",
+      "code": "PNJ",
+      "details": {
+        "Address": "Padriganj, NH543, Padriganj, Balagat Tahsil, Balaghat District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Padriganj"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d48",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.666075,
+        22.200657
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d48",
+      "name": "Palachauri",
+      "poiType": "station",
+      "code": "PCLI",
+      "details": {
+        "Address": "Palachauri, SH45, Chandameta, Parasia, Jamai Tahsil, Chhindwara, Madhya Pradesh, 480441, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d58",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.007371,
+        24.20366
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d58",
+      "name": "Piplia",
+      "poiType": "station",
+      "code": "PIP",
+      "details": {
+        "Address": "Piplia, MD2208, Gudbheli(Narayangarhwali), Malhargarh Tahsil, Mandsaur, Madhya Pradesh, 458553, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": "Gudbheli(Narayangarhwali)"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d73",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.747902,
+        22.6736
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d73",
+      "name": "Powerkheda",
+      "poiType": "station",
+      "code": "PRKD",
+      "details": {
+        "Address": "Powerkheda, NH46, Itarsi, Hoshangabad Tahsil, Hoshangabad, Madhya Pradesh, 461111, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2d52",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.443568,
+        24.656437
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2d52",
+      "name": "Pagara",
+      "poiType": "station",
+      "code": "PGA",
+      "details": {
+        "Address": "Pagara, SH54, Pagara, Guna Tahsil, Guna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Guna",
+        "Village": "Pagara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2da6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.501112,
+        24.047493
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2da6",
+      "name": "Pakara Road",
+      "poiType": "station",
+      "code": "PKRD",
+      "details": {
+        "Address": "Pakaria Road, NH30, Pala khas, Maihar Tahsil, Satna, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": "Pala khas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2dba",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.964429,
+        23.27998
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2dba",
+      "name": "Parbati",
+      "poiType": "station",
+      "code": "PRB",
+      "details": {
+        "Address": "Parbati, MD2407, Nandni, Kalapipal Tahsil, Shajapur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": "Nandni"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ddd",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.667246,
+        23.033006
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ddd",
+      "name": "Panchpipila",
+      "poiType": "station",
+      "code": "PCN",
+      "details": {
+        "Address": "Panch Piplia, SH64, Meghnagar Tahsil, Jhabua, Madhya Pradesh, 457777, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2df2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.799967,
+        22.829846
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2df2",
+      "name": "Palia",
+      "poiType": "station",
+      "code": "PLA",
+      "details": {
+        "Address": "Hatod Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e10",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.187613,
+        23.231325
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e10",
+      "name": "Phanda",
+      "poiType": "station",
+      "code": "PUD",
+      "details": {
+        "Address": "Phanda, MD3122, Sehore, Huzur Tahsil, Bhopal, Madhya Pradesh, 466002, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e0d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.797188,
+        22.514143
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e0d",
+      "name": "Patalpani",
+      "poiType": "station",
+      "code": "PTP",
+      "details": {
+        "Address": "Mhow Tahsil, Indore District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e22",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.804639,
+        22.63252
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e22",
+      "name": "Rau",
+      "poiType": "station",
+      "code": "RAU",
+      "details": {
+        "Address": "Indore, Indore Tahsil, Indore District, Madhya Pradesh, 452001, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e82",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.829286,
+        22.669771
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e82",
+      "name": "Rajendranagar",
+      "poiType": "station",
+      "code": "RJQ",
+      "details": {
+        "Address": "Vaishali Nagar, Indore, Indore Tahsil, Indore District, Madhya Pradesh, 452001, India",
+        "State": "Madhya Pradesh",
+        "District": "Indore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e44",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.879034,
+        23.183929
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e44",
+      "name": "Raoti",
+      "poiType": "station",
+      "code": "RTI",
+      "details": {
+        "Address": "Raoti, SH26, Petlawad Tahsil, Jhabua, Madhya Pradesh, 457770, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e6a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.849743,
+        21.702283
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e6a",
+      "name": "Ramakona",
+      "poiType": "station",
+      "code": "RMO",
+      "details": {
+        "Address": "Ramakona, Sausar Tahsil, Chhindwara, Madhya Pradesh, 480106, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": "Ramakona"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2e93",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.140317,
+        23.904414
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2e93",
+      "name": "Rithi",
+      "poiType": "station",
+      "code": "REI",
+      "details": {
+        "Address": "Rithi, SH63, Rithi, Rithi Tahsil, Katni, Madhya Pradesh, 483990, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": "Rithi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ea4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.270938,
+        23.1666
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ea4",
+      "name": "Runija",
+      "poiType": "station",
+      "code": "RNJ",
+      "details": {
+        "Address": "Runija, MD2615, Jassakhedi, Barnagar, Badnagar Tahsil, Ujjain, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ebb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.050493,
+        23.340694
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ebb",
+      "name": "Ratlam",
+      "poiType": "station",
+      "code": "RTM",
+      "details": {
+        "Address": "Ratlam Junction, NH927A, Ratlam, Ratlam Nagar Tahsil, Ratlam, Madhya Pradesh, 457001, India",
+        "State": "Madhya Pradesh",
+        "District": "Ratlam",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f01",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.81128,
+        23.811523
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f01",
+      "name": "Sagoni",
+      "poiType": "station",
+      "code": "SAO",
+      "details": {
+        "Address": "Sagoni, MD3615, Patera Tahsil, Damoh, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Damoh",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f19",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.588898,
+        24.631004
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f19",
+      "name": "Shadhoragaon",
+      "poiType": "station",
+      "code": "SHDR",
+      "details": {
+        "Address": "Shahdora Gaon, MD0808, Shadhora, Shadhora Tahsil, Ashok Nagar, Madhya Pradesh, 473330, India",
+        "State": "Madhya Pradesh",
+        "District": "Ashok Nagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f2c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.1567,
+        21.941737
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f2c",
+      "name": "Samnapur",
+      "poiType": "station",
+      "code": "SMC",
+      "details": {
+        "Address": "Samnapur, NH543, Magardarra, Balagat Tahsil, Balaghat District, Madhya Pradesh, 481441, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Magardarra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f4c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.486153,
+        23.340776
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f4c",
+      "name": "Sukhisewaniyan",
+      "poiType": "station",
+      "code": "SUW",
+      "details": {
+        "Address": "Bhopal, Huzur Tahsil, Bhopal, Madhya Pradesh, 462001, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhopal",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f7b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.364574,
+        23.286127
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f7b",
+      "name": "Shahdol",
+      "poiType": "station",
+      "code": "SDL",
+      "details": {
+        "Address": "Shahdol, NH543, ASH Area, Sohagpur Tahsil, Shahdol, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ed9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.189107,
+        23.414112
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ed9",
+      "name": "Runkhera",
+      "poiType": "station",
+      "code": "RNH",
+      "details": {
+        "Address": "Runkhera, SH26, Kanwas, Khacharod Tahsil, Nagda, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Kanwas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f02",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.802415,
+        21.65865
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f02",
+      "name": "Sausar",
+      "poiType": "station",
+      "code": "SASR",
+      "details": {
+        "Address": "Sausar, NH547, Sausar, Sausar Tahsil, Chhindwara, Madhya Pradesh, 480106, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f05",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.4086,
+        26.250878
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f05",
+      "name": "Sabalgarh",
+      "poiType": "station",
+      "code": "SBL",
+      "details": {
+        "Address": "Sabalgarh, NH552, Gudaya, Sabalgarh, Sabalgarh Tahsil, Morena, Madhya Pradesh, 476229, India",
+        "State": "Madhya Pradesh",
+        "District": "Morena",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f0f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.078521,
+        23.214904
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f0f",
+      "name": "Sehore",
+      "poiType": "station",
+      "code": "SEH",
+      "details": {
+        "Address": "Sehore, MD3205, Sehore, Sehore Tahsil, Sehore, Madhya Pradesh, 466002, India",
+        "State": "Madhya Pradesh",
+        "District": "Sehore",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f3f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.1645,
+        24.351769
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f3f",
+      "name": "Semarkheri",
+      "poiType": "station",
+      "code": "SRKI",
+      "details": {
+        "Address": "Kanjiya, SH11, Daulatpur, Girwal, Bina Tahsil, Sagar, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": "Girwal"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2fbc",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.87995,
+        23.625368
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2fbc",
+      "name": "Sumer",
+      "poiType": "station",
+      "code": "SUMR",
+      "details": {
+        "Address": "Sumer, MD2918, Hatiyakheda, Gulabganj Tahsil, Vidisha, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": "Hatiyakheda"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2fe6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.735872,
+        23.487762
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2fe6",
+      "name": "Sanchi",
+      "poiType": "station",
+      "code": "SCI",
+      "details": {
+        "Address": "Sanchi, Vidisha Road, Sanchi, Raisen Tahsil, Raisen, Madhya Pradesh, 464661, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": "Sanchi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f85",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.742902,
+        23.847573
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f85",
+      "name": "Saugor",
+      "poiType": "station",
+      "code": "SGO",
+      "details": {
+        "Address": "Sagar, Sagar Tahsil, Sagar, Madhya Pradesh, 470001, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f82",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.297962,
+        23.42521
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f82",
+      "name": "Shajapur",
+      "poiType": "station",
+      "code": "SFY",
+      "details": {
+        "Address": "Shajapur, SH17, Shajapur, Shajapur Tahsil, Shajapur, Madhya Pradesh, 465001, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2f94",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.857666,
+        22.798262
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2f94",
+      "name": "Shikara",
+      "poiType": "station",
+      "code": "SKY",
+      "details": {
+        "Address": "Shikara, Ghansaur Tahsil, Seoni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": "Shikara"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2fcf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.642797,
+        24.190669
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2fcf",
+      "name": "Shamgarh",
+      "poiType": "station",
+      "code": "SGZ",
+      "details": {
+        "Address": "Shamgarh, Shamgarh Tahsil, Mandsaur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ff2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.195662,
+        24.03282
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ff2",
+      "name": "Sareigram",
+      "poiType": "station",
+      "code": "SGAM",
+      "details": {
+        "Address": "Sareigram, MD1212, Deosar Tahsil, Singrauli, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ffa",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.109813,
+        23.466799
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ffa",
+      "name": "Sihora Road",
+      "poiType": "station",
+      "code": "SHR",
+      "details": {
+        "Address": "Sihora Road, MD3707, Khitola, Sihora, Sihora Tahsil, Jabalpur District, Madhya Pradesh, 483225, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2fe1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.285446,
+        23.614383
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2fe1",
+      "name": "Sleemanabad Road",
+      "poiType": "station",
+      "code": "SBD",
+      "details": {
+        "Address": "Sleemanabad Road, MD3619, Sleemanabad, Bahoriband Tahsil, Katni, Madhya Pradesh, 483440, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": "Sleemanabad"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ff5",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.194498,
+        22.693947
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ff5",
+      "name": "Sohagpur",
+      "poiType": "station",
+      "code": "SGP",
+      "details": {
+        "Address": "Sohagpur, SH67, Soghagpur, Sohagpur Tahsil, Hoshangabad, Madhya Pradesh, 461771, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee2ff0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.54579,
+        22.075139
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee2ff0",
+      "name": "Seoni",
+      "poiType": "station",
+      "code": "SEY",
+      "details": {
+        "Address": "Seoni, MD4115, Seoni, Seoni Tahsil, Seoni, Madhya Pradesh, 480600, India",
+        "State": "Madhya Pradesh",
+        "District": "Seoni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3010",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.400012,
+        24.007314
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3010",
+      "name": "Sumreri",
+      "poiType": "station",
+      "code": "SMRR",
+      "details": {
+        "Address": "Sumreri, NH934, Khurai, Khurai Tahsil, Sagar, Madhya Pradesh, 470117, India",
+        "State": "Madhya Pradesh",
+        "District": "Sagar",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3001",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.723113,
+        23.380833
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3001",
+      "name": "Shujalpur",
+      "poiType": "station",
+      "code": "SJP",
+      "details": {
+        "Address": "Shujalpur, NH752C, Rustampur, Shujalpur, Shujalpur Tahsil, Shajapur, Madhya Pradesh, 465331, India",
+        "State": "Madhya Pradesh",
+        "District": "Shajapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3013",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.40772,
+        23.254092
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3013",
+      "name": "Singhpur",
+      "poiType": "station",
+      "code": "SNGP",
+      "details": {
+        "Address": "Singhpur, NH43, ASH Area, Sohagpur Tahsil, Shahdol, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee301c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.408723,
+        25.731406
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee301c",
+      "name": "Sonagir",
+      "poiType": "station",
+      "code": "SOR",
+      "details": {
+        "Address": "Samroli, Sonagiri, Datia Tahsil, Datia, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Datia",
+        "Village": "Sonagiri"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee305b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.67666,
+        22.834138
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee305b",
+      "name": "Salichauka Road",
+      "poiType": "station",
+      "code": "SCKR",
+      "details": {
+        "Address": "Salichauka Road, MD3822, Gadarwara Tahsil, Narsimhapur, Madhya Pradesh, 487881, India",
+        "State": "Madhya Pradesh",
+        "District": "Narsimhapur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee301a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.700454,
+        25.671229
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee301a",
+      "name": "Sheopurkalan",
+      "poiType": "station",
+      "code": "SOE",
+      "details": {
+        "Address": "Sheopur Kalan, MD0406, Sheopur, Sheopur Tahsil, Sheopur, Madhya Pradesh, 476337, India",
+        "State": "Madhya Pradesh",
+        "District": "Sheopur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3021",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.950076,
+        22.613238
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3021",
+      "name": "Sontalai",
+      "poiType": "station",
+      "code": "SQL",
+      "details": {
+        "Address": "Sontalai, MD3312, Babai, Babai Tahsil, Hoshangabad, Madhya Pradesh, 461661, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3047",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.637945,
+        25.438128
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3047",
+      "name": "Shivpuri",
+      "poiType": "station",
+      "code": "SVPI",
+      "details": {
+        "Address": "Shivpuri, SH51A, Jasraipur, Singhanwas, Shivpuri Tahsil, Shivpuri, Madhya Pradesh, 473500, India",
+        "State": "Madhya Pradesh",
+        "District": "Shivpuri",
+        "Village": "Singhanwas"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3049",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        82.642676,
+        24.204678
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3049",
+      "name": "Singrauli",
+      "poiType": "station",
+      "code": "SGRL",
+      "details": {
+        "Address": "Singrauli, NH135C, Railway Colony, Singrauli, Singrauli Tahsil, Singrauli, Madhya Pradesh, 486889, India",
+        "State": "Madhya Pradesh",
+        "District": "Singrauli",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3065",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.487484,
+        23.581228
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3065",
+      "name": "Sarangpur",
+      "poiType": "station",
+      "code": "SFW",
+      "details": {
+        "Address": "Sarangpur, AH47, Taraganj, Sarangpur Tahsil, Rajgarh, Madhya Pradesh, 465697, India",
+        "State": "Madhya Pradesh",
+        "District": "Rajgarh",
+        "Village": "Taraganj"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3060",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.048404,
+        24.131084
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3060",
+      "name": "Sindpan",
+      "poiType": "station",
+      "code": "SDPN",
+      "details": {
+        "Address": "Mandsaur, Mandsaur Nagar Tahsil, Mandsaur, Madhya Pradesh, 458001, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30a8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.64872,
+        24.070503
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30a8",
+      "name": "Suwasra",
+      "poiType": "station",
+      "code": "SVA",
+      "details": {
+        "Address": "Suwasra, MD2214, Suwasra, Suwasra Tahsil, Mandsaur, Madhya Pradesh, 458688, India",
+        "State": "Madhya Pradesh",
+        "District": "Mandsaur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3084",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.672484,
+        23.461177
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3084",
+      "name": "Salamatpur",
+      "poiType": "station",
+      "code": "SMT",
+      "details": {
+        "Address": "Salamatpur, Bhopal Sanchi Road, Salamatpur, Raisen Tahsil, Raisen, Madhya Pradesh, 464661, India",
+        "State": "Madhya Pradesh",
+        "District": "Raisen",
+        "Village": "Salamatpur"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee308e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.552935,
+        26.52651
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee308e",
+      "name": "Soni",
+      "poiType": "station",
+      "code": "SONI",
+      "details": {
+        "Address": "Soni, SH1, Choniyapura, Mehgaon Tahsil, Bhind, Madhya Pradesh, 477557, India",
+        "State": "Madhya Pradesh",
+        "District": "Bhind",
+        "Village": "Choniyapura"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3090",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.83458,
+        22.907248
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3090",
+      "name": "Sukrimangela",
+      "poiType": "station",
+      "code": "SOY",
+      "details": {
+        "Address": "Sukrimangela, NH34, Sukri, Jabalpur Tahsil, Jabalpur District, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Jabalpur",
+        "Village": "Sukri"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30ac",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.007698,
+        23.256113
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30ac",
+      "name": "Shivpura",
+      "poiType": "station",
+      "code": "SVT",
+      "details": {
+        "Address": "Shivpura, Ujjain - Makshi Highway, Adarshnagar, Tarana Tahsil, Ujjain, Madhya Pradesh, 456663, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": "Adarshnagar"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30ae",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.073887,
+        22.178374
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30ae",
+      "name": "Sanawad",
+      "poiType": "station",
+      "code": "SWD",
+      "details": {
+        "Address": "Sanawad, SH36A, Barwaha Tahsil, Khargone, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khargone",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30c1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.229734,
+        22.37626
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30c1",
+      "name": "Timarni",
+      "poiType": "station",
+      "code": "TBN",
+      "details": {
+        "Address": "Timarni, SH67, Timarni, Rehatgarh Tahsil, Harda, Madhya Pradesh, 461228, India",
+        "State": "Madhya Pradesh",
+        "District": "Harda",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30b2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.969538,
+        23.846104
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30b2",
+      "name": "Salaia",
+      "poiType": "station",
+      "code": "SYA",
+      "details": {
+        "Address": "Salaia, SH23, Salaiya, Rithi Tahsil, Katni, Madhya Pradesh, 488443, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": "Salaiya"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee30bf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.066819,
+        23.264407
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee30bf",
+      "name": "Tarana Road",
+      "poiType": "station",
+      "code": "TAN",
+      "details": {
+        "Address": "Tarana Road, SH16, Malhargarh, Sumrakheda, Tarana Tahsil, Ujjain, Madhya Pradesh, 456663, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": "Sumrakheda"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3103",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.931692,
+        25.294301
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3103",
+      "name": "Teharka",
+      "poiType": "station",
+      "code": "TKA",
+      "details": {
+        "Address": "Teharka, NH39, Bhitora, Niwari Tahsil, Niwari, Madhya Pradesh, 472447, India",
+        "State": "Madhya Pradesh",
+        "District": "Niwari",
+        "Village": "Bhitora"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3151",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.670531,
+        21.427606
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3151",
+      "name": "Tukaithad",
+      "poiType": "station",
+      "code": "TTZ",
+      "details": {
+        "Address": "Thukaithad, SH49, Thukaithad, Khaknar Tahsil, Burhanpur, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Burhanpur",
+        "Village": "Thukaithad"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3134",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.55495,
+        23.835167
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3134",
+      "name": "Thuria",
+      "poiType": "station",
+      "code": "THUR",
+      "details": {
+        "Address": "Thuria, SH19C, Raipuriya, Unhel, Alot Tahsil, Nagda, Madhya Pradesh, 326515, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Unhel"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3127",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.533135,
+        21.653549
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3127",
+      "name": "Takal",
+      "poiType": "station",
+      "code": "TAKL",
+      "details": {
+        "Address": "Khandwa Tahsil, Khandwa, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Khandwa",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3132",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.588941,
+        22.962229
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3132",
+      "name": "Thandla Road",
+      "poiType": "station",
+      "code": "THDR",
+      "details": {
+        "Address": "Thandla Road, SH26, Meghnagar, Meghnagar Tahsil, Jhabua, Madhya Pradesh, 457777, India",
+        "State": "Madhya Pradesh",
+        "District": "Jhabua",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee314a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.716711,
+        21.680111
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee314a",
+      "name": "Tirodi",
+      "poiType": "station",
+      "code": "TRDI",
+      "details": {
+        "Address": "Tirodi, MD4316, Tirodi, Tirodi Tahsil, Balaghat District, Madhya Pradesh, 481449, India",
+        "State": "Madhya Pradesh",
+        "District": "Balaghat",
+        "Village": "Tirodi"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee316b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.923396,
+        23.216688
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee316b",
+      "name": "Tajpur",
+      "poiType": "station",
+      "code": "TJP",
+      "details": {
+        "Address": "Tajpur, Ujjain - Makshi Highway, Ujjain Tahsil, Ujjain, Madhya Pradesh, 456661, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee319c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.780587,
+        23.179264
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee319c",
+      "name": "Ujjain",
+      "poiType": "station",
+      "code": "UJN",
+      "details": {
+        "Address": "Western Railway Health Unit, SH64, Freeganj, Ujjain, Ujjain Tahsil, Ujjain, Madhya Pradesh, 456001, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31b9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.823208,
+        23.523051
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31b9",
+      "name": "Umaria",
+      "poiType": "station",
+      "code": "UMR",
+      "details": {
+        "Address": "Umaria, Bandhogarh Umaria Tahsil, Umaria, Madhya Pradesh, 484661, India",
+        "State": "Madhya Pradesh",
+        "District": "Umaria",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee320a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        81.872209,
+        22.923375
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee320a",
+      "name": "Venkatnagra",
+      "poiType": "station",
+      "code": "VKR",
+      "details": {
+        "Address": "Venkatnagar, MD1505, Jaithari Tehsil, Anuppur, Madhya Pradesh, 484113, India",
+        "State": "Madhya Pradesh",
+        "District": "Anuppur",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3212",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.818069,
+        23.162465
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3212",
+      "name": "Vikramnagar",
+      "poiType": "station",
+      "code": "VRG",
+      "details": {
+        "Address": "Ujjain, Ujjain Tahsil, Ujjain, Madhya Pradesh, 456001, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee315b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.820544,
+        22.482476
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee315b",
+      "name": "Taku",
+      "poiType": "station",
+      "code": "TAKU",
+      "details": {
+        "Address": "Itarsi Tahsil, Hoshangabad, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Hoshangabad",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31b2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.962133,
+        23.099051
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31b2",
+      "name": "Undasamadhawpu",
+      "poiType": "station",
+      "code": "UDM",
+      "details": {
+        "Address": "Ujjain Tahsil, Ujjain, Madhya Pradesh, 456664, India",
+        "State": "Madhya Pradesh",
+        "District": "Ujjain",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31b6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.87889,
+        21.874383
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31b6",
+      "name": "Umranala",
+      "poiType": "station",
+      "code": "ULA",
+      "details": {
+        "Address": "MD4225, Umranala, Mohkhed Tahsil, Chhindwara, Madhya Pradesh, 480107, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": "Umranala"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee320d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.538204,
+        23.764542
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee320d",
+      "name": "Vikramgarh Alot",
+      "poiType": "station",
+      "code": "VMA",
+      "details": {
+        "Address": "Vikramgarh Alot, SH25, Alot, Alot Tahsil, Nagda, Madhya Pradesh, 457114, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": "Alot"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee3257",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.610651,
+        23.709295
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee3257",
+      "name": "Vilayatkalan Road",
+      "poiType": "station",
+      "code": "VYK",
+      "details": {
+        "Address": "Badwara Tahsil, Katni, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Katni",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31bb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.474998,
+        23.314508
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31bb",
+      "name": "Unhel",
+      "poiType": "station",
+      "code": "UNL",
+      "details": {
+        "Address": "Unhel, MD2612, Dehta, Nagda Tahsil, Nagda, Madhya Pradesh, 456337, India",
+        "State": "Madhya Pradesh",
+        "District": "Nagda",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee321d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.814786,
+        23.522547
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee321d",
+      "name": "Vidisha",
+      "poiType": "station",
+      "code": "BHS",
+      "details": {
+        "Address": "Vidisha, MD3010, Vidisha, Vidisha Tahsil, Vidisha, Madhya Pradesh, 464001, India",
+        "State": "Madhya Pradesh",
+        "District": "Vidisha",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31b4",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.793971,
+        24.37996
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31b4",
+      "name": "Unchhera",
+      "poiType": "station",
+      "code": "UHR",
+      "details": {
+        "Address": "Ragala, Unchahara Tahsil, Satna, Madhya Pradesh, 485661, India",
+        "State": "Madhya Pradesh",
+        "District": "Satna",
+        "Village": "Ragala"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "626651971d7de951d5ee31cb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.086644,
+        22.055106
+      ]
+    },
+    "properties": {
+      "_id": "626651971d7de951d5ee31cb",
+      "name": "Umariaispahlt",
+      "poiType": "station",
+      "code": "UIH",
+      "details": {
+        "Address": "Chhindwara Tahsil, Chhindwara, Madhya Pradesh, India",
+        "State": "Madhya Pradesh",
+        "District": "Chhindwara",
+        "Village": ""
+      },
+      "commodities": []
+    }
+  }
+]
