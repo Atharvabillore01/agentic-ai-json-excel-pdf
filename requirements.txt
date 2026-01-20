@@ -34,3 +34,5 @@ regex
 rich
 groq
 openpyxl
+python-dotenv 
+openai
