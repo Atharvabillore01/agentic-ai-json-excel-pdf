@@ -1,17 +1,24 @@
 import os
-from dotenv import load_dotenv 
 from groq import Groq
 
-load_dotenv() 
+_client = None
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+def get_groq_client():
+    global _client
+    if _client is None:
+        api_key = os.getenv("GROQ_API_KEY")
+        if not api_key:
+            raise ValueError("GROQ_API_KEY not set")
+        _client = Groq(api_key=api_key)
+    return _client
 
-MODEL = "llama-3.3-70b-versatile"
 
-def groq_chat(messages, tools=None):
-    return client.chat.completions.create(
-        model=MODEL,
-        messages=messages,
-        tools=tools,
-        tool_choice="auto"
+def groq_chat(prompt: str, max_tokens=1024, temperature=0.7):
+    client = get_groq_client()
+    response = client.chat.completions.create(
+        model="mixtral-8x7b-32768",
+        messages=[{"role": "user", "content": prompt}],
+        max_tokens=max_tokens,
+        temperature=temperature
     )
+    return response.choices[0].message.content

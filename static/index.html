@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MP Industrial Agent – Test Console</title>
   
-  <!-- Vis.js for Neo4j style graphs -->
   <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
   <style>
@@ -59,6 +58,8 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       border: 1px solid var(--border);
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .card h3 {
@@ -76,7 +77,9 @@
       color: var(--muted);
       display: block;
       margin-bottom: 6px;
+      margin-top: 10px;
     }
+    label:first-of-type { margin-top: 0; }
 
     select, input, textarea {
       width: 100%;
@@ -84,16 +87,23 @@
       border-radius: 8px;
       border: 1px solid var(--border);
       font-size: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 4px; /* Reduced to fit better */
       outline: none;
     }
 
-    textarea { resize: vertical; }
+    textarea { resize: vertical; margin-bottom: 14px; }
 
     select:focus, input:focus, textarea:focus {
       border-color: var(--primary);
       box-shadow: 0 0 0 3px var(--secondary);
     }
+
+    /* Grouping inputs for the explorer */
+    .input-group {
+        display: flex;
+        gap: 10px;
+    }
+    .input-group > div { flex: 1; }
 
     button {
       background: var(--primary);
@@ -106,11 +116,23 @@
       cursor: pointer;
       transition: all 0.2s ease;
       width: 100%;
+      margin-top: 10px;
     }
 
     button:hover {
       background: #1c45c2;
       transform: translateY(-1px);
+    }
+
+    button.secondary-btn {
+        background: #fff;
+        color: var(--text);
+        border: 1px solid var(--border);
+    }
+    button.secondary-btn:hover {
+        background: var(--secondary);
+        color: var(--primary);
+        border-color: var(--primary);
     }
 
     /* Output Section Styles */
@@ -132,6 +154,7 @@
       border-radius: 6px;
       cursor: pointer;
       width: auto;
+      margin-top: 0;
     }
 
     .tab-btn.active {
@@ -251,6 +274,7 @@
       border-radius: 6px;
       cursor: pointer;
       width: auto;
+      margin-top: 0;
     }
 
     .sm-btn:hover {
@@ -271,29 +295,29 @@
         cursor: not-allowed;
     }
     .visualization-maximized {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: var(--bg);
-  margin: 0 !important;
-  padding: 16px;
-  border-radius: 0 !important;
-  max-width: none !important;
-  height: 100vh;
-  overflow: hidden;
-}
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--bg);
+      margin: 0 !important;
+      padding: 16px;
+      border-radius: 0 !important;
+      max-width: none !important;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-.visualization-maximized #mynetwork {
-  height: calc(100vh - 160px);
-}
+    .visualization-maximized #mynetwork {
+      height: calc(100vh - 160px);
+    }
 
-.visualization-maximized .response-container {
-  max-height: calc(100vh - 160px);
-}
+    .visualization-maximized .response-container {
+      max-height: calc(100vh - 160px);
+    }
 
-body.maximized {
-  overflow: hidden;
-}
+    body.maximized {
+      overflow: hidden;
+    }
     @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
     }
@@ -313,20 +337,58 @@ body.maximized {
 
     <div class="card">
       <h3>🧠 Ask the Agent</h3>
-      <label>State</label>
-      <select id="state">
-        <option value="madhya_pradesh">Madhya Pradesh</option>
-      </select>
+      
+      <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 10px;">
+        <label style="margin: 0; flex-shrink: 0;">Auto-Detect State:</label>
+        <input type="checkbox" id="autoDetect" style="width: auto; margin: 0;" onchange="toggleStateSelect()" />
+      </div>
+
+      <div id="stateSelectContainer">
+        <label>State Context</label>
+        <select id="state">
+          <option value="madhya_pradesh">Madhya Pradesh</option>
+        </select>
+      </div>
+
       <label>Question</label>
       <textarea id="question" rows="3">Medical Devices Policy</textarea>
       <button onclick="askAgent()">Ask Agent</button>
     </div>
 
     <div class="card">
-      <h3>🔌 Raw API Tester</h3>
-      <label>Endpoint</label>
-      <input id="endpoint" value="/api/madhya_pradesh/plots?limit=50" />
-      <button onclick="callApi()">Call API & Visualize</button>
+      <h3>⚡ Data Explorer</h3>
+      <p style="font-size:13px; color:var(--muted); margin: -10px 0 15px 0;">Select options to fetch data without typing a query.</p>
+      
+      <div class="input-group">
+        <div>
+            <label>State</label>
+            <select id="explorerState">
+                <option value="madhya_pradesh">Madhya Pradesh</option>
+            </select>
+        </div>
+        <div>
+            <label>Category (Sector)</label>
+            <select id="explorerCategory">
+                <option value="parks">🏭 Industrial Parks</option>
+                <option value="plots">🗺️ Industrial Plots</option>
+                <option value="pois">📍 POIs (Nearby)</option>
+            </select>
+        </div>
+      </div>
+
+      <label>Limit (Max Items)</label>
+      <input type="number" id="explorerLimit" value="50" min="1" max="500">
+      
+      <button onclick="fetchExplorerData()">Fetch Data</button>
+
+      <details style="margin-top:auto; padding-top:15px; border-top:1px solid #f1f5f9;">
+        <summary style="font-size:12px; color:var(--primary); cursor:pointer; font-weight:600;">Advanced: Raw Endpoint</summary>
+        <div style="margin-top:10px;">
+            <label>API Endpoint</label>
+            <input id="endpoint" value="/api/madhya_pradesh/plots?limit=50" style="font-family:monospace; font-size:12px;"/>
+            <button class="secondary-btn" onclick="callApi()">Call Raw Endpoint</button>
+        </div>
+      </details>
     </div>
 
   </div>
@@ -343,7 +405,6 @@ body.maximized {
       <button class="tab-btn" onclick="switchTab('json')">Raw JSON</button>
     </div>
 
-    <!-- Graph View -->
     <div id="view-graph" class="view-panel active">
       <div class="graph-toolbar">
         <span style="font-size:12px; font-weight:600; color:var(--muted)">GROUP BY:</span>
@@ -362,14 +423,12 @@ body.maximized {
       </p>
     </div>
 
-    <!-- Bot Answer View -->
     <div id="view-answer" class="view-panel">
       <div id="bot-response-container" class="response-container">
         <div style="text-align:center; padding: 40px; color:#aaa;">No data loaded yet.</div>
       </div>
     </div>
 
-    <!-- JSON View -->
     <div id="view-json" class="view-panel">
       <pre class="json-raw" id="output">Waiting for request…</pre>
     </div>
@@ -383,7 +442,6 @@ let network = null;
 let nodesDataSet = null; 
 let edgesDataSet = null;
 let agentBusy = false;
-let agentAbortController = null;
 
 // --- Tab Switching Logic ---
 function switchTab(view) {
@@ -399,6 +457,23 @@ function switchTab(view) {
   else btns[2].classList.add('active');
 }
 
+// --- NEW FUNCTION: Explorer Fetch ---
+function fetchExplorerData() {
+    const state = document.getElementById('explorerState').value;
+    const category = document.getElementById('explorerCategory').value;
+    const limit = document.getElementById('explorerLimit').value;
+
+    // Construct URL
+    // e.g., /api/madhya_pradesh/parks?limit=50
+    const url = `/api/${state}/${category}?limit=${limit}`;
+
+    // Update the raw endpoint input so the user sees what happened
+    document.getElementById('endpoint').value = url;
+
+    // Trigger the existing callApi function
+    callApi();
+}
+
 // --- API Logic ---
 
 async function askAgent() {
@@ -409,6 +484,7 @@ async function askAgent() {
   btn.disabled = true;
   btn.textContent = "Thinking…";
 
+  const autoDetect = document.getElementById("autoDetect").checked;
   const state = document.getElementById("state").value;
   const question = document.getElementById("question").value;
   const output = document.getElementById("output");
@@ -417,7 +493,12 @@ async function askAgent() {
   switchTab('answer');
 
   try {
-    const res = await fetch(`/api/${state}/ask`, {
+    // Use auto-detect endpoint if enabled, otherwise use state-specific endpoint
+    const endpoint = autoDetect 
+      ? `/api/ask` 
+      : `/api/${state}/ask`;
+
+    const res = await fetch(endpoint, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question })
@@ -439,6 +520,19 @@ async function askAgent() {
     agentBusy = false;
     btn.disabled = false;
     btn.textContent = "Ask Agent";
+  }
+}
+
+function toggleStateSelect() {
+  const autoDetect = document.getElementById("autoDetect").checked;
+  const stateContainer = document.getElementById("stateSelectContainer");
+  stateContainer.style.opacity = autoDetect ? "0.5" : "1";
+  stateContainer.style.pointerEvents = autoDetect ? "none" : "auto";
+  
+  if (autoDetect) {
+    document.getElementById("state").style.background = "#f0f0f0";
+  } else {
+    document.getElementById("state").style.background = "white";
   }
 }
 
@@ -474,11 +568,14 @@ function renderBotResponse(response) {
 
   // 1. Detect format
   if (response.answer && typeof response.answer === "string") {
-  renderChatStyleAnswer(response.answer);
-  return;
-} else if (Array.isArray(response)) {
+    renderChatStyleAnswer(response.answer);
+    return;
+  } else if (Array.isArray(response)) {
     items = response;
     summaryText = `Found <strong>${items.length}</strong> items.`;
+  } else if (response.data && Array.isArray(response.data)) {
+      items = response.data;
+      summaryText = `Found <strong>${items.length}</strong> items.`;
   } else {
     // Single object or error
     container.innerHTML = `<pre class="json-raw" style="background:transparent; color:#333">${JSON.stringify(response, null, 2)}</pre>`;
@@ -496,27 +593,33 @@ function renderBotResponse(response) {
   grid.className = 'data-grid';
 
   items.forEach(item => {
+    // Flatten properties if nested in GeoJSON style
+    let displayItem = item;
+    if (item.properties) {
+        displayItem = { ...item.properties, ...item };
+    }
+
     // Dynamic Title Selection
-    let title = item.park_name || item.plotno || item.name || "Unknown Item";
-    let sub = item.plotcat ? `Cat: ${item.plotcat}` : (item.sector || "");
+    let title = displayItem.park_name || displayItem.plotno || displayItem.name || "Unknown Item";
+    let sub = displayItem.plotcat ? `Cat: ${displayItem.plotcat}` : (displayItem.sector || "");
     
     // Dynamic Field rendering (Exclude internal fields)
-    const ignore = ['_id', '__v', 'geom', 'createdAt', 'updatedAt', 'park_name', 'plotno', 'name', 'details', 'properties'];
+    const ignore = ['_id', '__v', 'geom', 'createdAt', 'updatedAt', 'park_name', 'plotno', 'name', 'details', 'properties', 'location'];
     let rowsHtml = '';
     
     // Specific important fields first if they exist
     const priority = ['owner', 'status', 'dist_name', 'plotsize', 'plotrate', 'sector'];
     
     priority.forEach(key => {
-        if(item[key]) {
-            rowsHtml += `<div class="data-row"><span class="data-label">${key}:</span> <span class="data-val">${item[key]}</span></div>`;
+        if(displayItem[key]) {
+            rowsHtml += `<div class="data-row"><span class="data-label">${key}:</span> <span class="data-val">${displayItem[key]}</span></div>`;
         }
     });
 
     // Add rest roughly
-    Object.keys(item).forEach(key => {
-        if (!ignore.includes(key) && !priority.includes(key) && item[key]) {
-            let val = String(item[key]);
+    Object.keys(displayItem).forEach(key => {
+        if (!ignore.includes(key) && !priority.includes(key) && displayItem[key]) {
+            let val = String(displayItem[key]);
             if(val.length > 20) val = val.substring(0, 20) + '...';
             rowsHtml += `<div class="data-row"><span class="data-label">${key}:</span> <span class="data-val">${val}</span></div>`;
         }
