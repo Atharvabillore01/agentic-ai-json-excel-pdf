@@ -403,7 +403,7 @@
       <div id="stateSelectContainer">
         <label>State Context</label>
         <select id="state">
-          <option value="madhya_pradesh">Madhya Pradesh</option>
+          <option disabled selected>Loading states...</option>
         </select>
       </div>
 
@@ -420,7 +420,7 @@
         <div>
             <label>State</label>
             <select id="explorerState">
-                <option value="madhya_pradesh">Madhya Pradesh</option>
+              <option disabled selected>Loading states...</option>
             </select>
         </div>
         <div>
@@ -507,11 +507,12 @@
 
 <script>
 const BASE = "http://4.187.235.216:8001";
+// const BASE = "http://127.0.0.1:8000";
 let network = null;
 let nodesDataSet = null; 
 let edgesDataSet = null;
 let agentBusy = false;
-
+loadAvailableStates();
 // --- Tab Switching Logic ---
 function switchTab(view) {
   document.querySelectorAll('.view-panel').forEach(el => el.classList.remove('active'));
@@ -984,6 +985,51 @@ function toggleMaximize() {
       network.fit({ animation: true });
     }
   }, 200);
+}
+function formatStateName(str) {
+    return str
+        .split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+// 2. Function to fetch states from API
+async function loadAvailableStates() {
+    try {
+        console.log("Fetching states from /api/health...");
+        const res = await fetch(BASE + '/api/health');
+        
+        if (!res.ok) throw new Error("Health check failed");
+        
+        const data = await res.json();
+        
+        // Check if we have the states array
+        if (data.states && Array.isArray(data.states)) {
+            updateDropdowns(data.states);
+        }
+    } catch (err) {
+        console.error("Failed to load states:", err);
+        // Optional: Show error in the dropdown itself
+    }
+}
+function updateDropdowns(states) {
+    // The two IDs we need to update
+    const targetIds = ['state', 'explorerState'];
+
+    targetIds.forEach(id => {
+        const select = document.getElementById(id);
+        if (!select) return;
+
+        // Clear existing hardcoded options
+        select.innerHTML = '';
+
+        states.forEach(stateKey => {
+            const opt = document.createElement('option');
+            opt.value = stateKey; // e.g. "madhya_pradesh"
+            opt.textContent = formatStateName(stateKey); // e.g. "Madhya Pradesh"
+            select.appendChild(opt);
+        });
+    });
 }
 
 function renderChatStyleAnswer(answerText) {

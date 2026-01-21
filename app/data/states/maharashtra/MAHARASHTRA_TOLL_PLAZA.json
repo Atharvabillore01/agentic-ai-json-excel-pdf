@@ -1,0 +1,1472 @@
+[
+  {
+    "_id": "6266519b1d7de951d5ee44cb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.013118,
+        21.3415637
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44cb",
+      "name": "Patanswangi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Patanswangi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4523",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.9985686,
+        19.159014
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4523",
+      "name": "Airoli",
+      "poiType": "toll_plaza",
+      "code": "Airoli",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4524",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.9590872,
+        19.1576096
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4524",
+      "name": "Mulund(EEH)",
+      "poiType": "toll_plaza",
+      "code": "Mulund(EEH)",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4511",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.3074027,
+        20.5437937
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4511",
+      "name": "Husnapur",
+      "poiType": "toll_plaza",
+      "code": "Husnapur",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4517",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.6458459,
+        18.7139575
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4517",
+      "name": "Talegaon Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Talegaon Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44c6",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.7709978,
+        20.4667476
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44c6",
+      "name": "Daroada",
+      "poiType": "toll_plaza",
+      "code": "Daroada",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44d0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.4397054,
+        18.7602136
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44d0",
+      "name": "Kusgaon Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Kusgaon Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44cf",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.285307,
+        18.801022
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44cf",
+      "name": "Khalapur Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Khalapur Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44ce",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.1788898,
+        18.9474017
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44ce",
+      "name": "Shedung Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Shedung Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee44dd",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.9764143,
+        20.1417634
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee44dd",
+      "name": "Baswant  Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Baswant  Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4529",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.9308968,
+        19.9195519
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4529",
+      "name": "IRB Charoti",
+      "poiType": "toll_plaza",
+      "code": "IRB Charoti",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee455d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.89651,
+        21.1369546
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee455d",
+      "name": "Gondkhairi Plaza",
+      "poiType": "toll_plaza",
+      "code": "Gondkhairi Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4545",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.788341,
+        20.9509835
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4545",
+      "name": "Nandgaon Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Nandgaon Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4553",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.1228938,
+        17.3657584
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4553",
+      "name": "TASAWADE TOLL PLAZA",
+      "poiType": "toll_plaza",
+      "code": "TASAWADE TOLL PLAZA",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee455e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.5198409,
+        18.2880151
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee455e",
+      "name": "Patas Plaza",
+      "poiType": "toll_plaza",
+      "code": "Patas Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4568",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.9701927,
+        17.8121205
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4568",
+      "name": "Anewadi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Anewadi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.7892951,
+        21.0815474
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457d",
+      "name": "Songir",
+      "poiType": "toll_plaza",
+      "code": "Songir",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.7542803,
+        20.8329146
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457f",
+      "name": "Laling toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Laling toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.8797127,
+        21.3495981
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457c",
+      "name": "Shirpur",
+      "poiType": "toll_plaza",
+      "code": "Shirpur",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.0341495,
+        21.0882702
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457b",
+      "name": "Sendurwafa toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Sendurwafa toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee457e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.210726,
+        20.3251297
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee457e",
+      "name": "Chandwad toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Chandwad toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee450e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.0079781,
+        19.2425761
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee450e",
+      "name": "Dumbarwadi",
+      "poiType": "toll_plaza",
+      "code": "Dumbarwadi",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee451f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.0420662,
+        18.7501386
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee451f",
+      "name": "Vashi",
+      "poiType": "toll_plaza",
+      "code": "Vashi",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee450c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.1044506,
+        18.3712458
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee450c",
+      "name": "Dhoki",
+      "poiType": "toll_plaza",
+      "code": "Dhoki",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4526",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.8604097,
+        19.4945979
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4526",
+      "name": "Dahisar",
+      "poiType": "toll_plaza",
+      "code": "Dahisar",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4525",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.9425918,
+        19.1756951
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4525",
+      "name": "Mulund(LBS)",
+      "poiType": "toll_plaza",
+      "code": "Mulund(LBS)",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4554",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.2984148,
+        16.8766472
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4554",
+      "name": "Kini Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Kini Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee455f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.0670663,
+        18.0966661
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee455f",
+      "name": "Sardewadi Plaza",
+      "poiType": "toll_plaza",
+      "code": "Sardewadi Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4546",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.388,
+        21.1576735
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4546",
+      "name": "Karanja Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Karanja Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4551",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.9169769,
+        19.5190124
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4551",
+      "name": "Khaniwade Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Khaniwade Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4569",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.8524466,
+        18.3314028
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4569",
+      "name": "Khed-Shivapur Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Khed-Shivapur Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45b2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.8771871,
+        21.4612335
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45b2",
+      "name": "Kelwad",
+      "poiType": "toll_plaza",
+      "code": "Kelwad",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee460b",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.3866788,
+        21.1427963
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee460b",
+      "name": "Mathni",
+      "poiType": "toll_plaza",
+      "code": "Mathni",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45fb",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.3310602,
+        17.9575996
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45fb",
+      "name": "Varwade Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Varwade Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee45fa",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.7559323,
+        17.7647032
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee45fa",
+      "name": "Sawaleshwar Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Sawaleshwar Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4653",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.9636019,
+        20.8560864
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4653",
+      "name": "BORKHEDI TOLL PLAZA",
+      "poiType": "toll_plaza",
+      "code": "BORKHEDI TOLL PLAZA",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee466f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.6254872,
+        19.7154968
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee466f",
+      "name": "Ghoti toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Ghoti toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4670",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.1658917,
+        19.3614007
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4670",
+      "name": "Arjunalli toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Arjunalli toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4681",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.0748969,
+        19.1705903
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4681",
+      "name": "Chalakwadi  toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Chalakwadi  toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4690",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.7534212,
+        19.049487
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4690",
+      "name": "Padalshingi TP",
+      "poiType": "toll_plaza",
+      "code": "Padalshingi TP",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee462a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.9028064,
+        19.9119115
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee462a",
+      "name": "Nashik Sinner Tollways Limited",
+      "poiType": "toll_plaza",
+      "code": "Nashik Sinner Tollways Limited",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4652",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.8764853,
+        20.8581833
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4652",
+      "name": "NAGPUR BYPASS CHECK TOLL PLAZA",
+      "poiType": "toll_plaza",
+      "code": "NAGPUR BYPASS CHECK TOLL PLAZA",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee466e",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.5334307,
+        19.9999499
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee466e",
+      "name": "Kelapur",
+      "poiType": "toll_plaza",
+      "code": "Kelapur",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4650",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.2533341,
+        21.382333
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4650",
+      "name": "MANSAR TOLL PLAZA",
+      "poiType": "toll_plaza",
+      "code": "MANSAR TOLL PLAZA",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4651",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.2380664,
+        21.229727
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4651",
+      "name": "KAMPTEE KANHAN BYPASS CHECK TOLL PLAZA",
+      "poiType": "toll_plaza",
+      "code": "KAMPTEE KANHAN BYPASS CHECK TOLL PLAZA",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee468f",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.6973893,
+        18.6289353
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee468f",
+      "name": "Pargaon TP",
+      "poiType": "toll_plaza",
+      "code": "Pargaon TP",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4691",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.2172054,
+        16.6965035
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4691",
+      "name": "Maliwadi TP",
+      "poiType": "toll_plaza",
+      "code": "Maliwadi TP",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4728",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.0793401,
+        19.1686681
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4728",
+      "name": "Shilphata NH48 Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Shilphata NH48 Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee472a",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.4324161,
+        18.7588694
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee472a",
+      "name": "Kusgaon NH48 Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Kusgaon NH48 Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4680",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.2149978,
+        19.5109738
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4680",
+      "name": "Hiwargaon pavasa",
+      "poiType": "toll_plaza",
+      "code": "Hiwargaon pavasa",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4685",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.9892418,
+        18.3073841
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4685",
+      "name": "Yedashi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Yedashi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4684",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.9650996,
+        17.8522338
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4684",
+      "name": "Tamalwadi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Tamalwadi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee472d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.6727761,
+        21.1395529
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee472d",
+      "name": "Kardha Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Kardha Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee473d",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.8800567,
+        18.8378827
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee473d",
+      "name": "Rajgurunagar Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Rajgurunagar Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4751",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.1933814,
+        17.7995056
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4751",
+      "name": "Phulwadi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Phulwadi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4749",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.8764853,
+        20.8581833
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4749",
+      "name": "Haladgao Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Haladgao Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4752",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.7402171,
+        17.8259947
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4752",
+      "name": "Talmod Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Talmod Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4793",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.9793737,
+        20.5591593
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4793",
+      "name": "Arambha",
+      "poiType": "toll_plaza",
+      "code": "Arambha",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47a2",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        78.0081221,
+        20.238869
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47a2",
+      "name": "Bhamb Raja",
+      "poiType": "toll_plaza",
+      "code": "Bhamb Raja",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4705",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.0549812,
+        16.8214509
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4705",
+      "name": "Badewadi",
+      "poiType": "toll_plaza",
+      "code": "Badewadi",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4730",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.6921487,
+        18.7002516
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4730",
+      "name": "Dehuroad NH48 Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Dehuroad NH48 Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4729",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.178786,
+        18.9475745
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4729",
+      "name": "Shedung NH48 Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Shedung NH48 Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee4738",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.3582043,
+        18.1281537
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee4738",
+      "name": "Ashiv Fee Plaza",
+      "poiType": "toll_plaza",
+      "code": "Ashiv Fee Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee473c",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.8466388,
+        18.6868264
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee473c",
+      "name": "Moshi Toll Plaza",
+      "poiType": "toll_plaza",
+      "code": "Moshi Toll Plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47d0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.3926668,
+        18.6814715
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47d0",
+      "name": "Selu Amba",
+      "poiType": "toll_plaza",
+      "code": "Selu Amba",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47d9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.2706389,
+        17.5769739
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47d9",
+      "name": "Visapur",
+      "poiType": "toll_plaza",
+      "code": "Visapur",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47e0",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        79.139453,
+        21.123976
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47e0",
+      "name": "Kharbi toll plaza",
+      "poiType": "toll_plaza",
+      "code": "Kharbi toll plaza",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47d8",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.9043836,
+        20.4203902
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47d8",
+      "name": "Nanduri",
+      "poiType": "toll_plaza",
+      "code": "Nanduri",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47d1",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        75.8366908,
+        21.0419781
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47d1",
+      "name": "Fekari",
+      "poiType": "toll_plaza",
+      "code": "Fekari",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  },
+  {
+    "_id": "6266519b1d7de951d5ee47c9",
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        74.4873644,
+        18.94238
+      ]
+    },
+    "properties": {
+      "_id": "6266519b1d7de951d5ee47c9",
+      "name": "Mhasane Phata",
+      "poiType": "toll_plaza",
+      "code": "Mhasane Phata",
+      "details": {
+        "State": "Maharashtra"
+      },
+      "commodities": []
+    }
+  }
+]
