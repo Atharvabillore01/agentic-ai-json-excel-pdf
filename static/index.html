@@ -582,12 +582,10 @@ async function askAgent() {
   const question = document.getElementById("question").value;
   
   switchTab('answer');
-  showLoading();
+  showLoading(); // Show immediately
 
   try {
-    const endpoint = autoDetect 
-      ? `/api/ask` 
-      : `/api/${state}/ask`;
+    const endpoint = autoDetect ? `/api/ask` : `/api/${state}/ask`;
 
     const res = await fetch(endpoint, {
       method: "POST",
@@ -600,17 +598,19 @@ async function askAgent() {
     const data = await res.json();
     document.getElementById("output").textContent = JSON.stringify(data, null, 2);
     renderBotResponse(data);
-    visualizeData(data);
+    
+    // Pass 'true' to indicate we want to handle loading inside visualize
+    visualizeData(data, true); 
 
   } catch (err) {
     document.getElementById("output").textContent = err.toString();
     renderChatStyleAnswer("⚠️ Server Error: " + err.message);
+    hideLoading(); // Error case: hide manually
   } finally {
     agentBusy = false;
-    hideLoading();
+    // Note: We removed hideLoading() from here because visualizeData handles it now
   }
 }
-
 function toggleStateSelect() {
   const autoDetect = document.getElementById("autoDetect").checked;
   const stateContainer = document.getElementById("stateSelectContainer");
@@ -634,14 +634,15 @@ async function callApiInternal(endpoint) {
     
     document.getElementById("output").textContent = JSON.stringify(data, null, 2);
     renderBotResponse(data);
-    visualizeData(data);
+    
+    // Pass 'true' to indicate we want to handle loading inside visualize
+    visualizeData(data, true);
 
   } catch (err) {
     document.getElementById("output").textContent = err.toString();
     console.error(err);
     alert("Error fetching data: " + err);
-  } finally {
-    hideLoading();
+    hideLoading(); // Error case: hide manually
   }
 }
 
@@ -719,158 +720,183 @@ function renderBotResponse(response) {
 }
 
 // --- Visualization Logic ---
-function visualizeData(response) {
+// --- Visualization Logic (Updated) ---
+
+function visualizeData(response, handleLoading = false) {
+  // 1. If no data, hide loader immediately and return
   let rawArray = [];
   if (Array.isArray(response)) {
     rawArray = response;
   } else if (response.data && Array.isArray(response.data)) {
     rawArray = response.data;
   } else {
+    if(handleLoading) hideLoading();
     return;
   }
 
-  const dataArray = rawArray.map(item => {
-    if (item.properties) {
-        let flat = { ...item.properties };
-        if (flat.details) { flat = { ...flat, ...flat.details }; }
-        if (!flat._id && item._id) flat._id = item._id;
-        return flat;
-    }
-    return item;
-  });
+  // 2. Wrap heavy calculation in setTimeout to let the "Loading" spinner render first
+  setTimeout(() => {
+      const dataArray = rawArray.map(item => {
+        if (item.properties) {
+            let flat = { ...item.properties };
+            if (flat.details) { flat = { ...flat, ...flat.details }; }
+            if (!flat._id && item._id) flat._id = item._id;
+            return flat;
+        }
+        return item;
+      });
 
-  const nodes = [];
-  const edges = [];
-  const existingNodes = new Set();
+      const nodes = [];
+      const edges = [];
+      const existingNodes = new Set();
 
-  const addNode = (id, label, group, title = "") => {
-    if (!id || existingNodes.has(id)) return;
-    existingNodes.add(id);
-    nodes.push({ id: id, label: String(label), group: group, title: title });
-  };
+      const addNode = (id, label, group, title = "") => {
+        if (!id || existingNodes.has(id)) return;
+        existingNodes.add(id);
+        nodes.push({ id: id, label: String(label), group: group, title: title });
+      };
 
-  const addEdge = (from, to, label = "") => {
-    if (!from || !to) return;
-    edges.push({ from, to, label, arrows: 'to' });
-  };
+      const addEdge = (from, to, label = "") => {
+        if (!from || !to) return;
+        edges.push({ from, to, label, arrows: 'to' });
+      };
 
-  const mapConfig = {
-    primaryKey: ['plotno', 'park_name', 'name', 'station_name', '_id'], 
-    connectors: [
-      { keys: ['owner'], label: 'Owner', color: '#ec4899' },
-      { keys: ['dist_name', 'District'], label: 'District', color: '#f59e0b' },
-      { keys: ['sector', 'commodities'], label: 'Sector', color: '#10b981' },
-      { keys: ['sub_sector'], label: 'Sub-Sector', color: '#059669' },
-      { keys: ['status'], label: 'Status', color: '#ef4444' },
-      { keys: ['plotcat'], label: 'Category', color: '#6366f1' },
-      { keys: ['public_pri', 'poiType'], label: 'Type', color: '#8b5cf6' },
-      { keys: ['adm_name'], label: 'Admin', color: '#ec4899' }
-    ]
-  };
+      // --- Mapping Config ---
+      const mapConfig = {
+        primaryKey: ['plotno', 'park_name', 'name', 'station_name', '_id'], 
+        connectors: [
+          { keys: ['owner'], label: 'Owner', color: '#ec4899' },
+          { keys: ['dist_name', 'District'], label: 'District', color: '#f59e0b' },
+          { keys: ['sector', 'commodities'], label: 'Sector', color: '#10b981' },
+          { keys: ['sub_sector'], label: 'Sub-Sector', color: '#059669' },
+          { keys: ['status'], label: 'Status', color: '#ef4444' },
+          { keys: ['plotcat'], label: 'Category', color: '#6366f1' },
+          { keys: ['public_pri', 'poiType'], label: 'Type', color: '#8b5cf6' },
+          { keys: ['adm_name'], label: 'Admin', color: '#ec4899' }
+        ]
+      };
 
-  dataArray.forEach(item => {
-    let mainLabel = "Unknown";
-    let mainId = null;
+      dataArray.forEach(item => {
+        let mainLabel = "Unknown";
+        let mainId = null;
 
-    for (let key of mapConfig.primaryKey) {
-      if (item[key]) {
-        mainLabel = item[key];
-        mainId = item['_id'] || item[key];
-        break;
-      }
-    }
+        for (let key of mapConfig.primaryKey) {
+          if (item[key]) {
+            mainLabel = item[key];
+            mainId = item['_id'] || item[key];
+            break;
+          }
+        }
 
-    if (!mainId) return;
+        if (!mainId) return;
 
-    let group = item.plotno ? 'plot' : 'main';
-    addNode(mainId, mainLabel, group, JSON.stringify(item, null, 2));
+        let group = item.plotno ? 'plot' : 'main';
+        addNode(mainId, mainLabel, group, JSON.stringify(item, null, 2));
 
-    mapConfig.connectors.forEach(conn => {
-      let val = null;
-      for (const k of conn.keys) {
-         if (item[k]) {
-             val = item[k];
-             break;
-         }
-      }
+        mapConfig.connectors.forEach(conn => {
+          let val = null;
+          for (const k of conn.keys) {
+             if (item[k]) {
+                 val = item[k];
+                 break;
+             }
+          }
 
-      if (Array.isArray(val)) {
-          val.forEach(v => {
-            const nodeId = `${conn.label}:${v}`;
-            addNode(nodeId, v, conn.label);
+          if (Array.isArray(val)) {
+              val.forEach(v => {
+                const nodeId = `${conn.label}:${v}`;
+                addNode(nodeId, v, conn.label);
+                addEdge(mainId, nodeId);
+              });
+          } else if (val) {
+            const nodeId = `${conn.label}:${val}`;
+            const displayLabel = String(val).length > 20 ? String(val).substring(0, 18) + '...' : val;
+            addNode(nodeId, displayLabel, conn.label);
             addEdge(mainId, nodeId);
-          });
-      } else if (val) {
-        const nodeId = `${conn.label}:${val}`;
-        const displayLabel = String(val).length > 20 ? String(val).substring(0, 18) + '...' : val;
-        addNode(nodeId, displayLabel, conn.label);
-        addEdge(mainId, nodeId);
+          }
+        });
+      });
+
+      const container = document.getElementById("mynetwork");
+      nodesDataSet = new vis.DataSet(nodes);
+      edgesDataSet = new vis.DataSet(edges);
+      
+      const data = { nodes: nodesDataSet, edges: edgesDataSet };
+
+      const options = {
+        nodes: {
+          shape: "dot",
+          size: 16,
+          font: { size: 14, color: "#e2e8f0", face: 'Inter' }, 
+          borderWidth: 1,
+          shadow: true,
+        },
+        edges: {
+          width: 1,
+          color: { color: "#94a3b8", opacity: 0.3 }, 
+          smooth: { type: "continuous" }
+        },
+        physics: {
+          stabilization: { 
+              enabled: true, 
+              iterations: 1000, // Pre-calculate positions before showing
+              updateInterval: 50
+          },
+          solver: 'forceAtlas2Based', 
+          forceAtlas2Based: {
+            gravitationalConstant: -50,
+            springLength: 100,
+            springConstant: 0.08,
+            damping: 0.4
+          }
+        },
+        groups: {
+          main: { color: { background: "#3b82f6", border: "#60a5fa" }, size: 20 },
+          plot: { color: { background: "#14b8a6", border: "#2dd4bf" }, size: 15 },
+          District: { color: "#f59e0b", shape: "hexagon", size: 25 },
+          Sector: { color: "#10b981", shape: "square", size: 25 },
+          Owner: { color: "#ec4899", shape: "triangle", size: 20 },
+          Status: { color: "#ef4444", shape: "diamond", size: 25 },
+          Category: { color: "#6366f1", shape: "dot", size: 20 },
+          Type: { color: "#8b5cf6", size: 25 },
+          Admin: { color: "#ec4899", size: 25 }
+        },
+        interaction: {
+          hover: true,
+          tooltipDelay: 200,
+          zoomView: true,
+        }
+      };
+
+      if (network) network.destroy();
+      network = new vis.Network(container, data, options);
+      
+      // Events
+      network.on("doubleClick", function(params) {
+          if (params.nodes.length === 1 && network.isCluster(params.nodes[0])) {
+              network.openCluster(params.nodes[0]);
+          }
+      });
+
+      network.on("select", function(params) {
+          const btn = document.getElementById('btn-focus');
+          btn.disabled = (params.nodes.length === 0);
+      });
+
+      // --- KEY FIX: Hide Loader only when Graph is Ready ---
+      network.on("stabilizationIterationsDone", function () {
+         if(handleLoading) hideLoading();
+         network.fit(); // Snap to center
+      });
+      
+      // Fallback if stabilization takes too long (e.g. infinite loop protection)
+      if(handleLoading) {
+          // If no stabilization event fires within 2 seconds (e.g. small graph), hide anyway
+          setTimeout(() => { hideLoading(); }, 2000); 
       }
-    });
-  });
 
-  const container = document.getElementById("mynetwork");
-  nodesDataSet = new vis.DataSet(nodes);
-  edgesDataSet = new vis.DataSet(edges);
-  
-  const data = { nodes: nodesDataSet, edges: edgesDataSet };
-
-  const options = {
-    nodes: {
-      shape: "dot",
-      size: 16,
-      font: { size: 14, color: "#e2e8f0", face: 'Inter' }, 
-      borderWidth: 1,
-      shadow: true,
-    },
-    edges: {
-      width: 1,
-      color: { color: "#94a3b8", opacity: 0.3 }, 
-      smooth: { type: "continuous" }
-    },
-    physics: {
-      stabilization: { enabled: true, iterations: 1000 },
-      solver: 'forceAtlas2Based', 
-      forceAtlas2Based: {
-        gravitationalConstant: -50,
-        springLength: 100,
-        springConstant: 0.08,
-        damping: 0.4
-      }
-    },
-    groups: {
-      main: { color: { background: "#3b82f6", border: "#60a5fa" }, size: 20 },
-      plot: { color: { background: "#14b8a6", border: "#2dd4bf" }, size: 15 },
-      District: { color: "#f59e0b", shape: "hexagon", size: 25 },
-      Sector: { color: "#10b981", shape: "square", size: 25 },
-      Owner: { color: "#ec4899", shape: "triangle", size: 20 },
-      Status: { color: "#ef4444", shape: "diamond", size: 25 },
-      Category: { color: "#6366f1", shape: "dot", size: 20 },
-      Type: { color: "#8b5cf6", size: 25 },
-      Admin: { color: "#ec4899", size: 25 }
-    },
-    interaction: {
-      hover: true,
-      tooltipDelay: 200,
-      zoomView: true,
-    }
-  };
-
-  if (network) network.destroy();
-  network = new vis.Network(container, data, options);
-  
-  network.on("doubleClick", function(params) {
-      if (params.nodes.length === 1 && network.isCluster(params.nodes[0])) {
-          network.openCluster(params.nodes[0]);
-      }
-  });
-
-  network.on("select", function(params) {
-      const btn = document.getElementById('btn-focus');
-      btn.disabled = (params.nodes.length === 0);
-  });
+  }, 100); // 100ms delay to allow UI to paint the loader
 }
-
 function focusOnSelection() {
     if (!network) return;
     const selection = network.getSelection();
