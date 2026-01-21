@@ -328,7 +328,6 @@
 
 <header>
   <h1>MP Industrial Agent – Test Console</h1>
-  <p>Backend connected at <code>http://127.0.0.1:8000</code></p>
 </header>
 
 <div class="container">
@@ -437,7 +436,7 @@
 </div>
 
 <script>
-const BASE = "http://127.0.0.1:8000";
+const BASE = "http://4.187.235.216:8001";
 let network = null;
 let nodesDataSet = null; 
 let edgesDataSet = null;
@@ -463,16 +462,21 @@ function fetchExplorerData() {
     const category = document.getElementById('explorerCategory').value;
     const limit = document.getElementById('explorerLimit').value;
 
-    // Construct URL
-    // e.g., /api/madhya_pradesh/parks?limit=50
-    const url = `/api/${state}/${category}?limit=${limit}`;
+    let url;
 
-    // Update the raw endpoint input so the user sees what happened
+    // 🔑 POIs should NOT include limit
+    if (category === "pois") {
+        url = `/api/${state}/${category}`;
+    } else {
+        url = `/api/${state}/${category}?limit=${limit}`;
+    }
+
+    // Update visible endpoint
     document.getElementById('endpoint').value = url;
 
-    // Trigger the existing callApi function
     callApi();
 }
+
 
 // --- API Logic ---
 
@@ -864,6 +868,16 @@ function clusterByHub(group) {
     network.clusterByConnection(hub.id, clusterOptions);
   });
 }
+document.getElementById('explorerCategory').addEventListener('change', () => {
+    const category = document.getElementById('explorerCategory').value;
+    const limitInput = document.getElementById('explorerLimit').parentElement;
+
+    if (category === 'pois') {
+        limitInput.style.display = 'none';
+    } else {
+        limitInput.style.display = 'block';
+    }
+});
 
 function openAllClusters() {
   if(!network) return;
