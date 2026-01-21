@@ -6,215 +6,299 @@
   <title>MP Industrial Agent – Test Console</title>
   
   <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #f4f6fb;
-      --card: #ffffff;
-      --primary: #1f4fd8;
-      --secondary: #eef2ff;
-      --border: #e2e6f0;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --success: #0f172a;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --secondary: #eff6ff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #3b82f6;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --radius: 12px;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--bg);
-      color: var(--text);
+      color: var(--text-main);
       padding-bottom: 40px;
     }
 
+    /* Header Animation & Style */
     header {
-      background: linear-gradient(135deg, #1f4fd8, #3b82f6);
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
       color: #fff;
-      padding: 20px 32px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 24px 32px;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+      position: relative;
+      overflow: hidden;
     }
 
-    header h1 { margin: 0; font-size: 22px; font-weight: 600; }
-    header p { margin: 6px 0 0; font-size: 13px; opacity: 0.9; }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0) 40%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 60%);
+      animation: shimmer 3s infinite;
+    }
+
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    header h1 { margin: 0; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; position: relative; z-index: 1;}
 
     .container {
-      max-width: 1200px;
-      margin: 24px auto;
-      padding: 0 20px;
+      max-width: 1280px;
+      margin: 32px auto;
+      padding: 0 24px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      gap: 24px;
+      margin-bottom: 24px;
     }
 
     .card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
       border: 1px solid var(--border);
       height: 100%;
       display: flex;
       flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     }
 
     .card h3 {
-      margin: 0 0 14px;
-      font-size: 16px;
+      margin: 0 0 18px;
+      font-size: 18px;
       font-weight: 600;
+      color: var(--text-main);
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     label {
       font-size: 13px;
       font-weight: 500;
-      color: var(--muted);
-      display: block;
+      color: var(--text-muted);
       margin-bottom: 6px;
-      margin-top: 10px;
+      display: block;
     }
-    label:first-of-type { margin-top: 0; }
 
     select, input, textarea {
       width: 100%;
-      padding: 10px 12px;
+      padding: 12px;
       border-radius: 8px;
       border: 1px solid var(--border);
       font-size: 14px;
-      margin-bottom: 4px; /* Reduced to fit better */
-      outline: none;
+      font-family: inherit;
+      margin-bottom: 12px;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
-
-    textarea { resize: vertical; margin-bottom: 14px; }
 
     select:focus, input:focus, textarea:focus {
+      outline: none;
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px var(--secondary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     }
 
-    /* Grouping inputs for the explorer */
+    /* Input Group */
     .input-group {
-        display: flex;
-        gap: 10px;
+      display: flex;
+      gap: 16px;
     }
     .input-group > div { flex: 1; }
+
+    /* Animated Hide for Limit */
+    .limit-wrapper {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+        max-height: 100px; /* Arbitrary height larger than input */
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .limit-wrapper.hidden {
+        max-height: 0;
+        opacity: 0;
+        margin-bottom: 0;
+        transform: translateY(-10px);
+    }
 
     button {
       background: var(--primary);
       color: #fff;
       border: none;
-      padding: 10px 18px;
+      padding: 12px 20px;
       border-radius: 8px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
       width: 100%;
-      margin-top: 10px;
     }
 
     button:hover {
-      background: #1c45c2;
+      background: var(--primary-hover);
       transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+    }
+
+    button:disabled {
+      background: #94a3b8;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
     }
 
     button.secondary-btn {
-        background: #fff;
-        color: var(--text);
-        border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      margin-top: 8px;
     }
     button.secondary-btn:hover {
-        background: var(--secondary);
-        color: var(--primary);
-        border-color: var(--primary);
-    }
-
-    /* Output Section Styles */
-    .full { margin-top: 20px; grid-column: 1 / -1; }
-
-    .tabs {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 10px;
-    }
-
-    .tab-btn {
-      background: transparent;
-      color: var(--muted);
-      border: 1px solid transparent;
-      padding: 6px 16px;
-      border-radius: 6px;
-      cursor: pointer;
-      width: auto;
-      margin-top: 0;
-    }
-
-    .tab-btn.active {
       background: var(--secondary);
       color: var(--primary);
       border-color: var(--primary);
     }
 
-    .view-panel { display: none; }
+    /* Output Section */
+    .full { grid-column: 1 / -1; }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      color: var(--text-muted);
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      width: auto;
+      font-weight: 500;
+    }
+
+    .tab-btn:hover { background: #f1f5f9; color: var(--text-main); box-shadow: none; }
+
+    .tab-btn.active {
+      background: var(--secondary);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .view-panel { display: none; position: relative; min-height: 400px; }
     .view-panel.active { display: block; }
 
-    /* New "Bot Response" Styles */
+    /* LOADER OVERLAY */
+    .loading-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(255,255,255,0.9);
+        z-index: 50;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        backdrop-filter: blur(2px);
+    }
+    
+    .loading-overlay.active { display: flex; }
+
+    .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid var(--secondary);
+        border-bottom-color: var(--primary);
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+        margin-bottom: 16px;
+    }
+
+    @keyframes rotation {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    /* Response Area */
     .response-container {
       background: #f8fafc;
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 20px;
+      padding: 24px;
       max-height: 650px;
       overflow-y: auto;
     }
 
-    .bot-summary {
-      background: #eef2ff;
-      border: 1px solid #c7d2fe;
-      color: #3730a3;
-      padding: 12px 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      font-size: 14px;
-      font-weight: 500;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     .data-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
     }
 
     .data-card {
       background: white;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
       padding: 16px;
       font-size: 13px;
-      transition: box-shadow 0.2s;
+      transition: all 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .data-card::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 4px;
+        background: var(--primary);
+        opacity: 0;
+        transition: opacity 0.2s;
     }
     
     .data-card:hover {
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
       border-color: #cbd5e1;
+      transform: translateY(-2px);
     }
+    
+    .data-card:hover::before { opacity: 1; }
 
     .data-card-title {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 15px;
-      color: var(--primary);
-      margin-bottom: 8px;
+      color: var(--text-main);
+      margin-bottom: 12px;
       border-bottom: 1px solid #f1f5f9;
       padding-bottom: 8px;
       display: flex;
@@ -224,23 +308,16 @@
     .data-row {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      padding: 4px 0;
+      border-bottom: 1px dashed #f1f5f9;
     }
+    .data-row:last-child { border-bottom: none; }
     
-    .data-label { color: var(--muted); }
-    .data-val { font-weight: 500; text-align: right; max-width: 60%; }
+    .data-label { color: var(--text-muted); }
+    .data-val { font-weight: 600; color: var(--text-main); text-align: right; max-width: 60%; }
 
-    /* Raw JSON fallback */
-    .json-raw {
-      background: #0b1020;
-      color: #d1d5db;
-      border-radius: 8px;
-      padding: 16px;
-      font-family: monospace;
-      white-space: pre-wrap;
-    }
-
-    /* Graph Container */
+    /* Graph */
     #mynetwork {
       width: 100%;
       height: 650px;
@@ -251,12 +328,12 @@
       border-bottom-right-radius: 8px;
     }
 
-    /* Graph Toolbar */
+    /* Toolbar */
     .graph-toolbar {
-      padding: 10px 15px;
+      padding: 12px 20px;
       background: #fff;
       border: 1px solid var(--border);
-      border-bottom: 1px solid #edf2f7;
+      border-bottom: 1px solid #f1f5f9;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       display: flex;
@@ -266,34 +343,23 @@
     }
 
     .sm-btn {
-      padding: 5px 12px;
+      padding: 6px 14px;
       font-size: 12px;
       background: #fff;
-      color: var(--text);
+      color: var(--text-main);
       border: 1px solid var(--border);
       border-radius: 6px;
-      cursor: pointer;
       width: auto;
-      margin-top: 0;
+      margin: 0;
     }
-
-    .sm-btn:hover {
-      background: var(--secondary);
-      color: var(--primary);
-      border-color: var(--primary);
-    }
-
+    .sm-btn:hover { border-color: var(--primary); color: var(--primary); }
+    
     .sm-btn.highlight {
         background: var(--secondary);
         color: var(--primary);
         border-color: var(--primary);
-        font-weight: 600;
     }
-    
-    .sm-btn:disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
+
     .visualization-maximized {
       position: fixed;
       inset: 0;
@@ -307,17 +373,9 @@
       overflow: hidden;
     }
 
-    .visualization-maximized #mynetwork {
-      height: calc(100vh - 160px);
-    }
-
-    .visualization-maximized .response-container {
-      max-height: calc(100vh - 160px);
-    }
-
-    body.maximized {
-      overflow: hidden;
-    }
+    .visualization-maximized #mynetwork { height: calc(100vh - 160px); }
+    .visualization-maximized .response-container { max-height: calc(100vh - 160px); }
+    
     @media (max-width: 900px) {
       .grid { grid-template-columns: 1fr; }
     }
@@ -327,7 +385,7 @@
 <body>
 
 <header>
-  <h1>MP Industrial Agent – Test Console</h1>
+  <h1>MP Industrial Agent – Console</h1>
 </header>
 
 <div class="container">
@@ -337,9 +395,9 @@
     <div class="card">
       <h3>🧠 Ask the Agent</h3>
       
-      <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 10px;">
-        <label style="margin: 0; flex-shrink: 0;">Auto-Detect State:</label>
-        <input type="checkbox" id="autoDetect" style="width: auto; margin: 0;" onchange="toggleStateSelect()" />
+      <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 14px; background: #f8fafc; padding: 10px; border-radius: 8px;">
+        <input type="checkbox" id="autoDetect" style="width: 18px; height: 18px; margin: 0;" onchange="toggleStateSelect()" />
+        <label style="margin: 0; cursor: pointer; color: var(--text-main);" for="autoDetect">Auto-Detect Context</label>
       </div>
 
       <div id="stateSelectContainer">
@@ -349,14 +407,14 @@
         </select>
       </div>
 
-      <label>Question</label>
-      <textarea id="question" rows="3">Medical Devices Policy</textarea>
-      <button onclick="askAgent()">Ask Agent</button>
+      <label>Natural Language Query</label>
+      <textarea id="question" rows="3" placeholder="e.g., Show me industrial parks near Indore...">Medical Devices Policy</textarea>
+      <button onclick="askAgent()" id="btn-ask">Ask Agent</button>
     </div>
 
     <div class="card">
       <h3>⚡ Data Explorer</h3>
-      <p style="font-size:13px; color:var(--muted); margin: -10px 0 15px 0;">Select options to fetch data without typing a query.</p>
+      <p style="font-size:13px; color:var(--text-muted); margin: -14px 0 20px 0;">Directly query the database layer.</p>
       
       <div class="input-group">
         <div>
@@ -375,16 +433,18 @@
         </div>
       </div>
 
-      <label>Limit (Max Items)</label>
-      <input type="number" id="explorerLimit" value="50" min="1" max="500">
+      <div id="limitWrapper" class="limit-wrapper">
+          <label>Limit (Max Items)</label>
+          <input type="number" id="explorerLimit" value="50" min="1" max="500">
+      </div>
       
-      <button onclick="fetchExplorerData()">Fetch Data</button>
+      <button onclick="fetchExplorerData()" id="btn-explore">Fetch Data</button>
 
       <details style="margin-top:auto; padding-top:15px; border-top:1px solid #f1f5f9;">
         <summary style="font-size:12px; color:var(--primary); cursor:pointer; font-weight:600;">Advanced: Raw Endpoint</summary>
         <div style="margin-top:10px;">
             <label>API Endpoint</label>
-            <input id="endpoint" value="/api/madhya_pradesh/plots?limit=50" style="font-family:monospace; font-size:12px;"/>
+            <input id="endpoint" value="/api/madhya_pradesh/plots?limit=50" style="font-family:monospace; font-size:12px; background: #f1f5f9;"/>
             <button class="secondary-btn" onclick="callApi()">Call Raw Endpoint</button>
         </div>
       </details>
@@ -393,6 +453,13 @@
   </div>
 
   <div class="card full">
+    
+    <div id="loadingOverlay" class="loading-overlay">
+        <span class="spinner"></span>
+        <h4 style="color:var(--primary); margin:0;">Fetching Intelligence...</h4>
+        <p style="color:var(--text-muted); font-size:13px; margin-top:5px;">Analyzing data nodes and connections</p>
+    </div>
+
     <div style="display:flex; justify-content:space-between; align-items:center;">
       <h3 style="margin:0;">📤 Data Visualization</h3>
       <button class="sm-btn" id="btn-maximize" onclick="toggleMaximize()">⤢ Maximize</button>
@@ -406,7 +473,7 @@
 
     <div id="view-graph" class="view-panel active">
       <div class="graph-toolbar">
-        <span style="font-size:12px; font-weight:600; color:var(--muted)">GROUP BY:</span>
+        <span style="font-size:12px; font-weight:600; color:var(--text-muted)">CLUSTER BY:</span>
         <button class="sm-btn" onclick="clusterByHub('District')">District</button>
         <button class="sm-btn" onclick="clusterByHub('Sector')">Sector</button>
         <button class="sm-btn" onclick="clusterByHub('Owner')">Owner</button>
@@ -417,19 +484,22 @@
         <button class="sm-btn" onclick="resetView()">Reset</button>
       </div>
       <div id="mynetwork"></div>
-      <p style="font-size: 12px; color: var(--muted); margin-top: 5px;">
+      <p style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">
         * Select a node to enable Focus Mode. Double click a cluster to expand it.
       </p>
     </div>
 
     <div id="view-answer" class="view-panel">
       <div id="bot-response-container" class="response-container">
-        <div style="text-align:center; padding: 40px; color:#aaa;">No data loaded yet.</div>
+        <div style="text-align:center; padding: 60px; color: #94a3b8;">
+            <div style="font-size:40px; margin-bottom:10px;">💬</div>
+            No conversation yet. Ask a question or fetch data.
+        </div>
       </div>
     </div>
 
     <div id="view-json" class="view-panel">
-      <pre class="json-raw" id="output">Waiting for request…</pre>
+      <pre style="background: #0f172a; color: #cbd5e1; padding: 20px; border-radius: 8px; overflow: auto; max-height: 600px;" id="output">Waiting for request…</pre>
     </div>
   </div>
 
@@ -449,55 +519,72 @@ function switchTab(view) {
   
   document.getElementById(`view-${view}`).classList.add('active');
   
-  // Update buttons state
   const btns = document.querySelectorAll('.tab-btn');
   if(view === 'graph') btns[0].classList.add('active');
   else if(view === 'answer') btns[1].classList.add('active');
   else btns[2].classList.add('active');
 }
 
+// --- Loading State Management ---
+function showLoading() {
+    document.getElementById('loadingOverlay').classList.add('active');
+    document.getElementById('btn-explore').disabled = true;
+    document.getElementById('btn-ask').disabled = true;
+    document.getElementById('output').textContent = "Loading data...";
+}
+
+function hideLoading() {
+    document.getElementById('loadingOverlay').classList.remove('active');
+    document.getElementById('btn-explore').disabled = false;
+    document.getElementById('btn-ask').disabled = false;
+}
+
+// --- Logic to Hide Limit for POIs ---
+document.getElementById('explorerCategory').addEventListener('change', function() {
+    const category = this.value;
+    const limitWrap = document.getElementById('limitWrapper');
+    
+    if (category === 'pois') {
+        limitWrap.classList.add('hidden');
+    } else {
+        limitWrap.classList.remove('hidden');
+    }
+});
+
 // --- NEW FUNCTION: Explorer Fetch ---
-function fetchExplorerData() {
+async function fetchExplorerData() {
     const state = document.getElementById('explorerState').value;
     const category = document.getElementById('explorerCategory').value;
     const limit = document.getElementById('explorerLimit').value;
 
-    let url;
+    let url = `/api/${state}/${category}`;
 
-    // 🔑 POIs should NOT include limit
-    if (category === "pois") {
-        url = `/api/${state}/${category}`;
-    } else {
-        url = `/api/${state}/${category}?limit=${limit}`;
+    // ✅ Only add limit if NOT pois
+    if (category !== "pois") {
+        url += `?limit=${limit}`;
     }
 
-    // Update visible endpoint
+    // Update UI text
     document.getElementById('endpoint').value = url;
-
-    callApi();
+    
+    // Call the API
+    await callApiInternal(url);
 }
-
 
 // --- API Logic ---
 
 async function askAgent() {
   if (agentBusy) return;
-
   agentBusy = true;
-  const btn = document.querySelector("button[onclick='askAgent()']");
-  btn.disabled = true;
-  btn.textContent = "Thinking…";
-
+  
   const autoDetect = document.getElementById("autoDetect").checked;
   const state = document.getElementById("state").value;
   const question = document.getElementById("question").value;
-  const output = document.getElementById("output");
-
-  output.textContent = "Processing request...";
+  
   switchTab('answer');
+  showLoading();
 
   try {
-    // Use auto-detect endpoint if enabled, otherwise use state-specific endpoint
     const endpoint = autoDetect 
       ? `/api/ask` 
       : `/api/${state}/ask`;
@@ -508,22 +595,19 @@ async function askAgent() {
       body: JSON.stringify({ question })
     });
 
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status}`);
-    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();
-    output.textContent = JSON.stringify(data, null, 2);
+    document.getElementById("output").textContent = JSON.stringify(data, null, 2);
     renderBotResponse(data);
     visualizeData(data);
 
   } catch (err) {
-    output.textContent = err.toString();
-    renderChatStyleAnswer("⚠️ Something went wrong. Please try again.");
+    document.getElementById("output").textContent = err.toString();
+    renderChatStyleAnswer("⚠️ Server Error: " + err.message);
   } finally {
     agentBusy = false;
-    btn.disabled = false;
-    btn.textContent = "Ask Agent";
+    hideLoading();
   }
 }
 
@@ -532,45 +616,43 @@ function toggleStateSelect() {
   const stateContainer = document.getElementById("stateSelectContainer");
   stateContainer.style.opacity = autoDetect ? "0.5" : "1";
   stateContainer.style.pointerEvents = autoDetect ? "none" : "auto";
-  
-  if (autoDetect) {
-    document.getElementById("state").style.background = "#f0f0f0";
-  } else {
-    document.getElementById("state").style.background = "white";
-  }
 }
-
 
 async function callApi() {
   const endpoint = document.getElementById("endpoint").value;
-  const output = document.getElementById("output");
-  
-  output.textContent = "Fetching API response...";
+  await callApiInternal(endpoint);
+}
+
+// Shared internal function for data fetching
+async function callApiInternal(endpoint) {
   switchTab('graph'); 
+  showLoading();
 
   try {
     const res = await fetch(BASE + endpoint);
     const data = await res.json();
     
-    output.textContent = JSON.stringify(data, null, 2);
+    document.getElementById("output").textContent = JSON.stringify(data, null, 2);
     renderBotResponse(data);
     visualizeData(data);
 
   } catch (err) {
-    output.textContent = err.toString();
+    document.getElementById("output").textContent = err.toString();
     console.error(err);
+    alert("Error fetching data: " + err);
+  } finally {
+    hideLoading();
   }
 }
 
 // --- Render Bot Response (Card View) ---
 function renderBotResponse(response) {
   const container = document.getElementById('bot-response-container');
-  container.innerHTML = ''; // Clear
+  container.innerHTML = ''; 
 
   let items = [];
   let summaryText = "";
 
-  // 1. Detect format
   if (response.answer && typeof response.answer === "string") {
     renderChatStyleAnswer(response.answer);
     return;
@@ -581,37 +663,30 @@ function renderBotResponse(response) {
       items = response.data;
       summaryText = `Found <strong>${items.length}</strong> items.`;
   } else {
-    // Single object or error
-    container.innerHTML = `<pre class="json-raw" style="background:transparent; color:#333">${JSON.stringify(response, null, 2)}</pre>`;
+    container.innerHTML = `<pre style="font-family:monospace; color:#333">${JSON.stringify(response, null, 2)}</pre>`;
     return;
   }
 
-  // 2. Render Summary
   const summaryDiv = document.createElement('div');
-  summaryDiv.className = 'bot-summary';
-  summaryDiv.innerHTML = `<span>${summaryText}</span>`;
+  summaryDiv.style.padding = '10px 0 20px 0';
+  summaryDiv.style.color = 'var(--primary)';
+  summaryDiv.innerHTML = summaryText;
   container.appendChild(summaryDiv);
 
-  // 3. Render Grid of Cards
   const grid = document.createElement('div');
   grid.className = 'data-grid';
 
   items.forEach(item => {
-    // Flatten properties if nested in GeoJSON style
     let displayItem = item;
     if (item.properties) {
         displayItem = { ...item.properties, ...item };
     }
 
-    // Dynamic Title Selection
     let title = displayItem.park_name || displayItem.plotno || displayItem.name || "Unknown Item";
     let sub = displayItem.plotcat ? `Cat: ${displayItem.plotcat}` : (displayItem.sector || "");
     
-    // Dynamic Field rendering (Exclude internal fields)
     const ignore = ['_id', '__v', 'geom', 'createdAt', 'updatedAt', 'park_name', 'plotno', 'name', 'details', 'properties', 'location'];
     let rowsHtml = '';
-    
-    // Specific important fields first if they exist
     const priority = ['owner', 'status', 'dist_name', 'plotsize', 'plotrate', 'sector'];
     
     priority.forEach(key => {
@@ -620,7 +695,6 @@ function renderBotResponse(response) {
         }
     });
 
-    // Add rest roughly
     Object.keys(displayItem).forEach(key => {
         if (!ignore.includes(key) && !priority.includes(key) && displayItem[key]) {
             let val = String(displayItem[key]);
@@ -634,7 +708,7 @@ function renderBotResponse(response) {
     card.innerHTML = `
       <div class="data-card-title">
         <span>${title}</span>
-        <span style="font-weight:400; font-size:12px; color:#666">${sub}</span>
+        <span style="font-weight:400; font-size:12px; color:#64748b">${sub}</span>
       </div>
       ${rowsHtml}
     `;
@@ -644,11 +718,8 @@ function renderBotResponse(response) {
   container.appendChild(grid);
 }
 
-
 // --- Visualization Logic ---
-
 function visualizeData(response) {
-  // 1. Extract Array Data
   let rawArray = [];
   if (Array.isArray(response)) {
     rawArray = response;
@@ -658,7 +729,6 @@ function visualizeData(response) {
     return;
   }
 
-  // 2. Normalize Data
   const dataArray = rawArray.map(item => {
     if (item.properties) {
         let flat = { ...item.properties };
@@ -669,7 +739,6 @@ function visualizeData(response) {
     return item;
   });
 
-  // 3. Prepare Nodes and Edges
   const nodes = [];
   const edges = [];
   const existingNodes = new Set();
@@ -685,26 +754,21 @@ function visualizeData(response) {
     edges.push({ from, to, label, arrows: 'to' });
   };
 
-  // 4. Config: Dynamic Mapping
   const mapConfig = {
-    // Primary ID/Label for the main node
     primaryKey: ['plotno', 'park_name', 'name', 'station_name', '_id'], 
-    
-    // Connectors: Create shared nodes for these attributes
     connectors: [
       { keys: ['owner'], label: 'Owner', color: '#ec4899' },
       { keys: ['dist_name', 'District'], label: 'District', color: '#f59e0b' },
       { keys: ['sector', 'commodities'], label: 'Sector', color: '#10b981' },
       { keys: ['sub_sector'], label: 'Sub-Sector', color: '#059669' },
       { keys: ['status'], label: 'Status', color: '#ef4444' },
-      { keys: ['plotcat'], label: 'Category', color: '#6366f1' }, // Added for plots
+      { keys: ['plotcat'], label: 'Category', color: '#6366f1' },
       { keys: ['public_pri', 'poiType'], label: 'Type', color: '#8b5cf6' },
       { keys: ['adm_name'], label: 'Admin', color: '#ec4899' }
     ]
   };
 
   dataArray.forEach(item => {
-    // A. Main Node Identification
     let mainLabel = "Unknown";
     let mainId = null;
 
@@ -718,11 +782,9 @@ function visualizeData(response) {
 
     if (!mainId) return;
 
-    // Use a different color for 'Plot' items (identified by having 'plotno')
     let group = item.plotno ? 'plot' : 'main';
     addNode(mainId, mainLabel, group, JSON.stringify(item, null, 2));
 
-    // B. Connector Nodes
     mapConfig.connectors.forEach(conn => {
       let val = null;
       for (const k of conn.keys) {
@@ -747,7 +809,6 @@ function visualizeData(response) {
     });
   });
 
-  // 5. Vis.js Setup
   const container = document.getElementById("mynetwork");
   nodesDataSet = new vis.DataSet(nodes);
   edgesDataSet = new vis.DataSet(edges);
@@ -758,7 +819,7 @@ function visualizeData(response) {
     nodes: {
       shape: "dot",
       size: 16,
-      font: { size: 14, color: "#e2e8f0", face: 'Segoe UI' }, 
+      font: { size: 14, color: "#e2e8f0", face: 'Inter' }, 
       borderWidth: 1,
       shadow: true,
     },
@@ -779,7 +840,7 @@ function visualizeData(response) {
     },
     groups: {
       main: { color: { background: "#3b82f6", border: "#60a5fa" }, size: 20 },
-      plot: { color: { background: "#14b8a6", border: "#2dd4bf" }, size: 15 }, // Teal for plots
+      plot: { color: { background: "#14b8a6", border: "#2dd4bf" }, size: 15 },
       District: { color: "#f59e0b", shape: "hexagon", size: 25 },
       Sector: { color: "#10b981", shape: "square", size: 25 },
       Owner: { color: "#ec4899", shape: "triangle", size: 20 },
@@ -792,14 +853,12 @@ function visualizeData(response) {
       hover: true,
       tooltipDelay: 200,
       zoomView: true,
-      selectConnectedEdges: false 
     }
   };
 
   if (network) network.destroy();
   network = new vis.Network(container, data, options);
   
-  // Events
   network.on("doubleClick", function(params) {
       if (params.nodes.length === 1 && network.isCluster(params.nodes[0])) {
           network.openCluster(params.nodes[0]);
@@ -808,12 +867,9 @@ function visualizeData(response) {
 
   network.on("select", function(params) {
       const btn = document.getElementById('btn-focus');
-      if (params.nodes.length > 0) btn.disabled = false;
-      else btn.disabled = true;
+      btn.disabled = (params.nodes.length === 0);
   });
 }
-
-// --- Interaction Logic ---
 
 function focusOnSelection() {
     if (!network) return;
@@ -861,23 +917,13 @@ function clusterByHub(group) {
             shape: 'box',
             color: hub.color, 
             label: `${hub.label} (${network.getConnectedNodes(hub.id).length - 1})`, 
-            font: { size: 16, color: '#000', face: 'Segoe UI', strokeWidth: 0 },
+            font: { size: 16, color: '#000', face: 'Inter', strokeWidth: 0 },
             allowSingleNodeCluster: true
         }
     };
     network.clusterByConnection(hub.id, clusterOptions);
   });
 }
-document.getElementById('explorerCategory').addEventListener('change', () => {
-    const category = document.getElementById('explorerCategory').value;
-    const limitInput = document.getElementById('explorerLimit').parentElement;
-
-    if (category === 'pois') {
-        limitInput.style.display = 'none';
-    } else {
-        limitInput.style.display = 'block';
-    }
-});
 
 function openAllClusters() {
   if(!network) return;
@@ -889,8 +935,8 @@ function openAllClusters() {
   }
   clusterIds.forEach(id => network.openCluster(id));
 }
-let isMaximized = false;
 
+let isMaximized = false;
 function toggleMaximize() {
   const card = document.querySelector('.card.full');
   const btn = document.getElementById('btn-maximize');
@@ -906,7 +952,6 @@ function toggleMaximize() {
     document.body.classList.remove('maximized');
     btn.textContent = '⤢ Maximize';
   }
-  // Ensure Vis.js recalculates canvas size
   setTimeout(() => {
     if (network) {
       network.redraw();
@@ -914,20 +959,17 @@ function toggleMaximize() {
     }
   }, 200);
 }
+
 function renderChatStyleAnswer(answerText) {
   const container = document.getElementById("bot-response-container");
-
   container.innerHTML = `
-    <div class="data-card" style="font-size:14px; line-height:1.7">
-      ${answerText
-        .split("\n")
-        .map(line => {
+    <div class="data-card" style="font-size:15px; line-height:1.7; border-left:4px solid var(--primary);">
+      ${answerText.split("\n").map(line => {
           if (line.startsWith("- ")) return `<li>${line.slice(2)}</li>`;
           if (line.match(/^#+\s/)) return `<h4>${line.replace(/^#+\s/, "")}</h4>`;
           if (line.trim() === "") return "<br/>";
-          return `<p>${line}</p>`;
-        })
-        .join("")}
+          return `<p style="margin:5px 0">${line}</p>`;
+        }).join("")}
     </div>
   `;
 }
