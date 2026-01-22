@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Investor Support – Voice Call</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --secondary: #eff6ff;
+      --border: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #3b82f6;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --radius: 12px;
+      --success: #22c55e;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: #fff;
+      padding: 24px 32px;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .call-interface {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    /* Call Status Indicator */
+    .call-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 32px;
+      padding: 16px;
+      background: var(--secondary);
+      border-radius: 8px;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 15px;
+      min-height: 50px;
+    }
+
+    .status-indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--success);
+      animation: pulse 2s infinite;
+    }
+
+    .status-indicator.listening {
+      background: var(--warning);
+      animation: pulse-orange 0.8s infinite;
+    }
+
+    .status-indicator.idle {
+      background: #cbd5e1;
+      animation: none;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes pulse-orange {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+      50% { box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
+    }
+
+    /* Conversation Display */
+    .conversation-area {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 32px;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+    }
+
+    .conversation-message {
+      margin-bottom: 16px;
+      animation: slideIn 0.3s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .message-agent {
+      background: var(--secondary);
+      padding: 12px 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+      color: var(--text-main);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .message-user {
+      background: #e0e7ff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+      color: var(--text-main);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-left: 40px;
+    }
+
+    .message-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Control Buttons */
+    .call-controls {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-width: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-primary:disabled {
+      background: #cbd5e1;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .btn-danger {
+      background: var(--danger);
+      color: white;
+    }
+
+    .btn-danger:hover {
+      background: #dc2626;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white;
+    }
+
+    .btn-success:hover {
+      background: #16a34a;
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+    }
+
+    /* Settings Panel (Pre-Call) */
+    .settings-panel {
+      background: var(--secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .settings-panel h4 {
+      margin: 0 0 16px 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .setting-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .setting-row:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+      font-family: inherit;
+      background: white;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    /* Call Summary Card */
+    .summary-card {
+      background: var(--secondary);
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+      display: none;
+    }
+
+    .summary-card.active {
+      display: block;
+      animation: slideIn 0.3s ease-out;
+    }
+
+    .summary-card h3 {
+      margin: 0 0 16px 0;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .summary-row:last-child {
+      border-bottom: none;
+    }
+
+    .summary-label {
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .summary-value {
+      font-weight: 600;
+      color: var(--text-main);
+      text-align: right;
+    }
+
+    .summary-list {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .summary-list li {
+      font-size: 13px;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    /* Microphone indicator */
+    .mic-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    .mic-wave {
+      display: inline-flex;
+      gap: 2px;
+    }
+
+    .wave {
+      width: 3px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 2px;
+      animation: wave 0.6s ease-in-out infinite;
+    }
+
+    .wave:nth-child(2) { animation-delay: 0.1s; }
+    .wave:nth-child(3) { animation-delay: 0.2s; }
+
+    @keyframes wave {
+      0%, 100% { height: 8px; }
+      50% { height: 16px; }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 600px) {
+      .call-interface {
+        padding: 24px;
+      }
+
+      .setting-row {
+        grid-template-columns: 1fr;
+      }
+
+      .call-controls {
+        flex-direction: column;
+      }
+
+      .btn-primary, .btn-danger, .btn-success {
+        width: 100%;
+      }
+
+      .message-user {
+        margin-left: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🎯 Investor Support Call</h1>
+</header>
+
+<div class="container">
+
+  <div class="call-interface">
+
+    <!-- Settings Panel (shown before call starts) -->
+    <div id="settingsPanel" class="settings-panel">
+      <h4>📋 Call Preferences</h4>
+      
+      <div class="setting-row">
+        <div>
+          <label>State</label>
+          <select id="callState">
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+          </select>
+        </div>
+        <div>
+          <label>Sector (Optional)</label>
+          <input type="text" id="investorSector" placeholder="e.g., Pharmaceuticals, Automotive">
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <div>
+          <label>Location Interest (Optional)</label>
+          <input type="text" id="investorLocation" placeholder="e.g., Indore, Bhopal">
+        </div>
+      </div>
+    </div>
+
+    <!-- Call Status -->
+    <div class="call-status" id="callStatus" style="display: none;">
+      <span class="status-indicator" id="statusIndicator"></span>
+      <span id="statusText">Initializing call...</span>
+    </div>
+
+    <!-- Conversation Display -->
+    <div id="conversationArea" class="conversation-area hidden">
+      <div id="messages"></div>
+    </div>
+
+    <!-- Call Summary (shown after call ends) -->
+    <div id="summaryCard" class="summary-card">
+      <h3>✅ Call Summary</h3>
+      <div class="summary-row">
+        <span class="summary-label">Investor Intent:</span>
+        <span class="summary-value" id="summaryIntent">-</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Preferred Sector:</span>
+        <span class="summary-value" id="summarySector">-</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Preferred Location:</span>
+        <span class="summary-value" id="summaryLocation">-</span>
+      </div>
+      <div class="summary-list">
+        <strong style="font-size: 13px;">Suggested Next Steps:</strong>
+        <ul id="summaryNextSteps" style="margin: 8px 0 0 0; padding-left: 20px;"></ul>
+      </div>
+    </div>
+
+    <!-- Microphone indicator -->
+    <div id="micIndicator" class="mic-indicator hidden">
+      <span>Listening</span>
+      <div class="mic-wave">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="call-controls">
+      <button id="btnStartCall" class="btn-primary btn-success" onclick="startCall()">
+        ▶️ Start Call
+      </button>
+      <button id="btnEndCall" class="btn-primary btn-danger hidden" onclick="endCall()">
+        ⏹ End Call
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  const BASE = window.location.origin;
+
+  // Call state management
+  let currentCallId = null;
+  let currentVoiceState = "IDLE"; // IDLE, AGENT_SPEAKING, LISTENING, USER_SPEAKING
+  let recognition = null;
+  let isRecognitionActive = false;
+  let callActive = false;
+
+  // Initialize speech recognition
+  function initSpeechRecognition() {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+      alert("Web Speech API not supported. Please use Chrome or Edge.");
+      return null;
+    }
+
+    const rec = new SpeechRecognition();
+    rec.continuous = false;
+    rec.interimResults = false;
+    rec.lang = 'en-IN';
+
+    rec.onstart = function() {
+      console.log("[VOICE] Recognition started");
+      setVoiceState("USER_SPEAKING");
+      showMicIndicator();
+    };
+
+    rec.onend = function() {
+      console.log("[VOICE] Recognition ended");
+      isRecognitionActive = false;
+      hideMicIndicator();
+    };
+
+    rec.onresult = function(event) {
+      const transcript = event.results[0][0].transcript;
+      console.log("[VOICE] User said:", transcript);
+      
+      addMessageToConversation("user", transcript);
+      sendMessageToAgent(transcript);
+      
+      // Restart recognition for continuous session
+      setTimeout(() => {
+        if (callActive && currentVoiceState !== "AGENT_SPEAKING") {
+          restartRecognition();
+        }
+      }, 1000);
+    };
+
+    rec.onerror = function(event) {
+      console.error("[VOICE] Recognition error:", event.error);
+      if (callActive) {
+        restartRecognition();
+      }
+    };
+
+    return rec;
+  }
+
+  function restartRecognition() {
+    if (!recognition || !callActive || isRecognitionActive) return;
+    
+    console.log("[VOICE] Restarting recognition...");
+    isRecognitionActive = true;
+    setVoiceState("LISTENING");
+    
+    try {
+      recognition.start();
+    } catch (e) {
+      console.warn("[VOICE] Cannot start recognition:", e);
+    }
+  }
+
+  function stopRecognition() {
+    if (!recognition) return;
+    try {
+      recognition.stop();
+      isRecognitionActive = false;
+    } catch (e) {
+      console.warn("[VOICE] Error stopping recognition:", e);
+    }
+  }
+
+  // Call management
+  async function startCall() {
+    try {
+      const state = document.getElementById("callState").value;
+      const sector = document.getElementById("investorSector").value || null;
+      const location = document.getElementById("investorLocation").value || null;
+
+      console.log("[CALL] Starting call with state =", state);
+
+      const res = await fetch(`${BASE}/api/call/start`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          state,
+          investor_sector: sector,
+          investor_location: location
+        })
+      });
+
+      const data = await res.json();
+      
+      if (!data.call_id) {
+        throw new Error("Failed to start call");
+      }
+
+      currentCallId = data.call_id;
+      callActive = true;
+
+      console.log("[CALL] Started with ID:", currentCallId);
+
+      // Update UI
+      document.getElementById("settingsPanel").classList.add("hidden");
+      document.getElementById("callStatus").style.display = "flex";
+      document.getElementById("conversationArea").classList.remove("hidden");
+      document.getElementById("btnStartCall").classList.add("hidden");
+      document.getElementById("btnEndCall").classList.remove("hidden");
+
+      // Clear previous messages
+      document.getElementById("messages").innerHTML = "";
+
+      // Add agent greeting
+      addMessageToConversation("agent", data.agent_greeting);
+
+      // Play greeting audio
+      if (data.audio_base64) {
+        playAudio(data.audio_base64);
+      }
+
+      // Set agent speaking state
+      setVoiceState("AGENT_SPEAKING");
+
+      // Initialize speech recognition
+      if (!recognition) {
+        recognition = initSpeechRecognition();
+      }
+
+      // After agent finishes speaking, start listening
+      setTimeout(() => {
+        if (callActive) {
+          restartRecognition();
+        }
+      }, 2000 + (data.agent_greeting.length * 50)); // Estimate speech duration
+
+    } catch (err) {
+      console.error("[CALL] Error starting call:", err);
+      alert("Failed to start call: " + err.message);
+    }
+  }
+
+  async function sendMessageToAgent(userMessage) {
+    if (!currentCallId) return;
+
+    try {
+      setVoiceState("AGENT_SPEAKING");
+      stopRecognition();
+
+      console.log("[CALL] Sending message:", userMessage);
+
+      const res = await fetch(`${BASE}/api/call/send`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          call_id: currentCallId,
+          user_message: userMessage
+        })
+      });
+
+      const data = await res.json();
+
+      if (data.error) {
+        console.error("[CALL] Agent error:", data.error);
+        addMessageToConversation("agent", "I encountered an error. Could you please repeat that?");
+        return;
+      }
+
+      // Add agent response
+      addMessageToConversation("agent", data.agent_response);
+
+      // Play audio
+      if (data.audio_base64) {
+        await playAudio(data.audio_base64);
+      }
+
+      // Update conversation state
+      if (data.conversation_state) {
+        console.log("[CALL] Updated context:", data.conversation_state);
+      }
+
+      // Start listening for next input
+      if (callActive) {
+        setTimeout(() => {
+          restartRecognition();
+        }, 1000);
+      }
+
+    } catch (err) {
+      console.error("[CALL] Error sending message:", err);
+    }
+  }
+
+  async function endCall() {
+    if (!currentCallId) return;
+
+    try {
+      console.log("[CALL] Ending call:", currentCallId);
+
+      stopRecognition();
+      setVoiceState("IDLE");
+      callActive = false;
+
+      const res = await fetch(`${BASE}/api/call/end`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ call_id: currentCallId })
+      });
+
+      const data = await res.json();
+
+      // Add summary message
+      addMessageToConversation("agent", "Thank you for the call. Here's a summary of our conversation.");
+
+      // Play summary audio
+      if (data.summary_audio) {
+        await playAudio(data.summary_audio);
+      }
+
+      // Display summary
+      if (data.summary) {
+        displaySummary(data.summary);
+      }
+
+      // Update UI
+      document.getElementById("callStatus").style.display = "none";
+      document.getElementById("btnEndCall").classList.add("hidden");
+      document.getElementById("btnStartCall").classList.remove("hidden");
+      document.getElementById("btnStartCall").textContent = "🔄 Start New Call";
+
+      addMessageToConversation("agent", "Thank you for your time. Have a great day!");
+
+    } catch (err) {
+      console.error("[CALL] Error ending call:", err);
+      alert("Error ending call: " + err.message);
+    }
+  }
+
+  // Conversation display
+  function addMessageToConversation(role, text) {
+    const messagesDiv = document.getElementById("messages");
+    const messageEl = document.createElement("div");
+    messageEl.className = role === "agent" ? "conversation-message" : "conversation-message";
+
+    const label = document.createElement("div");
+    label.className = "message-label";
+    label.textContent = role === "agent" ? "🤖 Agent" : "👤 You";
+
+    const content = document.createElement("div");
+    content.className = role === "agent" ? "message-agent" : "message-user";
+    content.textContent = text;
+
+    messageEl.appendChild(label);
+    messageEl.appendChild(content);
+    messagesDiv.appendChild(messageEl);
+
+    // Auto-scroll to bottom
+    messagesDiv.parentElement.scrollTop = messagesDiv.parentElement.scrollHeight;
+  }
+
+  function displaySummary(summary) {
+    document.getElementById("summaryIntent").textContent = summary.investor_intent || "-";
+    document.getElementById("summarySector").textContent = summary.preferred_sector || "Not specified";
+    document.getElementById("summaryLocation").textContent = summary.preferred_location || "Not specified";
+
+    const nextStepsList = document.getElementById("summaryNextSteps");
+    nextStepsList.innerHTML = "";
+    
+    if (summary.suggested_next_steps && Array.isArray(summary.suggested_next_steps)) {
+      summary.suggested_next_steps.forEach(step => {
+        const li = document.createElement("li");
+        li.textContent = step;
+        nextStepsList.appendChild(li);
+      });
+    }
+
+    document.getElementById("summaryCard").classList.add("active");
+  }
+
+  // Voice state management
+  function setVoiceState(state) {
+    currentVoiceState = state;
+    const indicator = document.getElementById("statusIndicator");
+    const statusText = document.getElementById("statusText");
+
+    indicator.className = "status-indicator";
+
+    switch (state) {
+      case "AGENT_SPEAKING":
+        indicator.classList.add("pulse");
+        statusText.textContent = "🎤 Agent speaking...";
+        break;
+      case "LISTENING":
+        indicator.classList.add("listening");
+        statusText.textContent = "👂 Listening...";
+        break;
+      case "USER_SPEAKING":
+        indicator.classList.add("listening");
+        statusText.textContent = "🗣️ You're speaking...";
+        break;
+      case "IDLE":
+        indicator.classList.add("idle");
+        statusText.textContent = "Ready to start";
+        break;
+    }
+
+    console.log("[STATE] Changed to:", state);
+  }
+
+  function showMicIndicator() {
+    document.getElementById("micIndicator").classList.remove("hidden");
+  }
+
+  function hideMicIndicator() {
+    document.getElementById("micIndicator").classList.add("hidden");
+  }
+
+  // Audio playback
+  function playAudio(base64Audio) {
+    return new Promise((resolve) => {
+      try {
+        const audio = new Audio("data:audio/mpeg;base64," + base64Audio);
+        audio.onended = resolve;
+        audio.onerror = resolve;
+        audio.play().catch(() => {
+          console.warn("[AUDIO] Playback failed");
+          resolve();
+        });
+
+        // Fallback timeout
+        setTimeout(resolve, 10000);
+      } catch (e) {
+        console.warn("[AUDIO] Error:", e);
+        resolve();
+      }
+    });
+  }
+
+  // Initialize on load
+  window.addEventListener("load", () => {
+    console.log("[INIT] Call interface loaded");
+  });
+</script>
+
+</body>
+</html>

@@ -5,6 +5,7 @@ Unified interface for both providers
 
 import logging
 from typing import Dict, Any
+import json
 from enum import Enum
 from app.core import settings
 from app.services.groq_client import groq_chat
@@ -84,14 +85,33 @@ class LLMFactory:
                 return client.generate_investor_response(question, context_data)
             else:
                 # Groq client uses query method
+                # Optimize for single-pass generation if possible, or fallback
+                prompt = f"""Context:\n{context_data}\n\nQuestion: {question}
+                
+                Provide a response in JSON format with:
+                1. "detailed_analysis": Full structured markdown response
+                2. "voice_summary": Concise spoken summary (<3 sentences)
+                """
+                
                 response = client.query(
-                    f"Context:\n{context_data}\n\nQuestion: {question}",
+                    prompt,
                     max_tokens=1500,
                     temperature=0.6
                 )
+                
+                # Attempt to parse JSON from Groq
+                try:
+                    data = json.loads(response)
+                    answer = data.get("detailed_analysis", response)
+                    voice_summary = data.get("voice_summary") or ""
+                except:
+                    answer = response
+                    voice_summary = "" # Fallback will be handled in main.py if empty
+
                 return {
                     "status": "success",
-                    "answer": response,
+                    "answer": answer,
+                    "voice_summary": voice_summary,
                     "model": settings.GROQ_MODEL,
                     "provider": "groq"
                 }
@@ -103,6 +123,124 @@ class LLMFactory:
                 "provider": provider.value
             }
     
+    @staticmethod
+    def summarize_for_voice(text: str) -> str:
+        """
+        Generate a concise voice summary of a detailed text response
+        """
+        client = LLMFactory.get_client()
+        try:
+            return client.summarize_for_voice(text)
+        except Exception as e:
+            logger.error(f"Failed to generate voice summary: {e}")
+            return text[:200]  # Fallback
+
+    @staticmethod
+    def generate_dual_response(
+        question: str,
+        context_data: Dict[str, Any],
+        conversation_context: Dict[str, Any] = None,
+    ) -> Dict[str, Any]:
+        """
+        Generate both TEXT and VOICE responses from a single LLM call.
+        
+        This is the core method for voice-first conversational AI.
+        
+        Args:
+            question: User's question
+            context_data: Retrieved data (policies, parks, plots, pois)
+            conversation_context: Previous turns, asked questions, etc.
+        
+        Returns:
+            {
+                "status": "success|error",
+                "text_response": "Long structured response for chat UI",
+                "voice_response": "Short 2-4 sentence conversational response",
+                "conversation_state": { ...state tracking dict... },
+                "model": "which model was used",
+                "warnings": [...],
+            }
+        """
+        from app.agents.voice_prompts import VoicePromptEngine
+        from app.agents.voice_validator import VoiceResponseValidator, DualResponseGenerator
+        
+        client = LLMFactory.get_client()
+        provider = LLMFactory.get_provider()
+        
+        try:
+            # Build prompts
+            system_prompt = VoicePromptEngine.get_voice_system_prompt()
+            
+            previous_clarifications = []
+            if conversation_context:
+                previous_clarifications = conversation_context.get("previously_asked", [])
+            
+            user_prompt = VoicePromptEngine.get_voice_user_prompt(
+                question=question,
+                retrieved_data=context_data,
+                conversation_history=conversation_context.get("conversation_history") if conversation_context else None,
+                previous_clarifications=previous_clarifications,
+            )
+            
+            # Query LLM with system + user prompts
+            if provider == LLMProvider.OPENAI:
+                response = client.client.chat.completions.create(
+                    model=client.model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    max_tokens=2000,
+                    temperature=0.6,
+                    response_format={"type": "json_object"}  # Force JSON output for OpenAI
+                )
+                llm_response = response.choices[0].message.content
+            else:
+                # Groq
+                combined_prompt = system_prompt + "\n\n" + user_prompt
+                llm_response = client.query(
+                    combined_prompt,
+                    max_tokens=2000,
+                    temperature=0.6
+                )
+            
+            # Parse response
+            success, parsed_response, error_msg = VoiceResponseValidator.parse_dual_response(llm_response)
+            
+            if not success:
+                logger.error(f"Failed to parse dual response: {error_msg}")
+                # Fallback to text-only response
+                return {
+                    "status": "error",
+                    "error": error_msg,
+                    "fallback": llm_response[:200],
+                    "provider": provider.value
+                }
+            
+            # Validate voice response
+            validated_response, warnings = VoiceResponseValidator.validate_and_fix_voice_response(
+                parsed_response,
+                previous_clarifications
+            )
+            
+            return {
+                "status": "success",
+                "text_response": validated_response.get("text_response", ""),
+                "voice_response": validated_response.get("voice_response", ""),
+                "conversation_state": validated_response.get("conversation_state", {}),
+                "model": settings.OPENAI_MODEL if provider == LLMProvider.OPENAI else settings.GROQ_MODEL,
+                "provider": provider.value,
+                "warnings": warnings,
+            }
+        
+        except Exception as e:
+            logger.error(f"Failed to generate dual response: {str(e)}", exc_info=True)
+            return {
+                "status": "error",
+                "error": str(e),
+                "provider": provider.value
+            }
+
     @staticmethod
     def get_model_info() -> Dict[str, Any]:
         """Get information about current LLM configuration"""

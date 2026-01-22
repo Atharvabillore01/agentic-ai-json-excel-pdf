@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 import time
 import json
 from datetime import datetime
@@ -11,13 +12,19 @@ from app.utils.json_safe import json_safe
 import logging
 from app.middleware.timing import timing_middleware
 from app.api.ask import router as ask_router
+from app.api.call import router as call_router
 from fastapi.staticfiles import StaticFiles
+from app.services.llm_factory import get_llm_factory
+from app.services.tts.elevenlabs_client import ElevenLabsClient
+import base64
+import uuid
 
 logging.basicConfig(level=logging.INFO)
 
 
 app = FastAPI(title="MP Industrial Agent Backend")
 app.include_router(ask_router)
+app.include_router(call_router)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.middleware("http")(timing_middleware)
 
@@ -76,9 +83,6 @@ def parks(
         "data": safe_parks
     }
 
-import time
-import json
-from app.utils.json_safe import json_safe
 
 @app.get("/api/{state}/plots")
 def plots(
@@ -139,3 +143,96 @@ def pois_nearby(
     poi_type: str | None = None
 ):
     return find_nearby_pois(state, lat, lng, radius_km, poi_type)
+
+@app.post("/api/ask/voice")
+def ask_with_voice(payload: dict):
+    """
+    Voice conversation endpoint with dual-response mode.
+    
+    Returns:
+    {
+        "text_response": "Long structured response for chat UI",
+        "voice_response": "Short 2-4 sentence response for TTS",
+        "audio_base64": "Base64-encoded MP3 audio",
+        "conversation_state": {...},
+        "model": "model name",
+        "turn_number": "which turn in conversation",
+        "warnings": [...],
+    }
+    """
+    question = payload.get("question")
+    conversation_state = payload.get("conversation_state", {})  # Optional context from frontend
+    state = payload.get("state", "madhya_pradesh")  # Default state
+    
+    if not question:
+        return JSONResponse(status_code=400, content={"error": "Question required"})
+
+    llm = get_llm_factory()
+    
+    try:
+        tts = ElevenLabsClient()
+    except Exception as e:
+        logging.error(f"TTS Client Init Error: {e}")
+        tts = None
+
+    # 1. Retrieve relevant data (existing logic)
+    try:
+        from app.agents.agent import _execute_tools_intelligently
+        from app.core.observability import RequestLogger, get_performance_monitor
+        
+        request_logger = RequestLogger("voice_" + str(uuid.uuid4())[:8])
+        perf_monitor = get_performance_monitor()
+        
+        retrieved_data = _execute_tools_intelligently(
+            state,
+            question,
+            request_logger,
+            perf_monitor
+        )
+    except Exception as e:
+        logging.error(f"Tool execution error: {e}")
+        retrieved_data = {
+            "policies": [],
+            "parks": [],
+            "plots": [],
+            "pois": []
+        }
+
+    # 2. Generate DUAL responses (text + voice) in single LLM call
+    llm_response = llm.generate_dual_response(
+        question=question,
+        context_data=retrieved_data,
+        conversation_context=conversation_state,
+    )
+    
+    if llm_response.get("status") == "error":
+        return JSONResponse(
+            status_code=500,
+            content={"error": llm_response.get("error", "LLM Error")}
+        )
+
+    text_response = llm_response.get("text_response", "")
+    voice_response = llm_response.get("voice_response", "")
+    conversation_state_updated = llm_response.get("conversation_state", {})
+
+    # 3. Convert voice response to audio
+    audio_base64 = None
+    if tts and voice_response:
+        try:
+            audio_bytes = tts.synthesize(voice_response)
+            if audio_bytes:
+                audio_base64 = base64.b64encode(audio_bytes).decode("utf-8")
+        except Exception as e:
+            logging.error(f"TTS Synthesis Error: {e}")
+            # Proceed without audio
+
+    return {
+        "text_response": text_response,
+        "voice_response": voice_response,
+        "audio_base64": audio_base64,
+        "conversation_state": conversation_state_updated,
+        "model": llm_response.get("model", "unknown"),
+        "provider": llm_response.get("provider", "unknown"),
+        "turn_number": conversation_state.get("turn_number", 1) + 1,
+        "warnings": llm_response.get("warnings", []),
+    }

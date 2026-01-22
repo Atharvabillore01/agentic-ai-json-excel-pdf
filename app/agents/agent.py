@@ -48,7 +48,7 @@ TOOL_MAP = {
 }
 
 
-def run_agent(state: str, user_question: str) -> Dict[str, Any]:
+def run_agent(state: str, user_question: str, conversation_context: str = "", is_voice_mode: bool = False) -> Dict[str, Any]:
     """
     Enhanced agent with multi-stage reasoning, validation, and citation tracking.
     
@@ -127,12 +127,16 @@ def run_agent(state: str, user_question: str) -> Dict[str, Any]:
             )
         
         # ---- RESPONSE GENERATION WITH GUARDRAILS ----
-        request_logger.log_event("response_generation_start", {})
+        request_logger.log_event("response_generation_start", {"is_voice_mode": is_voice_mode})
         
-        system_prompt = (
-            EnhancedPrompts.get_system_prompt_response() + "\n\n" +
-            EnhancedPrompts.get_guardrail_prompt()
-        )
+        # Choose system prompt based on mode
+        if is_voice_mode:
+            system_prompt = _get_voice_system_prompt()
+        else:
+            system_prompt = (
+                EnhancedPrompts.get_system_prompt_response() + "\n\n" +
+                EnhancedPrompts.get_guardrail_prompt()
+            )
         
         context_prompt = EnhancedPrompts.get_data_context_prompt(
             policy_chunks=retrieved_data.get("policies", []),
@@ -141,9 +145,14 @@ def run_agent(state: str, user_question: str) -> Dict[str, Any]:
             pois_data=retrieved_data.get("pois"),
         )
         
+        # Add conversation context if provided (for voice calls)
+        user_content = context_prompt + "\n\nQuestion: " + user_question
+        if conversation_context:
+            user_content = f"## Conversation Context\n{conversation_context}\n\n---\n\n{user_content}"
+        
         messages = [
             {"role": "system", "content": system_prompt},
-            {"role": "user", "content": context_prompt + "\n\nQuestion: " + user_question}
+            {"role": "user", "content": user_content}
         ]
         
         # Use LLM Factory - switches between Groq and OpenAI based on configuration
@@ -250,8 +259,13 @@ def run_agent(state: str, user_question: str) -> Dict[str, Any]:
         # ---- COMPILE RESULT ----
         execution_time = time.time() - start_time
         
+        # Generate voice response (conversational, no tags)
+        voice_response = _create_voice_response(final_response)
+        
         result = {
             "answer": final_response,
+            "text_response": final_response,
+            "voice_response": voice_response,
             "state": normalized_state,
             "confidence_score": validation_result.confidence_score,
             "hallucination_risk": hal_risk,
@@ -462,4 +476,86 @@ def _error_response(
     )
     
     return response
+
+
+def _create_voice_response(text_response: str) -> str:
+    """
+    Convert structured text response into natural voice response.
+    
+    - Removes [VERIFIED INFORMATION], [REQUIRES USER INPUT], [CANNOT DETERMINE] tags
+    - Removes robotic disclaimers
+    - Truncates to 2-4 sentences for voice (~150-200 words)
+    - Makes it sound like a human consultant, not a chatbot
+    """
+    # Remove tag markers
+    response = text_response.replace("[VERIFIED INFORMATION]", "")
+    response = response.replace("[REQUIRES USER INPUT]", "")
+    response = response.replace("[CANNOT DETERMINE]", "")
+    response = response.replace("[POLICY DATA]", "")
+    
+    # Remove robotic phrases
+    robotic_phrases = [
+        "I must inform you that",
+        "Please note that",
+        "It is important to note that",
+        "According to the data",
+        "I am unable to provide",
+        "I cannot determine",
+        "requires user input",
+    ]
+    
+    for phrase in robotic_phrases:
+        response = response.replace(phrase, "", 1)
+    
+    # Remove extra whitespace
+    response = " ".join(response.split())
+    
+    # Truncate to ~2-4 sentences for voice
+    sentences = response.split(". ")
+    if len(sentences) > 4:
+        response = ". ".join(sentences[:4]) + "."
+    elif len(sentences) == 0:
+        response = response[:200]
+    
+    # Remove "Hmm" or "Well" artifacts
+    response = response.lstrip("Hmm ").lstrip("Well ")
+    
+    return response.strip()
+
+
+def _get_voice_system_prompt() -> str:
+    """
+    System prompt for voice mode - encourages natural, conversational responses.
+    No tags, no disclaimers, sounds like a trained investor relationship manager.
+    """
+    return """You are a professional investor relationship manager speaking with a potential industrial investor.
+
+CRITICAL VOICE BEHAVIORS:
+1. SPEAK NATURALLY - Use conversational English, not technical jargon
+2. ASK ONE QUESTION AT A TIME - Let the conversation flow naturally
+3. NO DISCLAIMERS - Don't say "I must inform you" or "Please note that"
+4. NO DATA DUMPS - Never list 10 things. Pick 2-3 most relevant ones
+5. PERSONAL TOUCH - Use their preferences from conversation context
+6. NO TAGS OR MARKERS - Never output [VERIFIED INFORMATION] or similar
+7. SHORT RESPONSES - Keep sentences clear and punchy
+
+STRUCTURE (INTERNAL ONLY - NOT VISIBLE):
+Your response will be split into two versions:
+1. VOICE: 2-4 sentences, conversational, for text-to-speech
+2. TEXT: Structured with bullet points, for display if needed
+
+VOICE GUIDELINES:
+- "We have some great opportunities in pharmaceutical manufacturing..." (not "Pharmaceutical sector availability includes...")
+- "Indore would be perfect for your timeline" (not "District suitability analysis shows...")
+- "Let me ask - what's your investment horizon?" (not "Investment timeline is required for next steps")
+
+ABSOLUTE RULES:
+- NEVER say "According to policy..."
+- NEVER list coordinates or technical specs
+- NEVER output JSON or code
+- NEVER use [BRACKETS] for anything
+- NEVER say "I cannot determine" - instead say "I'd need to check on that"
+
+Be warm, professional, and focused on helping them find the right opportunity."""
+
 

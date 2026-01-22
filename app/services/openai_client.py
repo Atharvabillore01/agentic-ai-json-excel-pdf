@@ -5,6 +5,7 @@ Provides intelligent question answering with fact verification
 
 from openai import OpenAI
 import logging
+import json
 from app.core import settings
 
 logger = logging.getLogger(__name__)
@@ -177,7 +178,7 @@ CRITICAL RULES:
    [CANNOT DETERMINE]
    What data isn't available without external sources
 
-4. For general topics (policies, incentives, investment climate) - be confident and detailed
+4. For general topics (policies, incentives) - be confident and detailed
 5. For specific data (plots, prices, distances) - be conservative and ask for details
 
 Always maintain professional, neutral, investor-focused tone."""
@@ -189,11 +190,13 @@ CONTEXT DATA:
 
 USER QUESTION: {question}
 
-Remember: 
-- Only provide facts you can verify
-- Ask for missing information
-- Never hallucinate specific details
-- Separate your response into the three sections"""
+OUTPUT FORMAT:
+Return a valid JSON object with exactly two keys:
+1. "detailed_analysis": The full, structured markdown response with sections (VERIFIED INFORMATION, etc.)
+2. "voice_summary": A concise, conversational summary (under 3 sentences) suitable for speech.
+   - If asking for input, be clear and direct.
+   - Do not read lists or coordinates.
+   - Focus on the key insight."""
 
         try:
             response = self.client.chat.completions.create(
@@ -202,15 +205,24 @@ Remember:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": prompt}
                 ],
+                response_format={"type": "json_object"},
                 max_tokens=1500,
                 temperature=0.6
             )
             
-            answer = response.choices[0].message.content
+            content = response.choices[0].message.content
+            try:
+                data = json.loads(content)
+                answer = data.get("detailed_analysis", content)
+                voice_summary = data.get("voice_summary") or ""
+            except json.JSONDecodeError:
+                answer = content
+                voice_summary = ""
             
             return {
                 "status": "success",
                 "answer": answer,
+                "voice_summary": voice_summary,
                 "model": self.model,
                 "verified_by_llm": True
             }
@@ -223,6 +235,24 @@ Remember:
                 "model": self.model
             }
     
+    def summarize_for_voice(self, text: str) -> str:
+        """
+        Summarize a detailed response for voice output
+        """
+        prompt = f"""Summarize this investment advisory response for a voice assistant.
+        
+Original Text: {text}
+
+Rules:
+1. Keep it under 3 sentences
+2. Be conversational, professional, and encouraging
+3. If asking for input, be clear and direct (ask one thing at a time)
+4. Do not read lists, coordinates, or long data verbatim
+5. Focus on the key insight or next step
+
+Voice Summary:"""
+        return self.query(prompt, max_tokens=150, temperature=0.6)
+
     def get_model_info(self) -> dict:
         """Get information about current model"""
         return {

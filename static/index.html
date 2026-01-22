@@ -409,7 +409,16 @@
 
       <label>Natural Language Query</label>
       <textarea id="question" rows="3" placeholder="e.g., Show me industrial parks near Indore...">Medical Devices Policy</textarea>
-      <button onclick="askAgent()" id="btn-ask">Ask Agent</button>
+      
+      <div style="display: flex; gap: 10px;">
+        <button onclick="askAgent()" id="btn-ask" style="flex: 2;">Ask Agent</button>
+        <button onclick="startVoiceInteraction()" id="btn-mic" style="flex: 1; background: #ef4444;" title="Speak Question">
+            🎤 Speak
+        </button>
+        <button onclick="resetVoiceConversation()" id="btn-reset" style="flex: 1; background: #8b5cf6; font-size: 12px;" title="Reset conversation context">
+            ↻ Reset
+        </button>
+      </div>
     </div>
 
     <div class="card">
@@ -506,12 +515,13 @@
 </div>
 
 <script>
-const BASE = "http://4.187.235.216:8001";
-// const BASE = "http://127.0.0.1:8000";
+//const BASE = "http://4.187.235.216:8001";
+ const BASE = "http://127.0.0.1:8111";
 let network = null;
 let nodesDataSet = null; 
 let edgesDataSet = null;
 let agentBusy = false;
+let audioContext = null;
 loadAvailableStates();
 // --- Tab Switching Logic ---
 function switchTab(view) {
@@ -570,6 +580,143 @@ async function fetchExplorerData() {
     
     // Call the API
     await callApiInternal(url);
+}
+
+// --- Voice Interaction Logic with State Tracking ---
+let voiceConversationState = {
+    conversation_history: [],
+    previously_asked: [],
+    provided_info: {},
+    missing_info: [],
+    turn_number: 0,
+};
+
+function resetVoiceConversation() {
+    voiceConversationState = {
+        conversation_history: [],
+        previously_asked: [],
+        provided_info: {},
+        missing_info: [],
+        turn_number: 0,
+    };
+    console.log("Voice conversation reset");
+}
+
+function startVoiceInteraction() {
+    if (!('webkitSpeechRecognition' in window)) {
+        alert("Web Speech API not supported in this browser. Try Chrome.");
+        return;
+    }
+
+    const recognition = new webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-IN';
+
+    const btn = document.getElementById('btn-mic');
+    const originalText = btn.innerHTML;
+    
+    recognition.onstart = function() {
+        btn.innerHTML = "Listening...";
+        btn.style.background = "#22c55e"; // Green
+    };
+
+    recognition.onend = function() {
+        btn.innerHTML = originalText;
+        btn.style.background = "#ef4444"; // Red
+    };
+
+    recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript;
+        document.getElementById('question').value = transcript;
+        // Automatically send after speaking
+        askAgentWithVoice(transcript);
+    };
+
+    recognition.start();
+}
+
+async function askAgentWithVoice(questionText) {
+    if (agentBusy) return;
+    agentBusy = true;
+    showLoading();
+    switchTab('answer');
+
+    try {
+        const payload = {
+            question: questionText,
+            state: document.getElementById("state").value || "madhya_pradesh",
+            conversation_state: voiceConversationState,
+        };
+
+        const res = await fetch('/api/ask/voice', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await res.json();
+        
+        // Update conversation state for next turn
+        if (data.conversation_state) {
+    voiceConversationState = {
+        ...voiceConversationState,          // preserve arrays
+        ...data.conversation_state,         // update server fields
+        conversation_history:
+            voiceConversationState.conversation_history || [],
+        previously_asked:
+            voiceConversationState.previously_asked || [],
+        provided_info:
+            voiceConversationState.provided_info || {},
+        missing_info:
+            voiceConversationState.missing_info || [],
+        turn_number:
+            data.turn_number ??
+            (voiceConversationState.turn_number || 0) + 1,
+    };
+}
+
+        
+        // Add turn to history
+        if (data.voice_response) {
+            voiceConversationState.conversation_history.push({
+                user_input: questionText,
+                voice_response: data.voice_response,
+                text_response: data.text_response,
+            });
+        }
+        
+        // Display text response in chat
+        renderBotResponse({ answer: data.text_response });
+        
+        // Show voice response as a subtitle/caption
+        if (data.voice_response) {
+            const voiceCaption = document.createElement('div');
+            voiceCaption.style.marginTop = '10px';
+            voiceCaption.style.fontSize = '12px';
+            voiceCaption.style.fontStyle = 'italic';
+            voiceCaption.style.color = '#64748b';
+            voiceCaption.innerHTML = `<strong>Voice Summary:</strong> "${data.voice_response}"`;
+            document.querySelector('#answer .card')?.appendChild(voiceCaption);
+        }
+        
+        // Play Audio
+        if (data.audio_base64) {
+            const audio = new Audio("data:audio/mpeg;base64," + data.audio_base64);
+            audio.play().catch(err => console.warn("Audio playback failed:", err));
+        }
+        
+        // Log warnings if any
+        if (data.warnings && data.warnings.length > 0) {
+            console.warn("Voice response warnings:", data.warnings);
+        }
+    } catch (err) {
+        console.error(err);
+        renderChatStyleAnswer("⚠️ Voice Error: " + err.message);
+    } finally {
+        hideLoading();
+        agentBusy = false;
+    }
 }
 
 // --- API Logic ---
